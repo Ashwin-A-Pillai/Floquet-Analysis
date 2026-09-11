@@ -1,0 +1,356 @@
+#!/bin/bash -l
+###############################################################################
+# SLURM: QE/Yambo/Lumen + Floquet post-processing
+###############################################################################
+#SBATCH --job-name=YNL
+#SBATCH --output=outs/%x.%j.out
+#SBATCH --error=outs/%x.%j.err
+#SBATCH --partition=c8
+#SBATCH --nodes=1
+#SBATCH --ntasks=16
+#SBATCH --cpus-per-task=2
+
+set -euo pipefail
+ulimit -l unlimited
+
+###############################################################################
+# MPI / OpenMP environment
+###############################################################################
+export OMPI_MCA_pml="ucx"
+export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK:-1}"
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+
+###############################################################################
+# Executables and scripts
+###############################################################################
+YAMBO="/home/attaccalite/SOFTWARE/lumen/bin/yambo"
+P2Y="/home/attaccalite/SOFTWARE/lumen/bin/p2y"
+YNL="/home/attaccalite/SOFTWARE/lumen/bin/yambo_nl"
+YRT="/home/attaccalite/SOFTWARE/lumen/bin/yambo_rt"
+YPP="/home/attaccalite/SOFTWARE/lumen/bin/ypp"
+YPP_NL="/home/attaccalite/SOFTWARE/lumen/bin/ypp_nl"
+
+scripts="/home/pillai/my_codes/yambo/Floqanalysis/scripts"
+
+###############################################################################
+# Floquet/Yambo parameters
+###############################################################################
+
+ynl_in="YNL.in"
+
+# Yambo NL parallelisation
+export NL_CPU_LAYOUT="1 ${SLURM_NTASKS}"
+export NL_ROLES="w k"
+export NL_THREADS=0
+
+# Floquet basis in the RT calculation
+export nl_band_i=4
+export nl_band_f=5
+
+# RT propagation
+export nl_step=0.009340
+export nl_time=-1.000000
+export nl_integrator="INVINT"
+export nl_correlation="IPA"
+
+# Force time step to divide the optical period
+export NTDiv=true
+
+# Floquet order
+export fl_order=4
+
+# Damping/dephasing
+export nl_damp=0.150000
+
+# Pump field
+export field1_freq=4.100000
+export field1_int=1000.00
+export field1_width=0.000000
+export field1_kind="SOFTSIN"
+export field1_pol="linear"
+
+export efield1_x=1.000000
+export efield1_y=1.000000
+export efield1_z=0.000000
+
+###############################################################################
+# Floquet post-processing parameters
+#
+# These are passed to the Python scripts as command-line arguments.
+###############################################################################
+
+# Yambo job/database directory created by -J
+FL_CALC_DIR="fl_sample"
+
+# Lattice database
+FL_SAVE_DB="SAVE/ns.db1"
+
+# Single-state diagnostic
+FL_TEST_KPT=6
+FL_TEST_BAND=4
+
+# Physical band to plot from the Floquet basis
+FL_PLOT_BAND=5
+FL_PLOT_TSTEP=0.004
+
+# All-k Floquet coefficient
+FL_INITIAL_BAND=4
+FL_PROJECTED_BAND=5
+FL_ETA=2
+
+# Interpolation density
+FL_NPOINTS=10
+
+# Reciprocal-space path.
+#
+# Format:
+#   LABEL:kx,ky,kz;LABEL:kx,ky,kz;...
+#
+# FCC-style AlAs example:
+FL_KPATH="G:0.0,0.0,0.0;X:0.5,0.0,0.5;W:0.5,0.25,0.75;K:0.375,0.375,0.75;G:0.0,0.0,0.0;L:0.5,0.5,0.5;U:0.625,0.25,0.625;W:0.5,0.25,0.75;L:0.5,0.5,0.5;K:0.375,0.375,0.75"
+
+# Optional y limits. Leave blank for automatic.
+FL_YMIN=""
+FL_YMAX=""
+
+# hBN tutorial uses plot_2D_kdist.
+# For bulk AlAs, leave false unless using a 2D k-space slice.
+FL_PLOT_KDIST=false
+
+# Outputs
+FL_REPORT_FILE="results_eval.dat"
+FL_BAND_PDF="QE_band_interp.pdf"
+
+###############################################################################
+# Directories
+###############################################################################
+
+WORKDIR="${PWD}"
+mkdir -p outs
+
+echo
+echo "Starting at        : $(date)"
+echo "Job name           : ${SLURM_JOB_NAME}"
+echo "Job ID             : ${SLURM_JOB_ID}"
+echo "Node list          : ${SLURM_NODELIST}"
+echo "MPI ranks          : ${SLURM_NTASKS}"
+echo "OMP threads/rank   : ${OMP_NUM_THREADS}"
+echo
+
+###############################################################################
+# Modules / Lumen environment
+###############################################################################
+
+module purge
+module load gnu12/12.2.0
+module load openmpi4/4.1.5
+module load phdf5/1.14.0
+module load netcdf/4.9.0
+module load netcdf-fortran/4.6.0
+module load scalapack/2.2.2
+module load fftw/3.3.10
+module load openblas/0.3.21
+module load petsc/3.22.0_s
+module load slepc/3.22.0_s
+module load libxc/5.2.3
+module load pmix/4.2.9
+module load prun/2.2
+
+module list
+
+echo "[$(date)] Running p2y and Yambo initialization ..."
+
+conda activate yambo-env
+
+###############################################################################
+# Clean and initialize Yambo databases
+###############################################################################
+
+rm -rf FixSymm
+rm -rf SAVE || true
+
+"${P2Y}"
+"${YNL}" -i -V RL -F setup.in
+"${YNL}" -F setup.in
+
+###############################################################################
+# IPA response before FixSymm
+###############################################################################
+
+"${YNL}" -o c -F ip_temp.in
+bash "${scripts}/patch_RTIP.sh" ip_temp.in IPA.in
+"${YNL}" -F IPA.in -J CHI_IP -C CHI_IP
+python3 "${scripts}/IPA_plt.py"
+
+###############################################################################
+# Fix symmetries
+###############################################################################
+
+"${YPP}" -y -F FSypp_temp.in
+bash "${scripts}/patch_FSy.sh" FSypp_temp.in FSypp.in
+"${YPP}" -F FSypp.in
+
+cd "./FixSymm"
+
+###############################################################################
+# Initialize inside FixSymm
+###############################################################################
+
+"${YNL}"
+
+###############################################################################
+# IPA response inside FixSymm
+###############################################################################
+
+"${YNL}" -o c -F ip_temp.in
+bash "${scripts}/patch_RTIP.sh" ip_temp.in IPA.in
+"${YNL}" -F IPA.in -J CHI_IP -C CHI_IP
+python3 "${scripts}/IPA_plt.py"
+
+###############################################################################
+# Floquet RT calculation
+###############################################################################
+
+rm -rf "${FL_CALC_DIR}"
+
+export nl_esteps=10
+
+"${YNL}" -u p -V nl -Input ynl_temp.in
+bash "${scripts}/patch_NL2.sh" ynl_temp.in "${ynl_in}"
+
+echo
+echo "Relevant Floquet input:"
+grep -E '^[[:space:]]*(NLstep|NLtime|NLStepDiv|FLOrder|NLDamping|Field1_Freq|Field1_kind|Field1_pol)' "${ynl_in}" || true
+echo
+
+prun "${YNL}" -Input "${ynl_in}" -J "${FL_CALC_DIR}"
+
+###############################################################################
+# Validate Floquet database
+###############################################################################
+
+python3 - "${FL_CALC_DIR}" "${fl_order}" <<'PY'
+import sys
+from pathlib import Path
+from netCDF4 import Dataset
+
+calc = Path(sys.argv[1])
+requested_order = int(sys.argv[2])
+dbfile = calc / "ndb.RT_V_bands"
+
+if not dbfile.is_file():
+    raise SystemExit(f"[ERROR] Missing Floquet database: {dbfile}")
+
+with Dataset(dbfile) as db:
+    order = int(db["IO_Floquet_order"][0])
+    nsteps = int(db["IO_TIME_steps_last_nsteps"][2])
+    times = db["IO_TIME_points"][:]
+
+print(f"Floquet DB          : {dbfile}")
+print(f"IO_Floquet_order    : {order}")
+print(f"N timesteps         : {nsteps}")
+print(f"IO_TIME_points      : {times}")
+
+expected_min = 2 * requested_order + 4
+
+if order != requested_order:
+    raise SystemExit(
+        f"[ERROR] Stored Floquet order is {order}, "
+        f"but requested FLOrder={requested_order}."
+    )
+
+if nsteps < expected_min:
+    raise SystemExit(
+        f"[ERROR] Insufficient Floquet sampling: "
+        f"{nsteps} timesteps for FLOrder={requested_order}; "
+        f"expected at least {expected_min}."
+    )
+
+print("[OK] Floquet sampling database passed validation.")
+PY
+
+###############################################################################
+# ypp_nl analysis
+###############################################################################
+
+export xorder=1
+export time_min=-1.00000
+export time_max=-1.00000
+export energy_min=0.00000
+export energy_max=10.00000
+export damp_mode="LORENTZIAN"
+export damp_factor=0.10000
+
+"${YPP_NL}" -u -Input anl_temp.in
+bash "${scripts}/patch_YAL.sh" anl_temp.in anl.in
+"${YPP_NL}" -F anl.in
+
+###############################################################################
+# Yambopy fl-analysis environment
+###############################################################################
+
+conda activate yambo-lelphc
+export PYTHONPATH="/home/pillai/my_codes/yambopy-fl-analysis:${PYTHONPATH:-}"
+
+python3 - <<'PY'
+import yambopy
+print("Yambopy:", yambopy.__file__)
+
+from yambopy import YamboVbandsDB, VbPP
+print("Floquet Yambopy imports OK")
+PY
+
+###############################################################################
+# Single-state Floquet diagnostic
+###############################################################################
+
+python3 "${scripts}/NLanl.py" \
+    --workdir "${PWD}" \
+    --calc "${FL_CALC_DIR}" \
+    --kpt "${FL_TEST_KPT}" \
+    --band "${FL_TEST_BAND}" \
+    --plot-band "${FL_PLOT_BAND}" \
+    --plot-t-step "${FL_PLOT_TSTEP}"
+
+###############################################################################
+# All-k Floquet analysis / interpolated bands
+###############################################################################
+
+PLT_ARGS=(
+    --workdir "${PWD}"
+    --calc "${FL_CALC_DIR}"
+    --save-db "${FL_SAVE_DB}"
+    --path "${FL_KPATH}"
+    --npoints "${FL_NPOINTS}"
+    --eta "${FL_ETA}"
+    --initial-band "${FL_INITIAL_BAND}"
+    --projected-band "${FL_PROJECTED_BAND}"
+    --report-file "${FL_REPORT_FILE}"
+    --band-pdf "${FL_BAND_PDF}"
+)
+
+if [[ -n "${FL_YMIN}" ]]; then
+    PLT_ARGS+=(--ymin "${FL_YMIN}")
+fi
+
+if [[ -n "${FL_YMAX}" ]]; then
+    PLT_ARGS+=(--ymax "${FL_YMAX}")
+fi
+
+case "${FL_PLOT_KDIST,,}" in
+    true|1|yes|on)
+        PLT_ARGS+=(--plot-kdist)
+        ;;
+    false|0|no|off)
+        ;;
+    *)
+        echo "[ERROR] FL_PLOT_KDIST must be true/false, 1/0, yes/no, or on/off." >&2
+        exit 10
+        ;;
+esac
+
+python3 "${scripts}/Plt_flq.py" "${PLT_ARGS[@]}"
+
+echo
+echo "Finished at: $(date)"
