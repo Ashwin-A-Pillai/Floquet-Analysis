@@ -1,0 +1,180 @@
+#!/bin/bash -l
+###############################################################################
+# SLURM: QE (pw.x) + Yambo
+###############################################################################
+#SBATCH --job-name=YNL
+#SBATCH --output=outs/%x.%j.out
+#SBATCH --error=outs/%x.%j.err
+#SBATCH --partition=c9
+#SBATCH --nodes=1
+#SBATCH --ntasks=24
+#SBATCH --cpus-per-task=2
+
+set -euo pipefail
+ulimit -l unlimited
+
+###############################################################################
+# Modules / environment
+###############################################################################
+export OMPI_MCA_pml="ucx"
+export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export OMP_PLACES=cores
+export OMP_PROC_BIND=close
+
+YAMBO="/home/attaccalite/SOFTWARE/lumen/bin/yambo"
+P2Y="/home/attaccalite/SOFTWARE/lumen/bin/p2y"
+YNL="/home/attaccalite/SOFTWARE/lumen/bin/yambo_nl"
+YRT="/home/attaccalite/SOFTWARE/lumen/bin/yambo_rt"
+YPP="/home/attaccalite/SOFTWARE/lumen/bin/ypp"
+YPP_NL="/home/attaccalite/SOFTWARE/lumen/bin/ypp_nl"
+P2Y="/home/attaccalite/SOFTWARE/lumen/bin/p2y"
+scripts="/home/pillai/my_codes/yambo/Floqanalysis/scripts_Col/"
+
+
+# Fixed Yambo band cutoff for nk convergence
+
+
+###############################################################################
+# Directories
+###############################################################################
+WORKDIR="${PWD}"
+
+mkdir -p outs
+
+echo
+echo "Starting at        : $(date)"
+echo " Job name          : ${SLURM_JOB_NAME}"
+echo " Job ID            : ${SLURM_JOB_ID}"
+echo " Node list         : ${SLURM_NODELIST}"
+echo " MPI ranks         : ${SLURM_NTASKS}"
+echo " OMP threads/rank  : ${OMP_NUM_THREADS}"
+echo
+
+###############################################################################
+# Clean stale artifacts
+###############################################################################
+echo "[$(date)] Cleaning old artifacts..."
+
+  #############################################################################
+  # Switch to Yambo/Lumen environment
+  #############################################################################
+  module purge
+  module load gnu12/12.2.0
+  module load openmpi4/4.1.5
+  module load phdf5/1.14.0
+  module load netcdf/4.9.0
+  module load netcdf-fortran/4.6.0
+  module load scalapack/2.2.2
+  module load fftw/3.3.10
+  module load openblas/0.3.21
+  module load petsc/3.22.0_s
+  module load slepc/3.22.0_s
+  module load libxc/5.2.3
+  module load pmix/4.2.9
+  module load prun/2.2
+  module list
+  
+  echo "[$(date)] Running p2y and Yambo initialization ..."
+  
+  # ---------- GW0 ----------
+  GWtag="GW0"
+  GWin="${GWtag}.in"
+  GWout="${GWtag}.out"
+  GWjob="${GWtag}"
+  GWcont="${GWtag}_files"
+  GWlog="LOG_${GWtag}"
+
+  # ---------- BSE ----------
+  BSEtag="BSE"
+  BSEin="${BSEtag}.in"
+  BSEout="${BSEtag}.out"
+  BSEjob="${BSEtag}"
+  BSEcont="${BSEtag}_files"
+  BSElog="LOG_${BSEtag}"
+  
+  conda activate yambo-env
+  
+  ynl_in="YNL.in"
+  export xp_band_i=1
+  export xp_band_f=40
+  export i_cb=4
+  export f_cb=5
+  export iq=1
+  export fq=14
+  export i_band=3
+  export f_band=6
+  export nl_en_min=0.500000
+  export nl_en_max=8.000000
+  export nl_esteps=80
+  export efield1_x=0.000000
+  export efield1_y=1.000000
+  
+  rm -rf FixSymm "${GWjob}" "${GWcont}" "${BSEjob}" "${BSEcont}"
+  rm -rf SAVE || true
+
+  "${P2Y}"
+  "${YAMBO}"
+  
+  # # ----------------------------- Yambo GW0 -----------------------------------
+   # Build GW template and patch
+   "${YAMBO}" -g n -r -X p -gw0 p -Input GW_temp.in -Q
+   bash "${scripts}/patch_GW.sh" GW_temp.in "${GWin}"
+   # Run GW0
+   prun "${YAMBO}" -F "${GWin}" -J "${GWjob}" -C "${GWcont}" > "${GWout}"
+
+  # # Preserve Yambo log if created in CWD
+  # [[ -e LOG ]] && mv -f "LOG" "${GWlog}"
+  
+  # # ------------------------------ Yambo BSE ----------------------------------
+  export fq=1
+   "${YAMBO}" -o b -k sex -r -X p -V qp -y d -Input "BSE_temp.in" -Q
+   bash "${scripts}/patch_BSE.sh" "BSE_temp.in" "${BSEin}"
+   prun "${YAMBO}" -F "${BSEin}" -J "${BSEjob}" -C "${BSEcont}" > "${BSEout}"
+
+  # [[ -e LOG ]] && mv -f "LOG" "${BSElog}"
+  
+  
+  "${YPP_NL}" -y -F FSypp_temp.in -Q
+  bash "${scripts}/patch_FSy.sh" FSypp_temp.in FSypp.in
+  "${YPP_NL}" -F FSypp.in
+  
+  cd "./FixSymm"
+  
+  "${YNL}"
+  
+  # "${YNL}" -nl n -F ip_temp.in
+  # bash "${scripts}/patch_RTIP.sh" ip_temp.in IPA.in
+  # "${YNL}" -F IPA.in -J CHI_IP -C CHI_IP
+  
+  # bash "${scripts}/patch_YAL.sh" anl_temp.in anl.in
+  # "${YPP_NL}" -F anl.in -J "DE1" -C "DE1"
+  
+  # python3 "${scripts}/probe_plt.py"
+  
+  "${YNL}" -X s -e -v hsex -r -F col_temp.in -Q
+  bash "${scripts}/patch_COL.sh" col_temp.in collisions.in
+  prun "${YNL}" -Input collisions.in -J "COL" -C "COL"
+  
+  
+  #"${YNL}" -u n -v hsex -V qp -Input ynl_temp.in 
+  export F_knd="SOFTSIN"
+  "${YNL}" -u n -V qp -Input ynl_temp.in -Q
+  bash "${scripts}/patch_NLR.sh" ynl_temp.in "${ynl_in}"
+  prun "${YNL}" -Input "${ynl_in}" -J "NL,COL" -C "NL"
+  
+  
+  
+  "${YPP_NL}" -u -Input anl_temp.in
+  export time_min=39.49271
+  export time_max=-1.00000
+  export energy_max=20.000000
+  export xorder=4
+  export damp_factor=0.00000
+  bash "${scripts}/patch_YAL.sh" anl_temp.in anl.in
+  "${YPP_NL}" -F anl.in -J "DE2,NL,COL" -C "DE2"
+  
+  export prb_file="./DE2/o-DE2.YPP-X_probe_order_2"
+  python3 "${scripts}/shg_plt.py" "${prb_file}"
+  
+echo
+echo "Finished at: $(date)"
