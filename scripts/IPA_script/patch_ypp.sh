@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 #
-# patch_ypp.sh — modify a YPP bands input:
-#   • INTERP_mode -> BOLTZ
-#   • % BANDS_bands -> [1 | $Num_bands]
-#   • BANDS_steps  -> $Num_steps
-#   • GfnQPdb      -> by $YPP_MODE (KS -> "none", QP -> "E < GW0/ndb.QP")
-#   • append a %BANDS_kpts block
+# patch_ypp.sh â€” modify a YPP bands input:
+#   â€¢ INTERP_mode -> BOLTZ
+#   â€¢ % BANDS_bands -> [1 | $Num_bands]
+#   â€¢ BANDS_steps  -> $Num_steps
+#   â€¢ GfnQPdb      -> by $YPP_MODE (KS -> "none", QP -> "E < GW0/ndb.QP")
+#   â€¢ append a %BANDS_kpts block
 #
 # Usage: ./patch_ypp.sh <input_file> [output_file]
 #
@@ -35,7 +35,7 @@ BEGIN{
   # Keep comments as-is
   if ($0 ~ /^[[:space:]]*#/) { print; next }
 
-  # 0) Drop any existing %BANDS_kpts … % block
+  # 0) Drop any existing %BANDS_kpts â€¦ % block
   if ($1=="%BANDS_kpts") {
     while (getline) {
       if ($1=="%") break
