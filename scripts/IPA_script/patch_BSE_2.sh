@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# convert_bse_input.sh — convert an initial Yambo BSE input to your target spec
+# convert_bse_input.sh â€” convert an initial Yambo BSE input to your target spec
 # Usage: ./convert_bse_input.sh <input_file> [output_file]
 
 ###############################################################################
