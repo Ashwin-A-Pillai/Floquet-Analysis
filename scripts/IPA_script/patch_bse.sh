@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 #
-# patch_optics.sh ó tweak an optics BSE/Yambo input:
-#   ï BSENGBlk ? ñ1
-#   ï KfnQPdb ? ìE <GW0/ndb.QPî
-#   ï % BEnRange ? $iE | $fE
-#   ï BEnSteps ? $stepE
-#   ï % BndsRnXp ? $Polar_band
-#   ï NGsBlkXp ? $Block_size
+# patch_optics.sh ‚Äî tweak an optics BSE/Yambo input:
+#   ‚Ä¢ BSENGBlk ? ‚Äì1
+#   ‚Ä¢ KfnQPdb ? ‚ÄúE <GW0/ndb.QP‚Äù
+#   ‚Ä¢ % BEnRange ? $iE | $fE
+#   ‚Ä¢ BEnSteps ? $stepE
+#   ‚Ä¢ % BndsRnXp ? $Polar_band
+#   ‚Ä¢ NGsBlkXp ? $Block_size
 #
 # Usage: ./patch_optics.sh <input_file> [output_file]
 # Requires:
@@ -53,7 +53,7 @@ awk -v ie="$iE" \
 
   # 3) % BEnRange block
   if ($1=="%" && $2=="BEnRange") {
-    print                             # ì% BEnRangeî line
+    print                             # ‚Äú% BEnRange‚Äù line
     getline                           # old range line
     printf "  %s | %s |         eV    # [BSS] Energy range\n", ie, fe
     next
@@ -67,7 +67,7 @@ awk -v ie="$iE" \
 
   # 5) % BndsRnXp block
   if ($1=="%" && $2=="BndsRnXp") {
-    print                             # ì% BndsRnXpî line
+    print                             # ‚Äú% BndsRnXp‚Äù line
     getline                           # old bands line
     printf "   1 |  %s |                         # [Xp] Polarization function bands\n", pb
     next
@@ -85,7 +85,7 @@ awk -v ie="$iE" \
   
   # 5) % BndsRnXp block
   if ($1=="%" && $2=="BSEBands") {
-    print                             # ì% BndsRnXpî line
+    print                             # ‚Äú% BndsRnXp‚Äù line
     getline                           # old bands line
     printf "  %s  |  %s |", ic, fc
     next
