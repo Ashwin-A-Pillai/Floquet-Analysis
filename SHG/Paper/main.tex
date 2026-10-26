@@ -1,0 +1,194 @@
+%This is a template file for use of iopjournal.cls
+
+\documentclass{iopjournal}
+
+% Options
+% 	[anonymous]	Provides output without author names, affiliations or acknowledgments to facilitate double-anonymous peer-review
+
+\begin{document}
+
+\articletype{Paper} %	 e.g. Paper, Letter, Topical Review...
+
+\title{Floquet analysis of excitons in non-linear response functions}
+
+\author{Ashwin Pillai$^{1,*}$, Vinicius Alves Bastos$^{2,3}$, Ignazio M. Alliati$^4$, Alice Ruini$^{2,3}$, Claudio Attaccalite$^{1}$\orcid{0000-0002-7660-261X} and Myrta Gr\"uning$^{5}$\orcid{0000-0002-2549-63}}
+
+\affil{$^1$ CNRS/Aix-Marseille Universit\'e, Centre Interdisciplinaire de Nanoscience de Marseille UMR 7325 Campus de Luminy, 13288 Marseille Cedex 9, France}
+
+\affil{$^2$ Dipartimento di Scienze Fisiche, Informatiche e Matematiche, Universit`a di Modena e Reggio Emilia, I-41125 Modena, Italy }
+\affil{$^3$ Centro S3, CNR–Istituto Nanoscienze, I-41125 Modena, Italy }
+\affil{$^4$ xxxxxxxxxxxx }
+\affil{$^5$ School of Mathematics and Physics, Queen’s University Belfast,
+ Belfast BT7 1NN, United Kingdom}
+
+\affil{$^*$Ashwin Pillai.}
+\email{ashwin.pillai@etu.univ-amu.fr}
+
+\keywords{nonlinear reponse, Floquet, excitons}
+
+\begin{abstract}
+\end{abstract}
+
+\section{Introduction}
+
+Floquet theory offers a suitable framework to address the time evolution of so-called
+periodically-driven quantum systems in light of the additional symmetry given by time
+periodicity, as initially proposed in the seminal works of Shirley~\cite{Shirley1965},
+Sambe~\cite{Sambe1973} and Salzman~\cite{Salzman1973}. This relies on the fact that, for a
+time-periodic Hamiltonian, the corresponding time-dependent Schr\"odinger equation is a
+differential equation with periodic coefficients,
+\begin{equation}
+  \left(\hat H(t) - i\partial_t\right)\psi(\mathbf r,t) = 0,
+  \label{eq:tdse}
+\end{equation}
+where $\hat H(t+T)=\hat H(t)$. A differential equation of these characteristics admits the
+application of Floquet's theorem~\cite{Floquet1883}, which states that its solutions are of the form
+\begin{equation}
+  \psi(\mathbf r,t) = e^{-i\xi t}\,\phi(\mathbf r,t),
+  \label{eq:floquet_theorem}
+\end{equation}
+i.e., a pure phase times a periodic function that retains the periodicity of the Hamiltonian,
+$\phi(\mathbf r,t+T)=\phi(\mathbf r,t)$. The latter is a so-called Floquet state, while the
+argument of the pure phase contains the Floquet quasienergy $\xi$. Throughout, we use atomic
+units ($\hbar=1$).
+In the introduction we should cite also the works of Octopus group\cite{giovannini2020floquet,li2026firstprinciplesfloquetanalysisrealtime}
+
+\section{Theory and methods}
+
+\subsection{Real-time simulations}
+\label{sec:rt}
+
+In real-time simulations~\cite{Attaccalite2013} the occupied (valence) Bloch
+states are evolved according to
+\begin{equation}
+  i\partial_t\,|v_{\mathbf k n}(t)\rangle = \hat H(t)\,|v_{\mathbf k n}(t)\rangle ,
+  \label{eq:rt_eom}
+\end{equation}
+and are expanded in the basis of the Kohn--Sham (KS)~\cite{KohnSham1965} eigenstates
+$|u_{\mathbf k i}\rangle$ of the unperturbed Hamiltonian $\hat H^0$,
+\begin{equation}
+  |v_{\mathbf k n}(t)\rangle = \sum_{i=1}^{\infty} C_{in}(t,\mathbf k)\,|u_{\mathbf k i}\rangle,
+  \qquad
+  C_{in}(t,\mathbf k) = \langle u_{\mathbf k i}|v_{\mathbf k n}(t)\rangle .
+  \label{eq:ks_expansion}
+\end{equation}
+The sum is truncated when convergence is achieved in the spectrum.
+
+\subsection{Floquet--Kohn--Sham basis}
+\label{sec:fks}
+
+Given their periodicity, the Floquet states $\phi$ in Eq.~\ref{eq:floquet_theorem} can be
+expanded in a Fourier series,
+\begin{equation}
+  \phi(\mathbf r,t) = \sum_{\eta=-\infty}^{+\infty} e^{-i\eta\omega_0 t}\,\tilde\phi_\eta(\mathbf r),
+  \label{eq:fourier}
+\end{equation}
+where the coefficients $\tilde\phi_\eta(\mathbf r)$ are the time-independent Floquet states,
+$\eta$ runs over the Floquet harmonics (sidebands) and $\omega_0=2\pi/T$ is the frequency of
+the perturbation in $\hat H$. We further expand the time-independent Floquet states in the
+KS basis, $\tilde\phi_\eta(\mathbf r)=\sum_i \tilde d_i(\eta)\,u_i(\mathbf r)$. This composite
+Floquet--Kohn--Sham (F--KS) space was originally introduced by Sambe as the Hilbert space of
+Floquet steady states, and the functions $e^{-i\eta\omega_0 t}u_i(\mathbf r)$ form an (infinite)
+orthonormal basis for it~\cite{Sambe1973}.
+
+\subsection{Floquet analysis of real-time data}
+\label{sec:tool}
+
+The real-time approach integrates Eq.~\ref{eq:rt_eom} and yields the time-dependent Bloch
+states in the KS basis, $C_{in}(t,\mathbf k)$. For a periodically driven system in its steady
+state each propagated state is a Floquet state, and its projection on the KS basis reads
+\begin{equation}
+  C_{in}(t,\mathbf k) = e^{-i\xi_{\mathbf k n} t}\, d_{\mathbf k n i}(t),
+  \label{eq:proj}
+\end{equation}
+where the coefficients $d_{\mathbf k n i}(t)$ retain the periodicity of the perturbation,
+\begin{equation}
+  d_{\mathbf k n i}(t) = d_{\mathbf k n i}(t+T).
+  \label{eq:periodicity}
+\end{equation}
+Equation~\ref{eq:proj} holds when each propagated state $n$ coincides with a single Floquet
+mode. In practice, near crossings or degeneracies the propagated states are linear combinations
+of Floquet modes. Below we therefore treat all active states at a given $\mathbf k$ as a
+subspace and determine the Floquet modes, labelled by $a$, together with their quasienergies
+$\xi_{\mathbf k a}$ and periodic parts $d_{\mathbf k a i}(t)$.
+
+\subsection{Direct monodromy formulation}
+\label{sec:monodromy}
+
+In order to determine the quasienergy we collect the coefficients of Eq.~\ref{eq:ks_expansion} into the
+matrix $C_{\mathbf k}(t)$, with elements $C_{in}(t,\mathbf k)$, and treat all active columns
+(propagated states) simultaneously. With $C_0=C_{\mathbf k}(t_0)$ and
+$C_T=C_{\mathbf k}(t_0+T)$, we define
+\begin{equation}
+  G = C_0^\dagger C_0, \qquad M = C_0^\dagger C_T, \qquad L = G^{-1}M .
+  \label{eq:monodromy}
+\end{equation}
+The metric $G$ is kept explicitly because a finite KS basis and the numerical propagation need
+not leave the columns exactly orthonormal. $L$ is the representation of the one-period
+propagator (monodromy matrix) in the subspace of the propagated states. Diagonalizing it,
+\begin{equation}
+  L\,\Gamma = \Gamma\,\mathrm{diag}(\zeta_a), \qquad
+  \xi_{\mathbf k a} = -\frac{1}{T}\arg(\zeta_a) \pmod{\omega_0},
+  \label{eq:quasienergy}
+\end{equation}
+returns all Floquet modes in the active subspace at once. This is advantageous near crossings
+or degeneracies, where a particular KS label may rotate or exchange while the full invariant
+subspace remains well defined. Notice also that, at variance with the ratio
+$C_{in}(t_s+T)/C_{in}(t_s)$, Eq.~\ref{eq:monodromy} does not require the mode to be
+identified with a single propagated state.
+
+The periodic part of the Floquet mode $a$ follows from Eq.~\ref{eq:proj},
+\begin{equation}
+  d_{\mathbf k a i}(t) = e^{+i\xi_{\mathbf k a}(t-t_0)} \sum_n C_{in}(t,\mathbf k)\,\Gamma_{na}.
+  \label{eq:periodic_part}
+\end{equation}
+Truncating the Fourier series of Eq.~\ref{eq:fourier} at $|\eta|\le N_F$, the $2N_F+1$
+equally spaced phase samples
+\begin{equation}
+  t_s = t_0 + \frac{s\,T}{2N_F+1}, \qquad s = 0,\dots,2N_F,
+  \label{eq:phase_grid}
+\end{equation}
+give the F--KS (Sambe) coefficients directly through the finite discrete Fourier transform
+\begin{equation}
+  \tilde d_{\mathbf k a i}(\eta) = \frac{1}{2N_F+1}\sum_{s=0}^{2N_F}
+  e^{+i\eta\omega_0(t_s-t_0)}\, d_{\mathbf k a i}(t_s),
+  \qquad -N_F\le\eta\le N_F ,
+  \label{eq:dft}
+\end{equation}
+so that $d_{\mathbf k a i}(t)=\sum_{\eta=-N_F}^{N_F} e^{-i\eta\omega_0(t-t_0)}\,\tilde d_{\mathbf k a i}(\eta)$,
+consistently with Eq.~\ref{eq:fourier}.
+
+The quasienergy is defined modulo $\omega_0$: a branch shift
+$\xi_{\mathbf k a}\to\xi_{\mathbf k a}+m\omega_0$ only relabels the Floquet sidebands,
+$\tilde d_{\mathbf k a i}(\eta)\to\tilde d_{\mathbf k a i}(\eta+m)$. KS-connected branches are
+therefore a choice of plotting gauge, not different physical solutions.
+The $2N_F+1$ phase samples are sufficient to determine the truncated Fourier representation and
+are thus reproduced exactly by construction; they cannot be the only test. We therefore
+additionally check:
+\begin{itemize}
+\item the phase grid and exact $T$ and $4T$ timing;
+\item the condition numbers $\kappa(G)$ and $\kappa(\Gamma)$;
+\item the closure of the propagated states within the chosen subspace;
+\item the semigroup consistency $L_4\simeq L^4$, with $L_4=G^{-1}C_0^\dagger C_{4T}$;
+\item the residual off-diagonal weight of $\Gamma^{-1}L_4\Gamma$;
+\item the Floquet-edge weight at $|\eta|=N_F$;
+\item the reconstruction of the Berry-phase polarization~\cite{Souza2004,Attaccalite2013}; and
+\item the final RT--Floquet $\chi^{(2)}$ spectrum.
+\end{itemize}
+All this methodology has been implemented in YamboPy\cite{YamboPy}.
+\section{Results}
+\subsection{hBN monolayer}
+We can present results for both IPA and BSE. 
+For plot the quasi-energies band structure for both systems.
+Then analysis in k-space of a give frequency in IPA to show that does not
+involve all k-points like the excitons.
+Then analysis in k-space of the 4 excitonic peaks.
+We can also compare with exciton in k-space from the analysis of BSE
+\subsection{Square system from vinicius}
+To be discussed 
+\section{Conclusions}
+Discuss the importance of the method and finally the possiblity to apply it also to other response functions as third harmonic\cite{PhysRevB.95.125403}, efish\cite{SciPostPhysCore.7.4.081}, shift-current\cite{qth8-6spb} etc..
+
+\bibliographystyle{unsrt}
+\bibliography{books,papers}
+\end{document}

@@ -1,0 +1,249 @@
+%% ****** Start of file apstemplate.tex ****** %
+%%
+%%
+%%   This file is part of the APS files in the REVTeX 4.2 distribution.%%
+%%   Copyright (c) 2024 The American Physical Society.
+%%
+%%   See the REVTeX 4 README file for restrictions and more information.
+%%
+%
+% This is a template for producing manuscripts for use with REVTEX 4.2
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+%  N.B. The groupedaddress option will reorder the author list based
+%  on the order in which affiliations appear. Please be sure to check the author 
+%  order. You can also use the unsortedaddress(?) option instead to prevent that
+%  behavior.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose physrev, prl, or rmp for journal
+%  N.B. physrev is appropriate for all APS journals except prl and rmp
+%  Add 'draft' option to mark overfull boxes with black boxes
+%  Add 'showkeys' option to make keywords appear
+\documentclass[aps,physrev,preprint,groupedaddress]{revtex4-2}
+%\documentclass[aps,physrev,preprint,superscriptaddress]{revtex4-2}
+%\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
+%\documentclass[aps,prl,reprint,groupedaddress]{revtex4-2}
+%\documentclass[aps,rmp,preprint,superscriptaddress]{revtex4-2}
+%\documentclass[aps,rmp,reprint,groupedaddress]{revtex4-2}
+\usepackage{graphicx}
+\usepackage[top=80pt,bottom=100pt,left=68pt,right=66pt]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+%\usepackage{cite}
+\usepackage{tablefootnote}
+\usepackage{datetime2}
+\date{\today} 
+\usepackage{changepage}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[stable]{footmisc}
+\usepackage{epigraph}
+\usepackage{xcolor}
+\newcommand{\ccc}[1]{#1}
+\newcommand{\fff}[1]{#1}
+\newcommand{\hhh}[1]{#1}
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev4-2}
+\newcommand{\kpt}{\mathbf{k}}
+\newcommand{\kpp}{\boldsymbol{\kappa}}
+\newcommand{\tiKS}{|\mu_{\mathbf{k}n}\rangle}
+\newcommand{\tdKS}{|v_{\mathbf{k}n}\rangle}
+\newcommand{\tdFL}{|\phi_{\kpt n}\rangle}
+\newcommand{\tiFL}{|\varphi_{\kpt n}^\eta\rangle}
+\newcommand{\dFKS}{\widetilde{d}_{\kpt ni}(\eta) }
+\newcommand{\dFKSj}{\widetilde{d}_{\kpt nj}(\gamma) }
+\newcommand{\kplus}{\mathbf{k}_\alpha^\sigma}
+\newcommand{\kgrid}[3]{#1$\times$#2$\times$#3}
+\newcommand{\xfft}{\mathbf{x}_\text{R}}
+\newcommand{\SIfl}[0]{\ref{Ap2}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ben}{\begin{equation*}}
+\newcommand{\een}{\end{equation*}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bean}{\begin{eqnarray*}}
+\newcommand{\eean}{\end{eqnarray*}}
+\newcommand{\lv}{{\bf a}}
+\newcommand{\bb}{{\bf b}}
+\newcommand{\uu}{{\bf u}}
+\newcommand{\qq}{{\bf q}}
+\newcommand{\hh}{{\bf h}}
+\newcommand{\rr}{{\bf r}}
+\newcommand{\pp}{{\bf p}}
+\newcommand{\PP}{{\bf P}}
+\newcommand{\kk}{{\bf k}}
+\newcommand{\HH}{{\bf H}}
+\newcommand{\GG}{{\bf G}}
+\newcommand{\SiS}{{\bf \Sigma}}
+\newcommand{\VV}{{\bf V}}
+\newcommand{\UU}{{\bf U}}
+\newcommand{\w}{\omega}
+\newcommand{\tf}{\textbf}
+\newcommand{\bo}{\mathbf}
+\newcommand{\br}{{\bf r}}
+\newcommand{\nup}{n_{\uparrow}}
+\newcommand{\ndown}{n_{\downarrow}}
+\newcommand{\Id}[1] {\int \! \! {\rm d}^3 #1}
+\renewcommand{\v}[1]{{\bf #1}}
+\renewcommand{\[}{\left[}
+\renewcommand{\]}{\right]}
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\def\efield{\boldsymbol{\cal E}}
+\def\ket#1{\vert#1\rangle}
+\def\bra#1{\langle#1\vert}
+\def\susc#1{\chi^{(#1)}}
+\def\ket#1{\vert#1\rangle}
+\def\bra#1{\langle#1\vert}
+\def\ai{\emph{ab-initio}\ }
+
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{Floquet analysis of real-time simulations.}
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+\author{Claudio Attaccalite}
+\author{Ignacio M. Alliati}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{}
+\author{Myrta Gr\"uning}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{}
+
+
+%Collaboration name if desired (requires use of superscriptaddress
+%option in \documentclass). \noaffiliation is required (may also be
+%used with the \author command).
+%\collaboration can be followed by \email, \homepage, \thanks as well.
+%\collaboration{}
+%\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+We present a Floquet analysis tool capable of calculating Floquet eigenvectors provided that the time-dependent states, i.e., the solutions of the real-time approach, are known. 
+\end{abstract}
+
+% insert suggested keywords - APS authors don't need to do this
+%\keywords{}
+
+%\maketitle must follow title, authors, abstract, and keywords
+\maketitle
+
+% body of paper here - Use proper section commands
+% References should be done using the \cite, \ref, and \label commands
+\section{Introduction}
+Floquet theory offers a suitable framework to address the time evolution of so-called periodically-driven quantum systems in light of the additional symmetry given by time-periodicity, as initially proposed in the seminal works of Shirley \cite{Shirley1965}, Sambe \cite{Sambe1973} and Salzman \cite{Salzman1973}. This relies on the fact that, provided a time-periodic Hamiltonian, the corresponding time-dependent Schr\"odinger equation is a differential equation with periodic coefficients,
+\begin{equation}\label{eq:2-Floquet_1}
+    (\hat{\cal H} - i \partial_t)\;\psi(\mathbf{r},t) = 0,
+\end{equation}
+where $\hat{\cal H}(t+T)=\hat{\cal H}(t)$. In general we would like to condier and Hamiltonian with a time depedence from the external field in the form $\hat{\cal H}(\rho(t+T),t+T)=\hat{\cal H}(\rho(t),t)$, similar to TDDFT or when density matrix is considered to TD-aGW. A differential equation of these characteristics admits the application of Floquet's theorem \cite{Floquet1883}
+\footnote{Floquet theory has been covered in numerous textbooks, e.g.,\cite{tannor2007,joachain2011}}, which states that its solutions would be of the form,
+\begin{equation}\label{eq:2-Floquet_2}
+    \psi(\mathbf{r},t) = e^{-i\xi t}\; \phi(\mathbf{r},t),
+\end{equation}
+i.e., a pure phase times a periodic function that retains the periodicity of the Hamiltonian, $\phi(\mathbf{r},t+T)=\phi(\mathbf{r},t)$. The latter represents a so-called Floquet state while the argument in the pure phase contains the Floquet quasi-energy, $\xi$. 
+% Put \label in argument of \section for cross-referencing
+%\section{\label{}}
+
+\section{\label{sec:theo} Theory and methods}
+\begin{enumerate}
+    \item introducing the real-time
+    \item introducing the composite Floquet--Kohn-Sham space (This composite space was originally introduced by Sambe as the Hilbert space for Floquet \textit{steady states} and the functions $e^{-i\fff{\eta\omega_0} t}\mu(\mathbf{r})$ form an (infinite) orthonormal basis for it \cite{Sambe1973}). 
+    \item introducing the analysis tool
+    \item introduce what we want to analyse and what info we can get
+\end{enumerate}
+
+
+\subsection{\label{sec:realtime} Real-time simulations}
+In real-time simulation we evolve valence bands with the equation:
+\begin{equation}\label{eq:EOM}
+    - i \partial_t  \tdKS =\hat{\cal H} \tdKS
+\end{equation}
+that are expanded in a Kohn-Sham basis as:
+\begin{equation}
+	|v_{\mathbf{k}n}(t)\rangle = \sum_{i=1}^{\infty} c_i^n(t) |u_{\mathbf{k}i}\rangle
+\end{equation}
+The sum is truncated when convergence is achieved in the spectrum.
+
+\subsection{\label{sec:FloqKS} Floquet--Kohn-Sham basis}
+Given their periodicity, Floquet states $\phi$ in Eq.~\ref{eq:2-Floquet_2} can be expanded in a Fourier series,
+\begin{equation}\label{eq:2-Floquet_3}
+    \phi(\mathbf{r},t) = \sum_{\gamma=-\infty}^{+\infty}{\;e^{-i\gamma\omega_0t}\;\widetilde\phi_\gamma(\mathbf{r})},
+\end{equation}
+where the coefficients, $\widetilde\phi_\gamma(\mathbf{r})$, receive the name of time-independent Floquet states, $\gamma$ runs over the Floquet modes and $\omega_0=\frac{2\pi}{T}$ is the frequency of the perturbation in $\hat{\cal H}$. 
+
+%These exponentials form an orthonormal basis for the Hilbert space of periodic functions of time, ${\cal L}_2[0,T]$, with the inner product,
+%\begin{equation}\label{eq:2-Floquet_4}
+%    \frac{1}{T}\int_0^T{dt\;e^{+i\eta\omega_0t}\;e^{-i\gamma\omega_0t}} = \delta_{\eta,\gamma}.
+%\end{equation}
+
+We further expand the time-independent Floquet states, $\widetilde\phi_\gamma(\mathbf{r})$, in the basis of eigenstates $u(\mathbf{r})$ of the unperturbed Hamiltonian, $\hat H^0$. 
+%These functions form an orthonormal set for the Hilbert space we denote ${\cal R}$. Therefore, the eigenproblem in Eq. \ref{eq:2-Floquet_5a} is solved in a composite Hilbert space, ${\cal L}_2[0,T]\otimes{\cal R}$, with the inner product,
+%\begin{equation}
+%    \langle\hspace{-1.37pt}\langle\cdot|\cdot\rangle\hspace{-1.37pt}\rangle\equiv
+%    \frac{1}{T}\int_0^T{dt\; \langle\cdot|\cdot\rangle}, 
+%\end{equation}
+%where $\langle\cdot|\cdot\rangle$ is the usual inner product in $\mathcal{R}$.
+
+
+%Another interesting feature of this Floquet formulation relates to the fact that the quasi-energies are defined modulo $\omega_0$. In essence, if $\phi_0$ is an eigenstate of the quasi-energy operator with eigenvalue $\xi_0$, then $\phi_n=e^{-in\omega_0t}\phi_0$ is also an eigenstate with eigenvalue $\xi_n=\xi_0-n\omega_0$. Therefore, $\phi_0$ and $\phi_n$ lead to the same physical state, $\psi$, in Eq. \ref{eq:2-Floquet_2}. This is equivalent to the folding of reciprocal space into the BZ for periodic systems. Indeed, we can define any interval of length $\omega_0$ in the real axis as an $\omega$-BZ, e.g., $[-\omega_0/2,\omega_0/2]$.
+
+\subsection{\label{sec:FloqAn} Floquet analysis tool}
+As explained in Section \ref{sec:realtime}, the real-time approach integrates Eq. \ref{eq:EOM} and calculates the time-dependent Bloch states in the KS basis, i.e., $\langle u_{\mathbf{k}i}\tdKS$. For periodically driven systems and under the adiabatic approximation introduced in Eq. \ref{adiabatic_approx}, this magnitude is equal to the projection of Eq. \ref{td-coefficients} over the KS basis,
+
+\begin{equation}
+     \label{eq:5-py1}
+     \langle u_{\mathbf{k}i} \tdKS  = \sum_{j}{e^{-i\xi_{\kpt n} t} \; d_{\kpt nj}(t)\;\delta_{i,j}} = e^{-i\xi_{\kpt n} t} \; d_{\kpt ni}(t) ,
+\end{equation}
+where the coefficients $d_{\kpt ni}(t)$ retain the periodicity of the perturbation,
+\begin{equation}\label{eq:5-py1b}
+    d_{\kpt ni}(t)=d_{\kpt ni}(t+T).
+\end{equation}
+The idea is to take the output of a real-time calculation, $\langle u_{\mathbf{k}i} \tdKS$, solve Eq.~\ref{eq:5-py1} for $d_{\kpt ni}(t)$ and Fourier transform the latter \textit{via} Eq.~\ref{time-to-eta} to obtain the Floquet eigenvectors, $\dFKS$. However, the quasi-energies $\xi_{\kpt n}$ are not computed explicitly by the real-time approach. In principle, one could obtain the phase from a pair of real-time results separated in time by one period,
+\begin{equation}
+     \label{eq:5-py2}
+     \frac{\langle \mu_{\mathbf{k}i} \tdKS(t_s+T)}{\langle \mu_{\mathbf{k}i} \tdKS(t_s)} = e^{-i\xi_{\kpt n} T}.
+\end{equation}
+In order to solve the above equation we use a  time step to be commensurate with the period of the field.
+
+\bibliography{books,papers}
+
+\end{document}
+%
+% ****** End of file apstemplate.tex ******
+

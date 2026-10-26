@@ -1,0 +1,659 @@
+%% ****** Start of file apstemplate.tex ****** %
+%%
+%%
+%%   This file is part of the APS files in the REVTeX 4.2 distribution.%%
+%%   Copyright (c) 2024 The American Physical Society.
+%%
+%%   See the REVTeX 4 README file for restrictions and more information.
+%%
+%
+% This is a template for producing manuscripts for use with REVTEX 4.2
+% Copy this file to another name and then work on that file.
+% That way, you always have this original template file to use.
+%
+% Group addresses by affiliation; use superscriptaddress for long
+% author lists, or if there are many overlapping affiliations.
+%  N.B. The groupedaddress option will reorder the author list based
+%  on the order in which affiliations appear. Please be sure to check the author 
+%  order. You can also use the unsortedaddress(?) option instead to prevent that
+%  behavior.
+% For Phys. Rev. appearance, change preprint to twocolumn.
+% Choose physrev, prl, or rmp for journal
+%  N.B. physrev is appropriate for all APS journals except prl and rmp
+%  Add 'draft' option to mark overfull boxes with black boxes
+%  Add 'showkeys' option to make keywords appear
+\documentclass[aps,physrev,preprint,groupedaddress]{revtex4-2}
+%\documentclass[aps,physrev,preprint,superscriptaddress]{revtex4-2}
+%\documentclass[aps,prl,preprint,superscriptaddress]{revtex4-2}
+%\documentclass[aps,prl,reprint,groupedaddress]{revtex4-2}
+%\documentclass[aps,rmp,preprint,superscriptaddress]{revtex4-2}
+%\documentclass[aps,rmp,reprint,groupedaddress]{revtex4-2}
+\usepackage{graphicx}
+\usepackage[top=80pt,bottom=100pt,left=68pt,right=66pt]{geometry}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+%\usepackage{cite}
+\usepackage{tablefootnote}
+\usepackage{datetime2}
+\date{\today} 
+\usepackage{changepage}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[stable]{footmisc}
+\usepackage{epigraph}
+\usepackage{xcolor}
+\newcommand{\ccc}[1]{#1}
+\newcommand{\fff}[1]{#1}
+\newcommand{\hhh}[1]{#1}
+% You should use BibTeX and apsrev.bst for references
+% Choosing a journal automatically selects the correct APS
+% BibTeX style file (bst file), so only uncomment the line
+% below if necessary.
+%\bibliographystyle{apsrev4-2}
+\newcommand{\kpt}{\mathbf{k}}
+\newcommand{\kpp}{\boldsymbol{\kappa}}
+\newcommand{\tiKS}{|\mu_{\mathbf{k}n}\rangle}
+\newcommand{\tdKS}{|v_{\mathbf{k}n}\rangle}
+\newcommand{\tdFL}{|\phi_{\kpt n}\rangle}
+\newcommand{\tiFL}{|\varphi_{\kpt n}^\eta\rangle}
+\newcommand{\dFKS}{\widetilde{d}_{\kpt ni}(\eta) }
+\newcommand{\dFKSj}{\widetilde{d}_{\kpt nj}(\gamma) }
+\newcommand{\kplus}{\mathbf{k}_\alpha^\sigma}
+\newcommand{\kgrid}[3]{#1$\times$#2$\times$#3}
+\newcommand{\xfft}{\mathbf{x}_\text{R}}
+\newcommand{\SIfl}[0]{\ref{Ap2}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\ben}{\begin{equation*}}
+\newcommand{\een}{\end{equation*}}
+\newcommand{\bea}{\begin{eqnarray}}
+\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\bean}{\begin{eqnarray*}}
+\newcommand{\eean}{\end{eqnarray*}}
+\newcommand{\lv}{{\bf a}}
+\newcommand{\bb}{{\bf b}}
+\newcommand{\uu}{{\bf u}}
+\newcommand{\qq}{{\bf q}}
+\newcommand{\hh}{{\bf h}}
+\newcommand{\rr}{{\bf r}}
+\newcommand{\pp}{{\bf p}}
+\newcommand{\PP}{{\bf P}}
+\newcommand{\kk}{{\bf k}}
+\newcommand{\HH}{{\bf H}}
+\newcommand{\GG}{{\bf G}}
+\newcommand{\SiS}{{\bf \Sigma}}
+\newcommand{\VV}{{\bf V}}
+\newcommand{\UU}{{\bf U}}
+\newcommand{\w}{\omega}
+\newcommand{\tf}{\textbf}
+\newcommand{\bo}{\mathbf}
+\newcommand{\br}{{\bf r}}
+\newcommand{\nup}{n_{\uparrow}}
+\newcommand{\ndown}{n_{\downarrow}}
+\newcommand{\Id}[1] {\int \! \! {\rm d}^3 #1}
+\renewcommand{\v}[1]{{\bf #1}}
+\renewcommand{\[}{\left[}
+\renewcommand{\]}{\right]}
+\renewcommand{\(}{\left(}
+\renewcommand{\)}{\right)}
+\def\efield{\boldsymbol{\cal E}}
+\def\ket#1{\vert#1\rangle}
+\def\bra#1{\langle#1\vert}
+\def\susc#1{\chi^{(#1)}}
+\def\ket#1{\vert#1\rangle}
+\def\bra#1{\langle#1\vert}
+\def\ai{\emph{ab-initio}\ }
+
+
+\begin{document}
+
+% Use the \preprint command to place your local institutional report
+% number in the upper righthand corner of the title page in preprint mode.
+% Multiple \preprint commands are allowed.
+% Use the 'preprintnumbers' class option to override journal defaults
+% to display numbers if necessary
+%\preprint{}
+
+%Title of paper
+\title{Floquet analysis of real-time simulations.}
+
+% repeat the \author .. \affiliation  etc. as needed
+% \email, \thanks, \homepage, \altaffiliation all apply to the current
+% author. Explanatory text should go in the []'s, actual e-mail
+% address or url should go in the {}'s for \email and \homepage.
+% Please use the appropriate macro foreach each type of information
+
+% \affiliation command applies to all authors since the last
+% \affiliation command. The \affiliation command should follow the
+% other information
+% \affiliation can be followed by \email, \homepage, \thanks as well.
+\author{Ignacio M. Alliati}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{}
+\author{Myrta Gr\"uning}
+%\email[]{Your e-mail address}
+%\homepage[]{Your web page}
+%\thanks{}
+%\altaffiliation{}
+\affiliation{}
+
+
+%Collaboration name if desired (requires use of superscriptaddress
+%option in \documentclass). \noaffiliation is required (may also be
+%used with the \author command).
+%\collaboration can be followed by \email, \homepage, \thanks as well.
+%\collaboration{}
+%\noaffiliation
+
+\date{\today}
+
+\begin{abstract}
+We present a Floquet analysis tool capable of calculating Floquet eigenvectors provided that the time-dependent states, i.e., the solutions of the real-time approach, are known. 
+\end{abstract}
+
+% insert suggested keywords - APS authors don't need to do this
+%\keywords{}
+
+%\maketitle must follow title, authors, abstract, and keywords
+\maketitle
+
+% body of paper here - Use proper section commands
+% References should be done using the \cite, \ref, and \label commands
+\section{Introduction}
+Floquet theory offers a suitable framework to address the time evolution of so-called periodically-driven quantum systems in light of the additional symmetry given by time-periodicity, as initially proposed in the seminal works of Shirley \cite{Shirley1965}, Sambe \cite{Sambe1973} and Salzman \cite{Salzman1973}. This relies on the fact that, provided a time-periodic Hamiltonian, the corresponding time-dependent Schr\"odinger equation is a differential equation with periodic coefficients,
+\begin{equation}\label{eq:2-Floquet_1}
+    (\hat{\cal H} - i \partial_t)\;\psi(\mathbf{r},t) = 0,
+\end{equation}
+where $\hat{\cal H}(t+T)=\hat{\cal H}(t)$. A differential equation of these characteristics admits the application of Floquet's theorem \cite{Floquet1883}
+\footnote{Floquet theory has been covered in numerous textbooks, e.g.,\cite{tannor2007,joachain2011}}, which states that its solutions would be of the form,
+\begin{equation}\label{eq:2-Floquet_2}
+    \psi(\mathbf{r},t) = e^{-i\xi t}\; \phi(\mathbf{r},t),
+\end{equation}
+i.e., a pure phase times a periodic function that retains the periodicity of the Hamiltonian, $\phi(\mathbf{r},t+T)=\phi(\mathbf{r},t)$. The latter represents a so-called Floquet state while the argument in the pure phase contains the Floquet quasi-energy, $\xi$. 
+% Put \label in argument of \section for cross-referencing
+%\section{\label{}}
+
+\section{\label{sec:theo} Theory and methods}
+\begin{enumerate}
+    \item introducing the real-time
+    \item introducing the composite Floquet--Kohn-Sham space (This composite space was originally introduced by Sambe as the Hilbert space for Floquet \textit{steady states} and the functions $e^{-i\fff{\eta\omega_0} t}\mu(\mathbf{r})$ form an (infinite) orthonormal basis for it \cite{Sambe1973}). 
+    \item introducing the analysis tool
+    \item introduce what we want to analyse and what info we can get
+\end{enumerate}
+
+
+\subsection{\label{sec:realtime} Real-time simulations}
+In real-time simulation we evolve valence bands with the equation:
+\begin{equation}\label{eq:EOM}
+    - i \partial_t  \tdKS =\hat{\cal H} \tdKS
+\end{equation}
+that are expanded in a Kohn-Sham basis as:
+\begin{equation}
+	|v_{\mathbf{k}n}(t)\rangle = \sum_{i=1}^{\infty} c_i^n(t) |u_{\mathbf{k}i}\rangle
+\end{equation}
+The sum is truncated when convergence is achieved in the spectrum.
+
+\subsection{\label{sec:FloqKS} Floquet--Kohn-Sham basis}
+Given their periodicity, Floquet states $\phi$ in Eq.~\ref{eq:2-Floquet_2} can be expanded in a Fourier series,
+\begin{equation}\label{eq:2-Floquet_3}
+    \phi(\mathbf{r},t) = \sum_{\gamma=-\infty}^{+\infty}{\;e^{-i\gamma\omega_0t}\;\widetilde\phi_\gamma(\mathbf{r})},
+\end{equation}
+where the coefficients, $\widetilde\phi_\gamma(\mathbf{r})$, receive the name of time-independent Floquet states, $\gamma$ runs over the Floquet modes and $\omega_0=\frac{2\pi}{T}$ is the frequency of the perturbation in $\hat{\cal H}$. 
+
+%These exponentials form an orthonormal basis for the Hilbert space of periodic functions of time, ${\cal L}_2[0,T]$, with the inner product,
+%\begin{equation}\label{eq:2-Floquet_4}
+%    \frac{1}{T}\int_0^T{dt\;e^{+i\eta\omega_0t}\;e^{-i\gamma\omega_0t}} = \delta_{\eta,\gamma}.
+%\end{equation}
+
+We further expand the time-independent Floquet states, $\widetilde\phi_\gamma(\mathbf{r})$, in the basis of eigenstates $u(\mathbf{r})$ of the unperturbed Hamiltonian, $\hat H^0$. 
+%These functions form an orthonormal set for the Hilbert space we denote ${\cal R}$. Therefore, the eigenproblem in Eq. \ref{eq:2-Floquet_5a} is solved in a composite Hilbert space, ${\cal L}_2[0,T]\otimes{\cal R}$, with the inner product,
+%\begin{equation}
+%    \langle\hspace{-1.37pt}\langle\cdot|\cdot\rangle\hspace{-1.37pt}\rangle\equiv
+%    \frac{1}{T}\int_0^T{dt\; \langle\cdot|\cdot\rangle}, 
+%\end{equation}
+%where $\langle\cdot|\cdot\rangle$ is the usual inner product in $\mathcal{R}$.
+
+
+%Another interesting feature of this Floquet formulation relates to the fact that the quasi-energies are defined modulo $\omega_0$. In essence, if $\phi_0$ is an eigenstate of the quasi-energy operator with eigenvalue $\xi_0$, then $\phi_n=e^{-in\omega_0t}\phi_0$ is also an eigenstate with eigenvalue $\xi_n=\xi_0-n\omega_0$. Therefore, $\phi_0$ and $\phi_n$ lead to the same physical state, $\psi$, in Eq. \ref{eq:2-Floquet_2}. This is equivalent to the folding of reciprocal space into the BZ for periodic systems. Indeed, we can define any interval of length $\omega_0$ in the real axis as an $\omega$-BZ, e.g., $[-\omega_0/2,\omega_0/2]$.
+
+\subsection{\label{sec:FloqAn} Floquet analysis tool}
+As explained in Section \ref{sec:realtime}, the real-time approach integrates Eq. \ref{eq:EOM} and calculates the time-dependent Bloch states in the KS basis, i.e., $\langle u_{\mathbf{k}i}\tdKS$. For periodically driven systems and under the adiabatic approximation introduced in Eq. \ref{adiabatic_approx}, this magnitude is equal to the projection of Eq. \ref{td-coefficients} over the KS basis,
+
+\begin{equation}
+     \label{eq:5-py1}
+     \langle u_{\mathbf{k}i} \tdKS  = \sum_{j}{e^{-i\xi_{\kpt n} t} \; d_{\kpt nj}(t)\;\delta_{i,j}} = e^{-i\xi_{\kpt n} t} \; d_{\kpt ni}(t) ,
+\end{equation}
+where the coefficients $d_{\kpt ni}(t)$ retain the periodicity of the perturbation,
+\begin{equation}\label{eq:5-py1b}
+    d_{\kpt ni}(t)=d_{\kpt ni}(t+T).
+\end{equation}
+The idea is to take the output of a real-time calculation, $\langle u_{\mathbf{k}i} \tdKS$, solve Eq.~\ref{eq:5-py1} for $d_{\kpt ni}(t)$ and Fourier transform the latter \textit{via} Eq.~\ref{time-to-eta} to obtain the Floquet eigenvectors, $\dFKS$. However, the quasi-energies $\xi_{\kpt n}$ are not computed explicitly by the real-time approach. In principle, one could obtain the phase from a pair of real-time results separated in time by one period,
+\begin{equation}
+     \label{eq:5-py2}
+     \frac{\langle \mu_{\mathbf{k}i} \tdKS(t_s+T)}{\langle \mu_{\mathbf{k}i} \tdKS(t_s)} = e^{-i\xi_{\kpt n} T}.
+\end{equation}
+However, this would require the time step to be commensurate with the period, which can be numerically difficult to realize. 
+%A response function obtained in this way would have been computed with a different time step at each frequency in the spectrum. This would only be correct if the time step was very well converged, so as to ensure that slight variations would not affect the numerical integration. Moreover, if one decided to just run a single frequency and adjust the time step accordingly, this would require to have computed the spectra beforehand in order to choose this frequency of interest (e.g., at an excitonic peak). On the other hand, using an arbitrary time step that ignores the requirement of being commensurate with the period would mean that the computed quasi-energy would only be an approximation. However, a far simpler approximation to $\xi_{\kpt n}$ is be given by the KS energies, which are already known from the DFT ground state. 
+
+Here, we formulate a procedure for computing quasi-energies that is independent of how the dynamical data was obtained.  We use the knowledge  that if the \textit{true} quasi-energy was used to solve Eq. \ref{eq:5-py1} for $d_{\kpt ni}(t)$, then the result would be periodic, i.e., it would fulfill Eq. \ref{eq:5-py1b}. Therefore, we propose an iterative solution to this problem where we essentially verify this condition for an assumed value of the quasi-energy that changes through the iterations. 
+
+To carry out this procedure we sample the real-time solutions, $\langle u_{\mathbf{k}i} \tdKS(t)$, at a handful of time steps, $\{t_s\}$, within one period (sampling period) and at a later time steps, $\{t_v\}$, outside the sampling period (e.g., three periods after a given time step in the first set, $t_v = t_s+3T$, this set could well have only one element). 
+The $\{t_s\}$ set of points (sampling set) is used to find the Floquet eigenvectors for the assumed quasi-energy value, the $\{t_v\}$ set (verifying set) is used to verify the periodicity.   
+ 
+Specifically, for all real-time solutions, at $\{t_s\}$ and $\{t_v\}$, using the assumed quasi-energy, we solve Eq.~\ref{eq:5-py1} and get $d^\text{RT}_{\kpt ni}(t)$ (where the RT subscript indicates these are extracted from the RT simulations).  
+We then take the $d_{\kpt ni}^\text{RT}(t_s)$, which are contained within one period, and perform a Fourier transform to compute the corresponding Floquet coefficients, $\dFKS$. We obtain an expansion with Floquet modes up to $\eta_\text{max}$ provided that the sampling set had $2\eta_\text{max}+1$ time steps. With these coefficients, we can evaluate the Fourier series in Eq. \ref{time-to-eta} at any time, in particular, for those time steps in the verifying set, 
+\begin{equation}
+    \label{eq:5-py3}
+    d_{\kpt ni}^\text{CALC}(t_v) = \sum_{\eta=-\eta_\text{max}}^{+\eta_\text{max}}{ e^{-i\eta\omega_0t_v} \; \dFKS},
+\end{equation}
+where we used the superscript 'CALC' to distinguish this calculated value from those extracted from the real-time result, $d_{\kpt ni}^\text{RT}(t_v)$. Let's consider the series of equalities,
+\begin{equation}
+    \label{eq:5-py3b}
+    d_{\kpt ni}^\text{CALC}(t_v=t_s+3T) \;=\; 
+    d_{\kpt ni}^\text{CALC}(t_s) \;=\; 
+    d_{\kpt ni}^\text{RT}(t_s) \;\stackrel{?}{=}\;
+    d_{\kpt ni}^\text{RT}(t_v=t_s+3T),
+\end{equation}
+the first of which holds because $d_{\kpt ni}^\text{CALC}$ is a Fourier series, while the second equality is true by construction of $d_{\kpt ni}^\text{CALC}$. The third equality is only satisfied if the quasi-energy assumed is indeed correct, as it would imply the fulfillment of the periodicity condition, Eq. \ref{eq:5-py1b}. Therefore, this procedure aims at finding a quasi-energy such that,
+\begin{equation}\label{eq:5-py3c}
+    d_{\kpt ni}^\text{CALC}(t_v)=d_{\kpt ni}^\text{RT}(t_v),
+\end{equation}
+for all time steps in the verifying set, which allows us to define the error in our method as,
+\begin{equation}
+    \label{eq:5-py4}
+    \text{err}_{\mathbf{k}n} = \sum_{t_v,i}{ |d_{\kpt ni}^\text{CALC}(t_v)-d_{\kpt ni}^\text{RT}(t_v)|}\;.
+\end{equation}
+This deviation can be calculated for any time-dependent state obtained \textit{via} the real-time approach, identified by its band index $n$ and $\mathbf{k}$-point. For each state, $\kpt n$, the summation in Eq. \ref{eq:5-py4} runs over the states $i$ in the KS space and the time steps in the verifying set, $t_v$. Ultimately, we can solve this problem by minimizing $\text{err}_{\mathbf{k}n}$ as a function of the assumed quasi-energy, $\xi_{\kpt n}$. 
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics{figs/fig6.1-NL2FL_method.pdf}
+    \caption{Agreement between $d_{\kpt vc}^\text{CALC}(t_s)$ and $d_{\kpt vc}^\text{RT}(t_s)$ for three trial values of the quasi-energy at a given $\kpt$-point, $\xi_{\kpt v}$. The pink dots represent $Re[d_{\kpt vc}^\text{RT}(t_s)]$ at the time steps of the sampling and verifying sets (first nine and last three values, respectively). The grey curve corresponds to $Re[d_{\kpt vc}^\text{CALC}(t)]$. Its value at the time steps of both sets is distinguished with a grey dot. The difference between the grey and pink dots are the contributions to the $\text{err}_{\kpt n}$ function. The lowermost quasi-energy is close to the correct value.}
+    \label{fig:6.1}
+\end{figure}
+
+As an example, Fig. \ref{fig:6.1} shows the execution of this procedure for a h-BN monolayer considering two-bands and assuming three different values for the quasi-energy. We aim to obtain the quasi-energy of the Floquet valence state at a given $\kpt$-point, $\xi_{\kpt v}$. While the $i$ index in Eq. \ref{eq:5-py4} would run over both bands, Fig. \ref{fig:6.1} focuses on the projection over the conduction band only, $d_{\kpt vc}(t)$, to exemplify the method. The first 9 points of each plot represent the sampling set, where $d_{\kpt vc}^\text{CALC}(t_s)$ and $d_{\kpt vc}^\text{RT}(t_s)$ are the same by construction. The remaining 3 points constitute the verifying set, where the agreement between $d_{\kpt vc}^\text{CALC}(t_v)$ and $d_{\kpt vc}^\text{RT}(t_v)$ is guaranteed only for the correct quasi-energy. Any other value of the quasi-energy (except those shifted by $\omega_0$) will not satisfy the periodicity condition in Eq. \ref{eq:5-py1b} and result in discrepancies between $d_{\kpt vc}^\text{CALC}(t_v)$ and $d_{\kpt vc}^\text{RT}(t_v)$, thus adding to $\text{err}_{\mathbf{k}v}$ (see uppermost and middle panels of Fig. \ref{fig:6.1}). At variance, the quasi-energy in the lowermost panel of Fig. \ref{fig:6.1} is close to the correct value and no deviation between $d_{\kpt vc}^\text{CALC}(t_v)$ and $d_{\kpt vc}^\text{RT}(t_v)$ can be distinguished at this scale.
+
+We automate the iterative procedure, by using the secant method~\cite{Burden2015} to find a better guess for the quasi-energy, $\xi_{\kpt n}^\text{guess}$ and minimize the error function in Eq. \ref{eq:5-py4}. According to our tests, this method allows us to reduce the $\text{err}_{\kpt n}$ function to values around 10$^{-9}$ and calculate quasi-energies with an accuracy in the order of 10$^{-10}$ \si{\eV}. 
+%$$
+%d_{\kpt ni}^\text{RT}(t_v) \approx d_{\kpt ni}^\text{CALC}(t_v) + \left(\xi_{\kpt n}^\text{guess} - \xi_{\kpt n}^\text{RT}\right) \left.%%%\frac{\partial{d_{\kpt ni}^\text{CALC}}}{\partial t}\right|_{t_v}
+%$$ MOVE TO APPENDIX?
+
+
+
+%In general,  depends on the number of time steps used for verification and how distant from the sampling set they are, providing a knob to tune the precision of this method. In order to automate the iterative procedure, we implemented a Newton-Raphson routine in our python module to perform this minimisation, where the derivative of the $\text{err}_{\kpt n}$ function is evaluated numerically \textit{via} finite differences. 
+
+\appendix
+\section{The density matrix in the Floquet--Kohn-Sham basis}
+The $\kpt$-density matrix operator:
+\begin{equation}
+    \hat\rho_\kpt = \sum_n | v_{\kpt n} \rangle \langle v_{\kpt n} |.   
+\end{equation}
+In the KS basis, the density matrix element:
+\begin{equation}
+    \rho_{\kpt ab}(t) = \sum_n \langle u_{\kpt a}| v_{\kpt n} \rangle (t)\langle v_{\kpt n} |u_{\kpt b}\rangle (t) = \sum_n d_{\kpt na}(t) d^*_{\kpt nb}(t).   
+\end{equation}
+Then,
+\begin{equation}
+    \rho_{\kpt ab}(t) = \sum_{\gamma \nu} e^{-i\gamma \omega_0 t} \tilde d_{\kpt na}(\gamma+\nu) \tilde d^*_{\kpt nb}(\nu) = e^{-i\gamma \omega_0 t} \sum_\gamma \tilde\rho_{\kpt ab}(\gamma)    
+\end{equation}
+where we defined: 
+\begin{equation}
+    \tilde\rho_{\kpt ab}(\gamma)  \equiv \sum_{\nu} \tilde d_{\kpt na}(\gamma+\nu) \tilde d^*_{\kpt nb}(\nu) %= \sum_\gamma \rho_{\kpt ab}(\gamma)    
+\end{equation}
+\section{\label{sec:connect} Connection with linear response}
+We consider a system driven by a weak monochromatic perturbation,
+\begin{equation}
+\hat H(t) = \hat H_0
++ \lambda \hat V e^{-i\omega_0 t}
++ \lambda \hat V^\dagger e^{+i\omega_0 t},
+\qquad \lambda \ll 1 ,
+\end{equation}
+where $\hat H_0$ is time independent and diagonal in the Kohn--Sham (KS) basis,
+The single-particle density matrix obeys the equation of motion
+\begin{equation}
+i\partial_t \hat\rho(t) = [\hat H(t),\hat\rho(t)] .
+\label{eq:dm_eom}
+\end{equation}
+
+Within linear-response theory, the density matrix is expanded as
+\begin{equation}
+\hat\rho(t) = \hat\rho^{(0)} + \lambda \hat\rho^{(1)}(t) + O(\lambda^2),
+\end{equation}
+where the equilibrium density matrix is
+\begin{equation}
+\rho^{(0)}_{ab} = f_a \delta_{ab}.
+\end{equation}
+
+To first order in $\lambda$, the solution of Eq.~\eqref{eq:dm_eom} reads
+\begin{equation}
+\rho^{(1)}_{ab}(t)
+=
+\rho^{(1)}_{ab}(\omega_0)e^{-i\omega_0 t}
++
+\rho^{(1)}_{ab}(-\omega_0)e^{+i\omega_0 t},
+\end{equation}
+with
+\begin{equation}
+\rho^{(1)}_{ab}(\omega_0)
+=
+\frac{f_b - f_a}
+{\epsilon_{ka}-\epsilon_{kb}-\omega_0+i\eta}
+\,V_{ab},
+\label{eq:kubo_dm}
+\end{equation}
+which is the standard Kubo expression in the KS basis.
+\subsection{Linear-response solution}
+
+Within linear-response theory, the density matrix is expanded as
+\begin{equation}
+\hat\rho(t) = \hat\rho^{(0)} + \lambda \hat\rho^{(1)}(t) + O(\lambda^2),
+\end{equation}
+where the equilibrium density matrix is
+\begin{equation}
+\rho^{(0)}_{ab} = f_a \delta_{ab}.
+\end{equation}
+
+To first order in $\lambda$, the solution of Eq.~\eqref{eq:dm_eom} reads
+\begin{equation}
+\rho^{(1)}_{ab}(t)
+=
+\rho^{(1)}_{ab}(\omega_0)e^{-i\omega_0 t}
++
+\rho^{(1)}_{ab}(-\omega_0)e^{+i\omega_0 t},
+\end{equation}
+with
+\begin{equation}
+\rho^{(1)}_{ab}(\omega_0)
+=
+\frac{f_b - f_a}
+{\epsilon_{ka}-\epsilon_{kb}-\omega_0+i\eta}
+\,V_{ab},
+\label{eq:kubo_dm}
+\end{equation}
+which is the standard Kubo expression in the KS basis.
+
+\subsection{Floquet representation of the density matrix}
+
+For a periodically driven system in the steady state, the density matrix admits a Fourier
+(Floquet) expansion,
+\begin{equation}
+\rho_{ab}(t)
+=
+\sum_{\gamma} e^{-i\gamma\omega_0 t}\,
+\tilde\rho_{ab}(\gamma).
+\label{eq:floquet_dm}
+\end{equation}
+the Floquet density-matrix coefficients are given by
+\begin{equation}
+\tilde\rho_{kab}(\gamma)
+=
+\sum_{\nu}
+\tilde d_{kna}(\gamma+\nu)\,
+\tilde d^{*}_{knb}(\nu).
+\label{eq:floquet_dm_coeff}
+\end{equation}
+In the weak-field regime, the Floquet amplitudes may be expanded perturbatively. In order
+to do so we start from the Sambe space rappresentations: 
+\begin{equation}
+	\langle\langle i, m | \mathcal{H} | j, p  \rangle\rangle = (E_i + m\hbar\omega) \delta_{ij} \delta_{mp} + W_{ij}(m,p)
+\end{equation}
+Now in the dynamical Berry formulation we know that the coupling term has the form:
+\begin{equation}
+	W_{ij}(m,p) = \lambda W^0_{ij}(m,p)\delta(m-p\pm 1) + O(\lambda^2)
+\end{equation}
+where $W^0_{ij}$ connects only valence to conduction bands.
+In the limit of a weak field intensity, we expand the Floquet modes assuming the system is primarily in the static state $|u_{i}\rangle$ (the "source" at m = 0), then we find the coefficients for the sidebands.
+We suppose that the mode:
+\bea
+	|u_i(t) \rangle = \sum_m e^{im\omega t} | u_{i,m} \rangle\\
+	|u_i(t) \rangle \simeq  |u_{i} \rangle + O(\lambda)
+\eea
+then we substitute this solution in the equation for $|u_{i,m} \rangle$ for $m \pm 1$:
+\bea
+ |u_{i,\pm 1} \rangle \simeq  \frac{1}{E_i - (H_0 \pm \hbar\omega)} W_{ij} (0,\pm 1) | u_j \rangle
+\eea
+this show that the terms with $\nu=\pm 1$ are of first order in the perturbation and in general we can write
+
+\begin{equation}
+\tilde d_{kna}(\nu)
+=
+\begin{cases}
+\delta_{an} + O(\lambda^2), & \nu = 0, \\[4pt]
+\lambda\, d^{(1)}_{kna}(\pm 1), & \nu = \pm 1, \\[4pt]
+O(\lambda^2), & \text{otherwise}.
+\end{cases}
+\end{equation}
+
+Inserting this expansion into Eq.~\eqref{eq:floquet_dm_coeff}, one finds for the zeroth harmonic
+\begin{equation}
+\tilde\rho_{kab}(0) = f_a \delta_{ab},
+\end{equation}
+which reproduces the equilibrium density matrix.
+
+For the first harmonics, one obtains
+\begin{equation}
+\tilde\rho_{kab}(\pm 1)
+=
+\rho^{(1)}_{kab}(\pm\omega_0),
+\label{eq:floquet_kubo_id}
+\end{equation}
+where $\rho^{(1)}_{kab}(\omega_0)$ is given by the Kubo formula in
+Eq.~\eqref{eq:kubo_dm}.
+
+Equation~\eqref{eq:floquet_kubo_id} establishes that, in the weak-driving limit, the Floquet
+density-matrix coefficients at $\gamma=\pm1$ are identical to the linear-response density
+matrix. 
+\section{Second-order response and second harmonic generation}
+\label{app:second_order}
+
+We can extend the previous analysis to the second order and in particular to the the second harmonic response.
+We consider again a weak monochromatic perturbation,
+\begin{equation}
+\hat H(t) = \hat H_0
++ \lambda \hat V e^{-i\omega_0 t}
++ \lambda \hat V^\dagger e^{+i\omega_0 t},
+\qquad \lambda \ll 1 ,
+\end{equation}
+and expand the single-particle density matrix again as
+\begin{equation}
+\hat\rho(t)
+=
+\hat\rho^{(0)}
++
+\lambda \hat\rho^{(1)}(t)
++
+\lambda^2 \hat\rho^{(2)}(t)
++
+O(\lambda^3).
+\end{equation}
+Inserting this expansion into the equation of motion we find and equation for the second-order density matrix:
+\begin{equation}
+i\partial_t \hat\rho^{(2)}(t)
+=
+[\hat H_0,\hat\rho^{(2)}(t)]
++
+[\hat V(t),\hat\rho^{(1)}(t)].
+\label{eq:dm_second_order_eom}
+\end{equation}
+
+Since $\hat V(t)$ oscillates at $\pm\omega_0$ and
+$\hat\rho^{(1)}(t)$ oscillates at the same frequencies,
+their commutator contains static and $\pm2\omega_0$
+components. We therefore write
+\begin{equation}
+\rho^{(2)}_{ab}(t)
+=
+\rho^{(2)}_{ab}(0)
++
+\rho^{(2)}_{ab}(2\omega_0)e^{-i2\omega_0 t}
++
+\rho^{(2)}_{ab}(-2\omega_0)e^{+i2\omega_0 t}.
+\end{equation}
+
+The oscillatory term at $2\omega_0$ corresponds to
+second harmonic generation.
+Considering only the terms that oscillate at $e^{-i2\omega_0 t}$ one gets:
+\begin{equation}
+\left(
+\epsilon_{ka}-\epsilon_{kb}-2\omega_0+i\eta
+\right)
+\rho^{(2)}_{kab}(2\omega_0)
+=
+\sum_c
+\left[
+V_{ac}\rho^{(1)}_{kcb}(\omega_0)
+-
+\rho^{(1)}_{kac}(\omega_0)V_{cb}
+\right].
+\label{eq:second_order_dm_freq}
+\end{equation}
+
+Using the linear-response result,
+\begin{equation}
+\rho^{(1)}_{kab}(\omega_0)
+=
+\frac{f_b-f_a}
+{\epsilon_{ka}-\epsilon_{kb}-\omega_0+i\eta}
+V_{ab},
+\end{equation}
+One obtains
+\begin{equation}
+\boxed{
+\rho^{(2)}_{kab}(2\omega_0)
+=
+\sum_c
+\frac{
+V_{ac} V_{cb}
+}{
+\epsilon_{ka}-\epsilon_{kb}-2\omega_0+i\eta
+}
+\left[
+\frac{f_b-f_c}
+{\epsilon_{kc}-\epsilon_{kb}-\omega_0+i\eta}
+-
+\frac{f_c-f_a}
+{\epsilon_{ka}-\epsilon_{kc}-\omega_0+i\eta}
+\right]
+}.
+\label{eq:shg_density_matrix}
+\end{equation}
+Equation~\eqref{eq:shg_density_matrix} is the standard
+independent-particle expression for the second-order density
+matrix responsible for second harmonic generation.
+
+%-------------------------------------------------
+\subsection{Connection with the Floquet density matrix}
+
+Within the Floquet formalism, the density matrix is expanded as
+\begin{equation}
+\rho_{ab}(t)
+=
+\sum_{\gamma} e^{-i\gamma\omega_0 t}\,
+\tilde\rho_{ab}(\gamma),
+\end{equation}
+with the Floquet coefficients given by
+\begin{equation}
+\tilde\rho_{kab}(\gamma)
+=
+\sum_{\nu}
+\tilde d_{kna}(\gamma+\nu)
+\tilde d^{*}_{knb}(\nu).
+\end{equation}
+
+In the weak-field regime, the Floquet amplitudes scale as
+$\tilde d(\pm1)=O(\lambda)$ and $\tilde d(\pm2)=O(\lambda^2)$.
+Keeping terms up to second order, one finds that the Floquet
+density-matrix coefficient at $\gamma=2$ satisfies
+\begin{equation}
+\tilde\rho_{kab}(2)
+=
+\rho^{(2)}_{kab}(2\omega_0).
+\end{equation}
+
+Thus, the second Floquet harmonic of the density matrix is
+identical to the second-order Kubo response at frequency
+$2\omega_0$, providing a direct connection between the Floquet
+formalism and second harmonic generation.
+
+\section{Connection with dynamical Berry-Phase}
+We consider the general equation of the Dynamical Berry phase:
+e obtain the EOMs:
+\be
+i\hbar  \frac{d}{dt}| v_{\kk,m} \rangle = \left(\hat H_\kk^0 + \hat w_\kk(\efield) +\hat w^\dagger_\kk(\efield) \right)| v_{\kk,m} \rangle. \label{eom_berry}
+\ee
+where:
+\begin{align}
+\hat w_\kk(\efield) =\frac{ief}{4 \pi}\sum_m \sum_{\alpha=1}^3 \left(\lv_\alpha\cdot\efield\right)N_{\kk_\alpha} \sum_{\sigma=\pm} \sigma |\tilde v_{\kk^\sigma_\alpha,m} \rangle\langle v_{\kk,m}|.
+\label{eq:fldcpl}
+\end{align}
+\bea
+| \tilde v_{ \kk^{\pm}_\alpha,n} \rangle &=& \sum_{m} \left(S(\kk,\kk^{\pm}_\alpha\right)^{-1})_{mn} |v_{\kk^{\pm}_\alpha,m}\rangle, \label{eq:vtilde}
+\eea
+and $S$ is the overlap matrix:
+\be
+S_{mn}(\kk , \kk') = \langle v_{\kk,m} | v_{\kk',n} \rangle.
+\label{eq:sovlps}
+\ee
+
+\subsection{Second-Order Density Matrix Equation in the Dynamical Berry-Phase Formalism}
+
+Starting from the Equation of Motion (EOM) provided in Appendix D:
+\begin{equation}
+i\hbar\frac{d}{dt}|v_{k,m}\rangle = \left(\hat{H}_{0k} + \hat{W}_k(E)\right) |v_{k,m}\rangle
+\end{equation}
+where $\hat{W}_k(E) = \hat{w}_k(E) + \hat{w}^\dagger_k(E)$. The operator $\hat{w}_k(E)$ depends on the state via the overlap matrix $S$.
+
+\subsection*{1. Perturbative Expansion}
+We expand the density matrix $\hat{\rho}_k$ and the interaction operator $\hat{W}_k$ in powers of the electric field $\mathcal{E}$:
+\begin{align}
+    \hat{\rho}_k(t) &= \hat{\rho}_k^{(0)} + \hat{\rho}_k^{(1)}(t) + \hat{\rho}_k^{(2)}(t) + \dots \\
+    \hat{W}_k(t) &= \hat{W}_k^{(1)}(t) + \hat{W}_k^{(2)}(t) + \dots
+\end{align}
+Note that $\hat{W}_k^{(1)}$ is linear in the field using equilibrium wavefunctions $|v^{(0)}\rangle$, while $\hat{W}_k^{(2)}$ is the second-order term arising from the first-order distortion of the wavefunctions.
+
+\subsection*{2. Second-Order Equation of Motion}
+The equation for the second-order density matrix is:
+\begin{equation}
+i\hbar \frac{\partial \hat{\rho}_k^{(2)}}{\partial t} = [\hat{H}_{0k}, \hat{\rho}_k^{(2)}] + [\hat{W}_k^{(1)}, \hat{\rho}_k^{(1)}] + [\hat{W}_k^{(2)}, \hat{\rho}_k^{(0)}]
+\end{equation}
+
+\subsection*{3. Explicit Form of the Second-Order Operator $\hat{W}_k^{(2)}$}
+The operator $\hat{w}_k^{(2)}$ is derived by expanding the definition:
+\begin{equation}
+\hat{w}_k = \frac{ie}{4\pi} \sum_{m, \alpha, \sigma} \sigma (a_\alpha \cdot \mathbf E) N_{\kk \alpha} |\tilde{v}_{ \kk \sigma\alpha, m}\rangle \langle v_{\kk,m}|
+\end{equation}
+To second order, this yields:
+\begin{equation}
+\hat{w}_k^{(2)} = \mathcal{C} \sum_{m, \alpha, \sigma} \sigma \left( \underbrace{|\tilde{v}_{\kk\sigma\alpha, m}^{(1)}\rangle \langle v_{\kk,m}^{(0)}|}_{\text{Dual Distortion}} + \underbrace{|\tilde{v}_{\kk\sigma\alpha, m}^{(0)}\rangle \langle v_{\kk,m}^{(1)}|}_{\text{State Distortion}} \right)
+\end{equation}
+where $\mathcal{C}$ contains the prefactors including the field $E$.
+
+\subsection*{4. Distortion of the Bloch States (The Overlap Term)}
+The distortion of the dual state $|\tilde{v}^{(1)}\rangle$ involves the first-order correction to the inverse overlap matrix $S^{-1}$:
+\begin{equation}
+|\tilde{v}_{k\pm\alpha, n}^{(1)}\rangle = \sum_{m} \left( S_{nm}^{-1 (1)} |v_{\kk\pm\alpha, m}^{(0)}\rangle + S_{nm}^{-1 (0)} |v_{\kk\pm\alpha, m}^{(1)}\rangle \right)
+\end{equation}
+The term $S^{-1 (1)}$ accounts for the change in the geometry/metric of the Hilbert space:
+\begin{equation}
+S_{nm}^{-1 (1)} = - \sum_{p,q} S_{np}^{-1 (0)} \left( \langle v_{\kk,p}^{(1)} | v_{k\pm\alpha, q}^{(0)}\rangle + \langle v_{\kk,p}^{(0)} | v_{\kk\pm\alpha, q}^{(1)}\rangle \right) S_{qm}^{-1 (0)}
+\end{equation}
+where the distorted wave-function can be obtained in frequency space as:
+\begin{equation}
+	|v_{\kk,m}^{(1)}(\omega)\rangle = \frac{\langle v_{k,n}^{(0)} |  \hat{W}_k^{(1)}(\omega) |v_{k,m}^{(0)}\rangle}{\hbar \omega -(\epsilon_{nk} -\epsilon_{mk}) + i \eta}
+\end{equation}
+
+
+
+\bibliography{books,papers}
+
+\end{document}
+%
+% ****** End of file apstemplate.tex ******
+
