@@ -1,0 +1,1861 @@
+FLQ-four-scripts-1.0
+Stored/full BZ k-points: 465 900
+Full grid: [30 30  1]
+FLQ-four-scripts-1.0
+Calculation: FLQ_000; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 6.089298e-14 5.366395e-12 2.729681e-11
+closure_4T                   min/mean/max = 6.392201e-14 5.385620e-12 2.548614e-11
+semigroup_4T                 min/mean/max = 7.335563e-16 4.593192e-15 1.250862e-14
+predicted_4T                 min/mean/max = 6.397823e-14 5.385628e-12 2.548614e-11
+offdiag_4T                   min/mean/max = 1.419725e-22 1.128781e-17 4.207982e-15
+gram_unitarity               min/mean/max = 3.925232e-17 4.805237e-13 1.772533e-11
+gauge_T_error                min/mean/max = 1.723530e-15 4.443168e-15 6.772588e-15
+gauge_4T_error               min/mean/max = 6.910191e-15 1.776337e-14 2.709843e-14
+Exact timing errors / T: {'phase_grid': 5.273559366969494e-16, 'T': 1.1102230246251565e-16, 'fourT': 4.440892098500626e-16}
+Max ||multiplier|-1|: 2.886579864025407e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.95737667e-15 4.71216369e-15 3.80360227e-15 2.09890421e-15
+ 2.30444813e-15 3.57427525e-15 3.43885763e-15 3.22447576e-15
+ 4.70094226e-15 8.09984989e-12 8.11054449e-12]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1,  2,  3,  4]), array([122,  50,  36, 126, 157, 120,  41, 112, 166]))
+Maximum Fourier edge fraction: 1.5392994135889006e-23
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_000/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_000/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_001; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.202007e-13 8.734300e-12 4.591995e-11
+closure_4T                   min/mean/max = 1.018092e-13 8.723308e-12 4.145136e-11
+semigroup_4T                 min/mean/max = 5.026750e-16 3.798477e-15 1.502866e-14
+predicted_4T                 min/mean/max = 1.018152e-13 8.723311e-12 4.145136e-11
+offdiag_4T                   min/mean/max = 2.643851e-22 6.320661e-18 1.828057e-15
+gram_unitarity               min/mean/max = 1.110223e-16 2.628393e-13 8.497089e-12
+gauge_T_error                min/mean/max = 1.195747e-15 2.507011e-15 4.572936e-15
+gauge_4T_error               min/mean/max = 4.720733e-15 1.003743e-14 1.824494e-14
+Exact timing errors / T: {'phase_grid': 4.440892098500626e-16, 'T': 4.440892098500626e-16, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 2.4424906541753444e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.71352225e-15 1.42526348e-15 7.84699936e-16 7.23920007e-16
+ 1.33835804e-15 6.52461149e-16 9.75925865e-16 1.50169439e-15
+ 2.62471054e-15 1.30583177e-11 1.31611278e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1,  2,  3,  4]), array([ 29, 175, 278,  58,  25,  15,  30, 222,  98]))
+Maximum Fourier edge fraction: 6.053112020554011e-23
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_001/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_001/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_002; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 1.092428e-13 1.242698e-11 7.159965e-11
+closure_4T                   min/mean/max = 1.277073e-13 1.220709e-11 5.909665e-11
+semigroup_4T                 min/mean/max = 4.615277e-16 3.468331e-15 9.910820e-15
+predicted_4T                 min/mean/max = 1.277515e-13 1.220709e-11 5.909665e-11
+offdiag_4T                   min/mean/max = 1.072659e-21 9.203260e-18 3.187439e-15
+gram_unitarity               min/mean/max = 1.962640e-17 3.368657e-13 9.320487e-12
+gauge_T_error                min/mean/max = 1.299483e-15 3.505953e-15 5.578802e-15
+gauge_4T_error               min/mean/max = 4.987361e-15 1.402993e-14 2.237285e-14
+Exact timing errors / T: {'phase_grid': 1.2212453270876722e-15, 'T': 6.661338147750939e-16, 'fourT': 0.0}
+Max ||multiplier|-1|: 2.9976021664879227e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.48089282e-15 5.85258274e-15 2.94275433e-15 4.13872864e-15
+ 6.08215558e-15 8.15072197e-15 6.74552213e-15 5.86842670e-15
+ 2.54563865e-15 1.93382099e-11 1.84710721e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  1,  2,  3,  4]), array([ 72, 374, 296,  33,  18,  25,  95,  17]))
+Maximum Fourier edge fraction: 1.0551047321304443e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_002/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_002/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_003; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.700856e-13 1.637480e-11 1.059194e-10
+closure_4T                   min/mean/max = 1.804687e-13 1.591927e-11 7.800030e-11
+semigroup_4T                 min/mean/max = 7.022353e-16 4.244790e-15 2.585151e-14
+predicted_4T                 min/mean/max = 1.805218e-13 1.591927e-11 7.800030e-11
+offdiag_4T                   min/mean/max = 3.750930e-21 6.582743e-18 9.309618e-16
+gram_unitarity               min/mean/max = 8.092083e-17 3.717623e-13 9.248651e-12
+gauge_T_error                min/mean/max = 1.336886e-15 2.737261e-15 4.196878e-15
+gauge_4T_error               min/mean/max = 5.591509e-15 1.095270e-14 1.672250e-14
+Exact timing errors / T: {'phase_grid': 5.551115123125783e-16, 'T': 1.3322676295501878e-15, 'fourT': 1.3322676295501878e-15}
+Max ||multiplier|-1|: 2.6645352591003757e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.09579040e-15 2.10686396e-15 1.04350427e-15 1.03248384e-15
+ 1.67637543e-15 7.66018532e-16 1.15058852e-15 2.05124252e-15
+ 3.31362746e-15 2.61797700e-11 2.42004437e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1,  4]), array([114, 430, 228,   9,  75,  55,  19]))
+Maximum Fourier edge fraction: 5.25369856995301e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_003/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_003/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_004; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 1.378472e-13 2.062352e-11 1.148186e-10
+closure_4T                   min/mean/max = 2.279748e-13 1.992224e-11 9.896434e-11
+semigroup_4T                 min/mean/max = 3.260542e-16 4.298907e-15 3.427090e-14
+predicted_4T                 min/mean/max = 2.280028e-13 1.992225e-11 9.896434e-11
+offdiag_4T                   min/mean/max = 1.283754e-21 8.100703e-18 1.586737e-15
+gram_unitarity               min/mean/max = 9.674327e-20 2.964925e-13 7.067584e-12
+gauge_T_error                min/mean/max = 1.665335e-15 4.040754e-15 6.828774e-15
+gauge_4T_error               min/mean/max = 6.554078e-15 1.615691e-14 2.720953e-14
+Exact timing errors / T: {'phase_grid': 1.887379141862766e-15, 'T': 8.881784197001252e-16, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 3.1086244689504383e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.02527684e-15 9.23605427e-15 8.48742995e-15 9.34559921e-15
+ 1.24932207e-14 1.23773783e-14 1.26131034e-14 1.05053424e-14
+ 1.01628741e-14 3.18787384e-11 3.04452079e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1]), array([ 66, 434, 165,  19, 158,  88]))
+Maximum Fourier edge fraction: 3.226928591669949e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_004/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_004/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_005; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 2.156414e-13 2.509596e-11 1.777952e-10
+closure_4T                   min/mean/max = 2.603894e-13 2.341099e-11 1.223555e-10
+semigroup_4T                 min/mean/max = 6.243462e-16 4.304319e-15 4.878208e-14
+predicted_4T                 min/mean/max = 2.603926e-13 2.341099e-11 1.223555e-10
+offdiag_4T                   min/mean/max = 4.335259e-21 9.223672e-18 1.426275e-15
+gram_unitarity               min/mean/max = 5.149656e-20 2.785888e-13 6.253899e-12
+gauge_T_error                min/mean/max = 1.185719e-15 3.141577e-15 5.371708e-15
+gauge_4T_error               min/mean/max = 4.711586e-15 1.256964e-14 2.149945e-14
+Exact timing errors / T: {'phase_grid': 1.942890293094024e-15, 'T': 9.992007221626409e-16, 'fourT': 1.3322676295501878e-15}
+Max ||multiplier|-1|: 2.1094237467877974e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.40551953e-14 1.67707045e-14 1.58521173e-14 1.35519536e-14
+ 1.24651949e-14 1.15328105e-14 1.47341488e-14 6.58051627e-15
+ 1.86316686e-14 4.22921925e-11 3.60415859e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1,  2,  3,  4]), array([ 58, 387, 108,  22, 238, 105,   5,   3,   4]))
+Maximum Fourier edge fraction: 5.979278610656916e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_005/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_005/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_006; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 3.796606e-13 3.186734e-11 1.803177e-10
+closure_4T                   min/mean/max = 2.905177e-13 2.646219e-11 1.410038e-10
+semigroup_4T                 min/mean/max = 4.902612e-16 3.862564e-15 3.246733e-14
+predicted_4T                 min/mean/max = 2.905240e-13 2.646219e-11 1.410038e-10
+offdiag_4T                   min/mean/max = 2.141623e-21 6.235383e-18 1.623569e-15
+gram_unitarity               min/mean/max = 1.119849e-20 2.937248e-13 6.443756e-12
+gauge_T_error                min/mean/max = 1.299483e-15 2.923060e-15 4.587317e-15
+gauge_4T_error               min/mean/max = 5.512120e-15 1.169623e-14 1.841333e-14
+Exact timing errors / T: {'phase_grid': 2.4980018054066022e-15, 'T': 2.6645352591003757e-15, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 2.4424906541753444e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.03449989e-14 7.25028991e-15 8.64851532e-15 8.08917742e-15
+ 1.13711815e-14 1.82545893e-14 1.73975000e-14 1.65463464e-14
+ 1.78407778e-14 5.25899493e-11 4.09681629e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1]), array([ 51, 339,  92,  32, 295, 121]))
+Maximum Fourier edge fraction: 5.786942098767933e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_006/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_006/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_007; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 4.756351e-13 3.341686e-11 1.799095e-10
+closure_4T                   min/mean/max = 2.769570e-13 2.854306e-11 1.608403e-10
+semigroup_4T                 min/mean/max = 3.330669e-16 3.935728e-15 3.073143e-14
+predicted_4T                 min/mean/max = 2.769626e-13 2.854306e-11 1.608403e-10
+offdiag_4T                   min/mean/max = 1.496872e-20 7.401679e-18 1.762533e-15
+gram_unitarity               min/mean/max = 7.850462e-17 3.051185e-13 6.650506e-12
+gauge_T_error                min/mean/max = 2.914203e-15 4.873961e-15 6.777421e-15
+gauge_4T_error               min/mean/max = 1.157045e-14 1.948360e-14 2.707511e-14
+Exact timing errors / T: {'phase_grid': 2.3869795029440866e-15, 'T': 1.1102230246251565e-15, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 3.219646771412954e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.95706678e-14 2.60630188e-14 2.21805751e-14 1.21625399e-14
+ 9.79137328e-15 1.15340954e-14 2.18546106e-14 2.57266525e-14
+ 2.95756165e-14 5.41888095e-11 4.44388077e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1,  3]), array([ 56, 317,  89,  27, 306, 127,   8]))
+Maximum Fourier edge fraction: 5.791391047993157e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_007/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_007/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_008; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 4.040525e-13 3.367845e-11 1.766662e-10
+closure_4T                   min/mean/max = 2.969220e-13 3.012497e-11 1.580484e-10
+semigroup_4T                 min/mean/max = 5.338892e-16 4.410297e-15 3.625046e-14
+predicted_4T                 min/mean/max = 2.969247e-13 3.012497e-11 1.580484e-10
+offdiag_4T                   min/mean/max = 1.450134e-20 7.563562e-18 9.552498e-16
+gram_unitarity               min/mean/max = 3.925232e-17 3.117871e-13 6.766383e-12
+gauge_T_error                min/mean/max = 2.782211e-15 4.348341e-15 6.437379e-15
+gauge_4T_error               min/mean/max = 1.100914e-14 1.739743e-14 2.569057e-14
+Exact timing errors / T: {'phase_grid': 1.5404344466674047e-15, 'T': 1.3322676295501878e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 3.1086244689504383e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [7.75166696e-15 1.50970705e-14 2.26529014e-14 2.62743470e-14
+ 2.72420439e-14 2.64153147e-14 2.32480204e-14 1.65584599e-14
+ 7.28724308e-15 5.31787230e-11 4.68143338e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1]), array([ 30, 293,  48,  47, 346, 166]))
+Maximum Fourier edge fraction: 5.511424787404384e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_008/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_008/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_009; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000002e+00
+closure_T                    min/mean/max = 2.215552e-13 3.336803e-11 1.613701e-10
+closure_4T                   min/mean/max = 3.745773e-13 3.186118e-11 1.807654e-10
+semigroup_4T                 min/mean/max = 4.980623e-16 4.834967e-15 3.930886e-14
+predicted_4T                 min/mean/max = 3.746057e-13 3.186118e-11 1.807654e-10
+offdiag_4T                   min/mean/max = 4.328019e-21 1.306144e-17 2.002199e-15
+gram_unitarity               min/mean/max = 7.850499e-17 3.132291e-13 6.789182e-12
+gauge_T_error                min/mean/max = 1.577923e-15 2.814367e-15 4.946414e-15
+gauge_4T_error               min/mean/max = 6.125373e-15 1.124801e-14 1.980271e-14
+Exact timing errors / T: {'phase_grid': 1.4988010832439613e-15, 'T': 4.440892098500626e-16, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 2.6645352591003757e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.05998641e-14 1.30796266e-14 2.24246664e-14 2.67745893e-14
+ 2.90379132e-14 2.84527152e-14 2.50328440e-14 2.02432964e-14
+ 9.62708084e-15 5.11053717e-11 4.97973196e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1]), array([ 19, 281,  38,  48, 380, 164]))
+Maximum Fourier edge fraction: 4.441627427284548e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_009/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_009/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_010; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 1.426834e-13 3.311902e-11 1.520059e-10
+closure_4T                   min/mean/max = 3.084109e-13 3.320287e-11 1.930867e-10
+semigroup_4T                 min/mean/max = 7.781468e-16 4.836266e-15 3.958803e-14
+predicted_4T                 min/mean/max = 3.084333e-13 3.320287e-11 1.930867e-10
+offdiag_4T                   min/mean/max = 2.311733e-21 1.343299e-17 1.372792e-15
+gram_unitarity               min/mean/max = 7.850467e-17 3.114415e-13 6.754613e-12
+gauge_T_error                min/mean/max = 1.200890e-15 2.798289e-15 4.469940e-15
+gauge_4T_error               min/mean/max = 4.526457e-15 1.119501e-14 1.789974e-14
+Exact timing errors / T: {'phase_grid': 2.4424906541753444e-15, 'T': 9.992007221626409e-16, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 2.6645352591003757e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.09667186e-14 2.19555884e-14 2.21151628e-14 1.86704011e-14
+ 1.74288541e-14 1.44314641e-14 1.73108347e-14 6.95532689e-15
+ 2.39103062e-14 5.00812742e-11 5.21263917e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1,  3,  4]), array([ 18, 281,  44,  42, 382, 151,   9,   3]))
+Maximum Fourier edge fraction: 3.9929032960590825e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_010/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_010/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_011; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 1.604016e-13 3.309826e-11 1.740600e-10
+closure_4T                   min/mean/max = 3.379953e-13 3.453006e-11 2.039829e-10
+semigroup_4T                 min/mean/max = 2.611090e-16 5.065422e-15 4.141513e-14
+predicted_4T                 min/mean/max = 3.380052e-13 3.453006e-11 2.039829e-10
+offdiag_4T                   min/mean/max = 1.086755e-20 1.510303e-17 1.271828e-15
+gram_unitarity               min/mean/max = 7.850465e-17 3.077612e-13 6.687227e-12
+gauge_T_error                min/mean/max = 2.400657e-15 4.091855e-15 6.057587e-15
+gauge_4T_error               min/mean/max = 9.705407e-15 1.636246e-14 2.422729e-14
+Exact timing errors / T: {'phase_grid': 2.886579864025407e-15, 'T': 1.9984014443252818e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 2.4424906541753444e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.06394805e-14 1.42331747e-14 7.74325082e-15 9.67346765e-15
+ 1.55121786e-14 1.83323146e-14 1.44981006e-14 1.32786631e-14
+ 5.34919121e-15 4.96925906e-11 5.44487773e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1]), array([  6, 286,  18,  54, 417, 149]))
+Maximum Fourier edge fraction: 4.971418028137333e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_011/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_011/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_012; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 2.551722e-13 3.300027e-11 2.024513e-10
+closure_4T                   min/mean/max = 4.082329e-13 3.529133e-11 2.043754e-10
+semigroup_4T                 min/mean/max = 5.770001e-16 5.306543e-15 3.602586e-14
+predicted_4T                 min/mean/max = 4.082372e-13 3.529133e-11 2.043754e-10
+offdiag_4T                   min/mean/max = 2.326558e-21 1.809318e-17 2.086028e-15
+gram_unitarity               min/mean/max = 3.925234e-17 3.040884e-13 6.617979e-12
+gauge_T_error                min/mean/max = 1.042960e-15 2.803710e-15 4.426383e-15
+gauge_4T_error               min/mean/max = 4.159356e-15 1.119759e-14 1.770275e-14
+Exact timing errors / T: {'phase_grid': 3.1086244689504383e-15, 'T': 1.3322676295501878e-15, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 2.55351295663786e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.07685698e-14 7.04915819e-15 1.13040580e-14 3.91483221e-15
+ 1.14408238e-14 1.31082445e-14 1.99759561e-14 2.04634014e-14
+ 1.40429203e-14 4.97723203e-11 5.57817211e-11]
+Compact integer gauges: (array([-4, -3, -2, -1,  0,  1]), array([  6, 240,  16,  64, 430, 174]))
+Maximum Fourier edge fraction: 6.425733056681752e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_012/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_012/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_013; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 3.638334e-13 3.313813e-11 2.310357e-10
+closure_4T                   min/mean/max = 3.527604e-13 3.592115e-11 1.965761e-10
+semigroup_4T                 min/mean/max = 5.715223e-16 5.652460e-15 4.464320e-14
+predicted_4T                 min/mean/max = 3.527621e-13 3.592115e-11 1.965762e-10
+offdiag_4T                   min/mean/max = 1.161658e-22 1.569495e-17 8.867841e-16
+gram_unitarity               min/mean/max = 3.925273e-17 2.989194e-13 6.518708e-12
+gauge_T_error                min/mean/max = 1.053250e-15 3.133573e-15 5.007094e-15
+gauge_4T_error               min/mean/max = 4.373771e-15 1.253306e-14 2.004445e-14
+Exact timing errors / T: {'phase_grid': 3.0253577421035516e-15, 'T': 3.1086244689504383e-15, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 3.1086244689504383e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.18378337e-14 1.32276080e-14 1.30854561e-14 2.44889233e-14
+ 2.84875072e-14 3.12466896e-14 3.11644273e-14 2.74592981e-14
+ 2.19965152e-14 5.09254255e-11 5.67176512e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1]), array([239,  19,  44, 450, 178]))
+Maximum Fourier edge fraction: 8.085726532178382e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_013/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_013/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_014; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 4.640920e-13 3.364750e-11 2.593116e-10
+closure_4T                   min/mean/max = 3.229571e-13 3.671973e-11 2.043880e-10
+semigroup_4T                 min/mean/max = 7.280219e-16 5.982903e-15 6.584143e-14
+predicted_4T                 min/mean/max = 3.229634e-13 3.671973e-11 2.043881e-10
+offdiag_4T                   min/mean/max = 5.402296e-21 1.663335e-17 8.893723e-16
+gram_unitarity               min/mean/max = 5.551122e-17 2.933502e-13 6.410101e-12
+gauge_T_error                min/mean/max = 1.023575e-15 3.263361e-15 5.307052e-15
+gauge_4T_error               min/mean/max = 4.321700e-15 1.305529e-14 2.090317e-14
+Exact timing errors / T: {'phase_grid': 2.220446049250313e-15, 'T': 6.661338147750939e-16, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 3.885780586188048e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.55753747e-14 1.48901747e-14 1.24497717e-14 1.25207064e-14
+ 2.52236099e-14 2.98812819e-14 3.42281330e-14 3.50734395e-14
+ 3.21938139e-14 5.32078018e-11 5.78355908e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1,  2]), array([229,  29,  25, 467, 174,   6]))
+Maximum Fourier edge fraction: 9.936662147399441e-22
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_014/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_014/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_015; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 5.474918e-13 3.452783e-11 2.861279e-10
+closure_4T                   min/mean/max = 4.199109e-13 3.789538e-11 2.185462e-10
+semigroup_4T                 min/mean/max = 7.570912e-16 6.292567e-15 8.560057e-14
+predicted_4T                 min/mean/max = 4.199297e-13 3.789538e-11 2.185462e-10
+offdiag_4T                   min/mean/max = 3.256408e-21 1.870517e-17 1.968503e-15
+gram_unitarity               min/mean/max = 1.074445e-20 2.888515e-13 6.317009e-12
+gauge_T_error                min/mean/max = 1.050687e-15 2.558780e-15 4.201648e-15
+gauge_4T_error               min/mean/max = 4.375180e-15 1.023151e-14 1.702057e-14
+Exact timing errors / T: {'phase_grid': 3.427813588530171e-15, 'T': 1.5543122344752192e-15, 'fourT': 2.6645352591003757e-15}
+Max ||multiplier|-1|: 2.886579864025407e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.90623616e-14 2.61963336e-14 1.41643201e-14 1.02815736e-14
+ 6.96610622e-15 1.02597756e-14 8.54847842e-15 1.19736491e-14
+ 2.15450585e-14 5.64445972e-11 5.95623970e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1]), array([212,  26,  35, 496, 161]))
+Maximum Fourier edge fraction: 1.1860762775437704e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_015/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_015/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_016; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 6.487312e-13 3.777215e-11 3.365030e-10
+closure_4T                   min/mean/max = 3.564127e-13 4.088714e-11 2.553665e-10
+semigroup_4T                 min/mean/max = 4.263892e-16 6.619871e-15 1.196902e-13
+predicted_4T                 min/mean/max = 3.564154e-13 4.088714e-11 2.553665e-10
+offdiag_4T                   min/mean/max = 2.034714e-22 1.539388e-17 1.010841e-15
+gram_unitarity               min/mean/max = 1.962653e-17 2.826643e-13 6.176353e-12
+gauge_T_error                min/mean/max = 1.093443e-15 3.049930e-15 4.868869e-15
+gauge_4T_error               min/mean/max = 4.375180e-15 1.220581e-14 1.933837e-14
+Exact timing errors / T: {'phase_grid': 2.9976021664879227e-15, 'T': 6.661338147750939e-16, 'fourT': 2.6645352591003757e-15}
+Max ||multiplier|-1|: 4.6629367034256575e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.11169452e-14 1.49959562e-14 2.64987842e-14 1.33323281e-14
+ 1.54714920e-14 2.76817519e-14 1.45571145e-14 1.54382804e-14
+ 2.96751383e-14 6.57695870e-11 6.54493537e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1]), array([186,  62,  35, 485, 162]))
+Maximum Fourier edge fraction: 1.5993605188194372e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_016/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_016/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_017; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 5.861051e-13 4.939321e-11 4.245141e-10
+closure_4T                   min/mean/max = 4.164535e-13 4.554616e-11 2.711677e-10
+semigroup_4T                 min/mean/max = 4.458213e-16 7.676483e-15 1.498872e-13
+predicted_4T                 min/mean/max = 4.164564e-13 4.554616e-11 2.711677e-10
+offdiag_4T                   min/mean/max = 6.809357e-21 1.014843e-17 1.132822e-15
+gram_unitarity               min/mean/max = 7.850472e-17 2.845085e-13 6.193282e-12
+gauge_T_error                min/mean/max = 1.148387e-15 3.285880e-15 6.477003e-15
+gauge_4T_error               min/mean/max = 4.601151e-15 1.315089e-14 2.593743e-14
+Exact timing errors / T: {'phase_grid': 3.3306690738754696e-15, 'T': 1.3322676295501878e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 8.881784197001252e-15
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.22476761e-14 3.27759235e-14 2.30598809e-14 8.49589619e-15
+ 2.20516917e-14 1.55549068e-14 1.97164644e-14 2.14358061e-14
+ 3.02126391e-14 9.13963877e-11 7.40171637e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1]), array([143,  42,  36, 511, 198]))
+Maximum Fourier edge fraction: 2.495763962914874e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_017/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_017/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_018; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 4.511899e-13 5.688558e-11 4.666201e-10
+closure_4T                   min/mean/max = 4.336379e-13 4.828202e-11 2.840224e-10
+semigroup_4T                 min/mean/max = 4.791355e-16 8.180293e-15 1.559247e-13
+predicted_4T                 min/mean/max = 4.336420e-13 4.828202e-11 2.840224e-10
+offdiag_4T                   min/mean/max = 2.265902e-21 6.568189e-18 7.591842e-16
+gram_unitarity               min/mean/max = 7.850467e-17 2.923423e-13 6.365301e-12
+gauge_T_error                min/mean/max = 1.077832e-15 3.445745e-15 5.063396e-15
+gauge_4T_error               min/mean/max = 4.283007e-15 1.377858e-14 2.036936e-14
+Exact timing errors / T: {'phase_grid': 2.0539125955565396e-15, 'T': 6.661338147750939e-16, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 1.0658141036401503e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [8.51652063e-15 1.33431872e-14 1.70238708e-14 2.44340935e-14
+ 2.24213572e-14 1.45371572e-14 9.92819251e-15 2.56291675e-15
+ 7.39545337e-15 1.06069801e-10 7.68032848e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1]), array([120,  27,  29, 550, 204]))
+Maximum Fourier edge fraction: 2.9905209933587263e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_018/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_018/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_019; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.515497e-13 7.229899e-11 5.401698e-10
+closure_4T                   min/mean/max = 3.770699e-13 5.548690e-11 4.064529e-10
+semigroup_4T                 min/mean/max = 3.532708e-16 1.376173e-14 2.646789e-13
+predicted_4T                 min/mean/max = 3.770793e-13 5.548690e-11 4.064529e-10
+offdiag_4T                   min/mean/max = 4.249860e-21 8.365571e-18 1.237406e-15
+gram_unitarity               min/mean/max = 4.889207e-21 3.144562e-13 6.864772e-12
+gauge_T_error                min/mean/max = 1.132550e-15 2.605896e-15 4.285518e-15
+gauge_4T_error               min/mean/max = 4.424556e-15 1.043234e-14 1.713668e-14
+Exact timing errors / T: {'phase_grid': 3.3306690738754696e-16, 'T': 2.220446049250313e-16, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 2.1094237467877974e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.54407283e-15 8.75260891e-16 8.36013013e-16 4.60427789e-16
+ 6.22250338e-16 5.31391339e-16 9.99763219e-16 8.45723332e-16
+ 1.47057994e-15 1.34521450e-10 9.32241389e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1]), array([ 95,  13,  32, 577, 213]))
+Maximum Fourier edge fraction: 3.9704248460429774e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_019/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_019/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_020; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 2.579535e-13 7.993135e-11 5.693956e-10
+closure_4T                   min/mean/max = 5.596727e-13 6.053370e-11 4.412987e-10
+semigroup_4T                 min/mean/max = 2.818592e-16 1.840094e-14 3.284894e-13
+predicted_4T                 min/mean/max = 5.596771e-13 6.053370e-11 4.412988e-10
+offdiag_4T                   min/mean/max = 6.687957e-21 9.707847e-18 1.224574e-15
+gram_unitarity               min/mean/max = 3.175838e-21 3.242251e-13 7.098586e-12
+gauge_T_error                min/mean/max = 1.110223e-15 2.620547e-15 4.577547e-15
+gauge_4T_error               min/mean/max = 4.389595e-15 1.047871e-14 1.831902e-14
+Exact timing errors / T: {'phase_grid': 3.9968028886505635e-15, 'T': 1.9984014443252818e-15, 'fourT': 3.552713678800501e-15}
+Max ||multiplier|-1|: 2.4646951146678475e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.94631548e-14 2.49980323e-14 1.95529744e-14 1.18648519e-14
+ 3.43012851e-14 3.76011384e-14 3.25346042e-14 4.01960368e-14
+ 3.60766266e-14 1.47516342e-10 1.03252891e-10]
+Compact integer gauges: (array([-3, -2, -1,  0,  1,  2,  3]), array([ 72,  15,  15, 565, 237,  25,   1]))
+Maximum Fourier edge fraction: 4.387441966924286e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_020/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_020/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_021; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 5.482851e-13 9.159962e-11 6.073000e-10
+closure_4T                   min/mean/max = 4.962075e-13 6.613967e-11 4.651791e-10
+semigroup_4T                 min/mean/max = 5.715223e-16 2.701837e-14 4.417674e-13
+predicted_4T                 min/mean/max = 4.962167e-13 6.613968e-11 4.651793e-10
+offdiag_4T                   min/mean/max = 2.138274e-21 1.608330e-17 1.723435e-15
+gram_unitarity               min/mean/max = 1.070784e-19 3.355922e-13 7.387628e-12
+gauge_T_error                min/mean/max = 1.599803e-15 2.973043e-15 4.989832e-15
+gauge_4T_error               min/mean/max = 6.380886e-15 1.189742e-14 1.989972e-14
+Exact timing errors / T: {'phase_grid': 3.552713678800501e-15, 'T': 2.220446049250313e-16, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 3.608224830031759e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.09027011e-14 2.85403087e-14 2.91706305e-14 3.19690166e-14
+ 1.81016170e-14 1.22678358e-14 1.35006101e-14 1.18226947e-14
+ 1.70817329e-14 1.66168277e-10 1.12186189e-10]
+Compact integer gauges: (array([-3, -1,  0,  1]), array([ 66,  28, 598, 238]))
+Maximum Fourier edge fraction: 4.954690538192583e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_021/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_021/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_022; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 8.009206e-13 1.026826e-10 6.358646e-10
+closure_4T                   min/mean/max = 5.802316e-13 7.006327e-11 4.710795e-10
+semigroup_4T                 min/mean/max = 2.077037e-16 3.564218e-14 5.889170e-13
+predicted_4T                 min/mean/max = 5.802326e-13 7.006328e-11 4.710797e-10
+offdiag_4T                   min/mean/max = 3.072697e-21 2.209072e-17 1.204558e-15
+gram_unitarity               min/mean/max = 3.925243e-17 3.409139e-13 7.571370e-12
+gauge_T_error                min/mean/max = 1.350716e-15 3.249852e-15 5.426925e-15
+gauge_4T_error               min/mean/max = 5.398085e-15 1.301261e-14 2.178669e-14
+Exact timing errors / T: {'phase_grid': 2.55351295663786e-15, 'T': 1.3322676295501878e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 4.551914400963142e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.09302444e-14 2.53542721e-14 3.52669690e-14 3.30255678e-14
+ 3.73432273e-14 3.17519805e-14 1.06604340e-14 1.82866811e-14
+ 1.24181346e-14 1.82686269e-10 1.18876037e-10]
+Compact integer gauges: (array([-3, -2, -1,  0,  1,  4]), array([ 42,   6,  28, 613, 238,   3]))
+Maximum Fourier edge fraction: 5.4008548157814705e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_022/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_022/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_023; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000002e+00
+closure_T                    min/mean/max = 1.069870e-12 1.223121e-10 6.693458e-10
+closure_4T                   min/mean/max = 4.514756e-13 9.570096e-11 1.043221e-09
+semigroup_4T                 min/mean/max = 6.765147e-16 4.530227e-14 7.967958e-13
+predicted_4T                 min/mean/max = 4.514776e-13 9.570098e-11 1.043221e-09
+offdiag_4T                   min/mean/max = 3.164160e-21 3.100342e-17 1.888035e-15
+gram_unitarity               min/mean/max = 1.036321e-19 3.595647e-13 8.119107e-12
+gauge_T_error                min/mean/max = 1.777224e-15 3.454245e-15 5.476506e-15
+gauge_4T_error               min/mean/max = 7.051446e-15 1.382239e-14 2.199026e-14
+Exact timing errors / T: {'phase_grid': 3.6637359812630166e-15, 'T': 2.886579864025407e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 5.218048215738236e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [9.45766036e-15 1.74307286e-14 1.50974211e-14 3.54294139e-14
+ 3.83493756e-14 3.46397431e-14 3.69399425e-14 2.56224754e-14
+ 1.83001925e-14 2.08896599e-10 1.77984846e-10]
+Compact integer gauges: (array([-3, -1,  0,  1,  4]), array([ 18,  15, 603, 281,  13]))
+Maximum Fourier edge fraction: 5.924746296423388e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_023/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_023/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_024; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.077833e-12 1.304161e-10 6.771027e-10
+closure_4T                   min/mean/max = 8.230875e-13 1.126324e-10 1.330754e-09
+semigroup_4T                 min/mean/max = 4.232156e-16 4.785269e-14 7.935757e-13
+predicted_4T                 min/mean/max = 8.230886e-13 1.126324e-10 1.330754e-09
+offdiag_4T                   min/mean/max = 2.324220e-21 2.468544e-17 8.981880e-16
+gram_unitarity               min/mean/max = 4.906604e-18 3.825902e-13 8.695834e-12
+gauge_T_error                min/mean/max = 1.613647e-15 2.974124e-15 4.508380e-15
+gauge_4T_error               min/mean/max = 6.473657e-15 1.190208e-14 1.825912e-14
+Exact timing errors / T: {'phase_grid': 4.1772141301521515e-15, 'T': 3.9968028886505635e-15, 'fourT': 5.329070518200751e-15}
+Max ||multiplier|-1|: 1.1479706074624119e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.33001641e-14 3.11437869e-14 3.25119205e-14 3.15239593e-14
+ 3.37124930e-14 2.32421497e-14 1.75268311e-14 2.13767686e-14
+ 5.44292432e-15 2.18886828e-10 2.26427981e-10]
+Compact integer gauges: (array([-3, -1,  0,  1]), array([ 19,  31, 599, 281]))
+Maximum Fourier edge fraction: 6.047102464404113e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_024/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_024/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_025; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 1.004134e-12 1.373523e-10 6.790191e-10
+closure_4T                   min/mean/max = 7.316069e-13 1.306686e-10 1.527962e-09
+semigroup_4T                 min/mean/max = 4.172578e-16 5.065203e-14 6.728281e-13
+predicted_4T                 min/mean/max = 7.316078e-13 1.306686e-10 1.527962e-09
+offdiag_4T                   min/mean/max = 4.412479e-21 2.279619e-17 1.744463e-15
+gram_unitarity               min/mean/max = 7.850465e-17 4.179876e-13 9.486882e-12
+gauge_T_error                min/mean/max = 1.640164e-15 3.483271e-15 5.608855e-15
+gauge_4T_error               min/mean/max = 6.725847e-15 1.393692e-14 2.243293e-14
+Exact timing errors / T: {'phase_grid': 4.218847493575595e-15, 'T': 1.6653345369377348e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 3.9324099532223045e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.65657096e-14 3.76816982e-14 3.76582630e-14 3.18843321e-14
+ 2.97248231e-14 2.41527506e-14 3.05052504e-14 9.96794439e-15
+ 4.06917037e-14 2.26545215e-10 2.78958679e-10]
+Compact integer gauges: (array([-2, -1,  0,  1,  4]), array([ 11,  21, 608, 282,   8]))
+Maximum Fourier edge fraction: 6.073454294131593e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_025/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_025/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_026; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 7.592976e-13 1.453237e-10 6.847363e-10
+closure_4T                   min/mean/max = 6.096470e-13 1.633311e-10 1.754634e-09
+semigroup_4T                 min/mean/max = 3.330669e-16 6.179678e-14 8.131568e-13
+predicted_4T                 min/mean/max = 6.096498e-13 1.633311e-10 1.754634e-09
+offdiag_4T                   min/mean/max = 1.512836e-21 3.999648e-17 2.783084e-15
+gram_unitarity               min/mean/max = 7.850462e-17 4.800325e-13 1.077735e-11
+gauge_T_error                min/mean/max = 1.443290e-15 2.870023e-15 4.904576e-15
+gauge_4T_error               min/mean/max = 5.834323e-15 1.147059e-14 1.963087e-14
+Exact timing errors / T: {'phase_grid': 2.7755575615628914e-15, 'T': 7.771561172376096e-16, 'fourT': 2.6645352591003757e-15}
+Max ||multiplier|-1|: 7.263079027097774e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [4.06788010e-14 3.75042874e-14 4.21217558e-14 2.44550034e-14
+ 1.46108966e-14 1.83740572e-14 1.61403399e-14 2.60018194e-14
+ 3.94967884e-14 2.34348161e-10 3.52949739e-10]
+Compact integer gauges: (array([-3, -2, -1,  0,  1,  4]), array([  8,   9,   2, 602, 304,   5]))
+Maximum Fourier edge fraction: 6.170457182062056e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_026/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_026/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_027; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 6.813168e-13 1.489950e-10 6.869685e-10
+closure_4T                   min/mean/max = 9.123545e-13 1.838763e-10 1.840776e-09
+semigroup_4T                 min/mean/max = 2.351558e-16 6.382924e-14 9.058517e-13
+predicted_4T                 min/mean/max = 9.123555e-13 1.838763e-10 1.840776e-09
+offdiag_4T                   min/mean/max = 5.915881e-22 5.307221e-17 3.926601e-15
+gram_unitarity               min/mean/max = 7.850462e-17 5.026057e-13 1.148028e-11
+gauge_T_error                min/mean/max = 1.421779e-15 3.041260e-15 5.047014e-15
+gauge_4T_error               min/mean/max = 5.773160e-15 1.215602e-14 2.018317e-14
+Exact timing errors / T: {'phase_grid': 1.9984014443252818e-15, 'T': 2.3314683517128287e-15, 'fourT': 3.1086244689504383e-15}
+Max ||multiplier|-1|: 7.94475596421762e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.31448753e-14 7.68378104e-15 5.72035743e-15 3.45934391e-15
+ 6.70420151e-15 3.63977082e-15 5.84163957e-15 8.12918371e-15
+ 1.39975874e-14 2.37664495e-10 3.91042860e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 18, 605, 307]))
+Maximum Fourier edge fraction: 6.2032196238532446e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_027/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_027/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_028; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000002e+00
+closure_T                    min/mean/max = 2.447951e-13 1.568042e-10 6.812720e-10
+closure_4T                   min/mean/max = 6.769719e-13 2.489375e-10 1.872002e-09
+semigroup_4T                 min/mean/max = 6.389813e-16 7.900957e-14 1.009253e-12
+predicted_4T                 min/mean/max = 6.769723e-13 2.489375e-10 1.872003e-09
+offdiag_4T                   min/mean/max = 9.033278e-21 9.719022e-17 7.416813e-15
+gram_unitarity               min/mean/max = 1.177614e-19 6.225765e-13 1.456325e-11
+gauge_T_error                min/mean/max = 1.299483e-15 4.218826e-15 6.516357e-15
+gauge_4T_error               min/mean/max = 5.075027e-15 1.688032e-14 2.605810e-14
+Exact timing errors / T: {'phase_grid': 3.3306690738754696e-16, 'T': 4.440892098500626e-16, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 1.1248779685502086e-12
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.65051371e-15 1.30171837e-15 9.84161561e-16 8.88649667e-16
+ 1.15329064e-15 3.49413372e-16 6.14079224e-16 1.08287817e-15
+ 2.60393109e-15 2.42799283e-10 4.93189398e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 38, 556, 336]))
+Maximum Fourier edge fraction: 6.066779130889965e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_028/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_028/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_029; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 2.264946e-13 1.603088e-10 6.780728e-10
+closure_4T                   min/mean/max = 6.401539e-13 2.791560e-10 1.942103e-09
+semigroup_4T                 min/mean/max = 6.550551e-16 7.821769e-14 8.126238e-13
+predicted_4T                 min/mean/max = 6.401550e-13 2.791560e-10 1.942103e-09
+offdiag_4T                   min/mean/max = 7.260882e-21 1.132887e-16 8.495570e-15
+gram_unitarity               min/mean/max = 7.850463e-17 6.696732e-13 1.686317e-11
+gauge_T_error                min/mean/max = 1.894712e-15 4.088657e-15 6.155483e-15
+gauge_4T_error               min/mean/max = 7.646245e-15 1.635236e-14 2.457583e-14
+Exact timing errors / T: {'phase_grid': 4.773959005888173e-15, 'T': 5.329070518200751e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 5.495603971894525e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.04820688e-14 1.94469843e-14 1.32706983e-14 6.51758401e-15
+ 1.34525323e-14 6.92302446e-15 1.37181868e-14 1.95212905e-14
+ 3.01998253e-14 2.44846119e-10 5.34926220e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 38, 541, 351]))
+Maximum Fourier edge fraction: 6.014234566911514e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_029/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_029/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_030; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 4.565774e-13 1.624715e-10 6.734080e-10
+closure_4T                   min/mean/max = 1.126046e-12 3.024266e-10 1.917312e-09
+semigroup_4T                 min/mean/max = 4.710277e-16 7.903468e-14 7.845337e-13
+predicted_4T                 min/mean/max = 1.126046e-12 3.024266e-10 1.917312e-09
+offdiag_4T                   min/mean/max = 3.019277e-21 1.255968e-16 8.816542e-15
+gram_unitarity               min/mean/max = 4.388550e-17 7.663599e-13 2.009701e-11
+gauge_T_error                min/mean/max = 2.220446e-15 4.161430e-15 5.763811e-15
+gauge_4T_error               min/mean/max = 9.046274e-15 1.665175e-14 2.321621e-14
+Exact timing errors / T: {'phase_grid': 3.0253577421035516e-15, 'T': 3.885780586188048e-15, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 8.346656699131927e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.49650432e-14 3.35081139e-14 4.78690568e-14 4.53875842e-14
+ 4.96664114e-14 4.43976945e-14 1.60685379e-14 2.22089355e-14
+ 1.29557734e-14 2.44984929e-10 5.63339603e-10]
+Compact integer gauges: (array([0, 1]), array([558, 372]))
+Maximum Fourier edge fraction: 5.916146705220826e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_030/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_030/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_031; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 6.393554e-13 1.633081e-10 6.678990e-10
+closure_4T                   min/mean/max = 1.315574e-12 3.137118e-10 1.938557e-09
+semigroup_4T                 min/mean/max = 5.468095e-16 8.199425e-14 9.739487e-13
+predicted_4T                 min/mean/max = 1.315575e-12 3.137118e-10 1.938557e-09
+offdiag_4T                   min/mean/max = 2.860342e-21 1.351783e-16 8.622514e-15
+gram_unitarity               min/mean/max = 7.850477e-17 8.632299e-13 2.294882e-11
+gauge_T_error                min/mean/max = 1.752782e-15 3.186920e-15 4.779120e-15
+gauge_4T_error               min/mean/max = 7.072391e-15 1.272941e-14 1.891204e-14
+Exact timing errors / T: {'phase_grid': 2.220446049250313e-15, 'T': 2.55351295663786e-15, 'fourT': 3.1086244689504383e-15}
+Max ||multiplier|-1|: 1.2423395645555502e-12
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.46136358e-14 9.37713527e-15 6.76733310e-15 3.30048381e-15
+ 6.26379825e-15 3.14880789e-15 6.64935941e-15 9.29618544e-15
+ 1.50546560e-14 2.44179122e-10 5.74390859e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 26, 541, 363]))
+Maximum Fourier edge fraction: 5.819162988677805e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_031/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_031/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_032; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 7.354608e-13 1.641305e-10 6.667807e-10
+closure_4T                   min/mean/max = 1.342522e-12 3.191043e-10 1.945725e-09
+semigroup_4T                 min/mean/max = 6.563035e-16 7.949280e-14 9.773420e-13
+predicted_4T                 min/mean/max = 1.342522e-12 3.191044e-10 1.945726e-09
+offdiag_4T                   min/mean/max = 3.611117e-21 1.377811e-16 8.366346e-15
+gram_unitarity               min/mean/max = 3.925265e-17 9.109504e-13 2.466877e-11
+gauge_T_error                min/mean/max = 1.341488e-15 3.363036e-15 5.426481e-15
+gauge_4T_error               min/mean/max = 5.250134e-15 1.344681e-14 2.143306e-14
+Exact timing errors / T: {'phase_grid': 5.10702591327572e-15, 'T': 2.886579864025407e-15, 'fourT': 4.440892098500626e-15}
+Max ||multiplier|-1|: 1.2616574451840279e-12
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [5.51194881e-14 6.23143169e-14 5.17929964e-14 5.95820140e-14
+ 5.36404664e-14 1.92429101e-14 3.00166637e-14 3.77743981e-14
+ 4.49920075e-14 2.44369029e-10 5.79527358e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([521, 363,  36,  10]))
+Maximum Fourier edge fraction: 5.803016143806948e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_032/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_032/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_033; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.018400e-12 1.654135e-10 6.594346e-10
+closure_4T                   min/mean/max = 1.120466e-12 3.292462e-10 1.939050e-09
+semigroup_4T                 min/mean/max = 3.284447e-16 8.141607e-14 9.536860e-13
+predicted_4T                 min/mean/max = 1.120469e-12 3.292462e-10 1.939051e-09
+offdiag_4T                   min/mean/max = 1.747270e-21 1.475961e-16 7.225713e-15
+gram_unitarity               min/mean/max = 1.794584e-19 1.079257e-12 3.120981e-11
+gauge_T_error                min/mean/max = 1.291156e-15 3.599466e-15 5.543338e-15
+gauge_4T_error               min/mean/max = 5.163731e-15 1.438343e-14 2.222360e-14
+Exact timing errors / T: {'phase_grid': 7.105427357601002e-15, 'T': 5.329070518200751e-15, 'fourT': 7.105427357601002e-15}
+Max ||multiplier|-1|: 1.255218151641202e-12
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.85416425e-14 3.41914013e-14 1.95849822e-14 2.25926886e-14
+ 3.74041043e-14 3.95820028e-14 3.07348786e-14 3.14440869e-14
+ 1.70609787e-14 2.43106760e-10 5.83680594e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 44, 513, 373]))
+Maximum Fourier edge fraction: 5.68422407735459e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_033/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_033/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_034; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.569849e-12 1.670637e-10 6.432962e-10
+closure_4T                   min/mean/max = 8.262239e-13 3.308906e-10 1.840023e-09
+semigroup_4T                 min/mean/max = 1.359740e-16 7.237782e-14 7.786999e-13
+predicted_4T                 min/mean/max = 8.262278e-13 3.308907e-10 1.840023e-09
+offdiag_4T                   min/mean/max = 2.053921e-21 1.528924e-16 5.875719e-15
+gram_unitarity               min/mean/max = 1.360518e-20 1.686851e-12 6.020737e-11
+gauge_T_error                min/mean/max = 1.143045e-15 2.701086e-15 4.394528e-15
+gauge_4T_error               min/mean/max = 4.556059e-15 1.080370e-14 1.758819e-14
+Exact timing errors / T: {'phase_grid': 5.773159728050814e-15, 'T': 9.992007221626409e-16, 'fourT': 3.9968028886505635e-15}
+Max ||multiplier|-1|: 1.0779155346085645e-12
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [7.41582589e-14 7.24666236e-14 6.54813277e-14 5.41559037e-14
+ 2.76738705e-14 2.90296458e-14 2.99398051e-14 5.53319646e-14
+ 6.64397293e-14 2.39117425e-10 5.61204271e-10]
+Compact integer gauges: (array([0, 1, 2]), array([464, 451,  15]))
+Maximum Fourier edge fraction: 5.391079867669076e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_034/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_034/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_035; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.745195e-12 1.675893e-10 6.383296e-10
+closure_4T                   min/mean/max = 1.209432e-12 3.270099e-10 1.763441e-09
+semigroup_4T                 min/mean/max = 4.098062e-16 6.727530e-14 6.482406e-13
+predicted_4T                 min/mean/max = 1.209432e-12 3.270099e-10 1.763441e-09
+offdiag_4T                   min/mean/max = 3.339827e-21 1.613084e-16 6.178985e-15
+gram_unitarity               min/mean/max = 4.213582e-19 2.068738e-12 7.973282e-11
+gauge_T_error                min/mean/max = 1.295921e-15 2.631225e-15 4.064239e-15
+gauge_4T_error               min/mean/max = 5.041745e-15 1.054121e-14 1.625863e-14
+Exact timing errors / T: {'phase_grid': 7.882583474838611e-15, 'T': 1.1102230246251565e-15, 'fourT': 4.440892098500626e-15}
+Max ||multiplier|-1|: 7.451816941284051e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.32212212e-14 5.85696574e-14 6.62066987e-14 7.18596768e-14
+ 7.18327234e-14 6.39175527e-14 5.27051227e-14 2.43485394e-14
+ 3.48145977e-14 2.37890405e-10 5.47674332e-10]
+Compact integer gauges: (array([0, 1, 2]), array([464, 451,  15]))
+Maximum Fourier edge fraction: 5.3153328896356564e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_035/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_035/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_036; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 1.908916e-12 1.674500e-10 6.310956e-10
+closure_4T                   min/mean/max = 1.558290e-12 3.204423e-10 1.674249e-09
+semigroup_4T                 min/mean/max = 5.867318e-16 6.804086e-14 6.265242e-13
+predicted_4T                 min/mean/max = 1.558290e-12 3.204423e-10 1.674249e-09
+offdiag_4T                   min/mean/max = 1.528136e-21 1.788361e-16 8.664855e-15
+gram_unitarity               min/mean/max = 1.110223e-16 2.642616e-12 1.139994e-10
+gauge_T_error                min/mean/max = 1.005350e-15 2.396924e-15 4.057518e-15
+gauge_4T_error               min/mean/max = 4.090371e-15 9.575985e-15 1.623481e-14
+Exact timing errors / T: {'phase_grid': 5.828670879282072e-15, 'T': 3.1086244689504383e-15, 'fourT': 4.440892098500626e-15}
+Max ||multiplier|-1|: 7.773781618425346e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.48024593e-14 1.02409938e-14 2.27976897e-14 4.35219586e-14
+ 5.25052122e-14 3.24062397e-14 2.31966507e-14 1.96243699e-14
+ 3.69587162e-14 2.35809699e-10 5.29973807e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 37, 476, 417]))
+Maximum Fourier edge fraction: 5.196166750324098e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_036/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_036/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_037; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 1.984821e-12 1.670824e-10 6.264727e-10
+closure_4T                   min/mean/max = 1.687763e-12 3.162051e-10 1.643281e-09
+semigroup_4T                 min/mean/max = 4.526913e-16 6.576903e-14 6.449052e-13
+predicted_4T                 min/mean/max = 1.687764e-12 3.162051e-10 1.643281e-09
+offdiag_4T                   min/mean/max = 5.297205e-21 1.850175e-16 9.343029e-15
+gram_unitarity               min/mean/max = 7.850475e-17 3.038835e-12 1.446992e-10
+gauge_T_error                min/mean/max = 1.354174e-15 3.395639e-15 6.068063e-15
+gauge_4T_error               min/mean/max = 5.413476e-15 1.358827e-14 2.427860e-14
+Exact timing errors / T: {'phase_grid': 5.995204332975845e-15, 'T': 5.329070518200751e-15, 'fourT': 5.329070518200751e-15}
+Max ||multiplier|-1|: 6.035172361862351e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.68684274e-14 1.10782473e-14 2.04135537e-14 2.38533897e-14
+ 3.54384717e-14 5.07552908e-14 4.26289872e-14 3.90154645e-14
+ 3.73842493e-14 2.34387718e-10 5.19645908e-10]
+Compact integer gauges: (array([0, 1]), array([486, 444]))
+Maximum Fourier edge fraction: 5.111017670396347e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_037/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_037/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_038; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 2.065305e-12 1.671555e-10 6.235721e-10
+closure_4T                   min/mean/max = 1.785390e-12 3.126062e-10 1.612571e-09
+semigroup_4T                 min/mean/max = 4.336670e-16 6.503782e-14 6.644364e-13
+predicted_4T                 min/mean/max = 1.785391e-12 3.126062e-10 1.612572e-09
+offdiag_4T                   min/mean/max = 5.958965e-21 1.895833e-16 7.867913e-15
+gram_unitarity               min/mean/max = 8.777088e-17 3.538537e-12 1.831492e-10
+gauge_T_error                min/mean/max = 1.146652e-15 2.661635e-15 4.834572e-15
+gauge_4T_error               min/mean/max = 4.584484e-15 1.065183e-14 1.931278e-14
+Exact timing errors / T: {'phase_grid': 6.106226635438361e-15, 'T': 5.662137425588298e-15, 'fourT': 6.217248937900877e-15}
+Max ||multiplier|-1|: 2.552402733613235e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.87155622e-14 1.16198710e-14 2.10066690e-14 2.28879221e-14
+ 3.51008913e-14 5.16800696e-14 4.38015743e-14 4.04096332e-14
+ 3.99872382e-14 2.33608531e-10 5.10419840e-10]
+Compact integer gauges: (array([0, 1]), array([486, 444]))
+Maximum Fourier edge fraction: 5.070677263980686e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_038/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_038/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_039; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000015e+00
+closure_T                    min/mean/max = 2.143072e-12 1.671890e-10 6.205959e-10
+closure_4T                   min/mean/max = 1.842620e-12 3.087643e-10 1.577705e-09
+semigroup_4T                 min/mean/max = 5.926969e-16 6.990675e-14 6.770025e-13
+predicted_4T                 min/mean/max = 1.842620e-12 3.087643e-10 1.577705e-09
+offdiag_4T                   min/mean/max = 6.626260e-21 1.790854e-16 6.678487e-15
+gram_unitarity               min/mean/max = 8.777085e-17 4.157864e-12 2.258801e-10
+gauge_T_error                min/mean/max = 1.294731e-15 2.468833e-15 4.577567e-15
+gauge_4T_error               min/mean/max = 4.866337e-15 9.858143e-15 1.817417e-14
+Exact timing errors / T: {'phase_grid': 6.994405055138486e-15, 'T': 6.661338147750939e-16, 'fourT': 5.329070518200751e-15}
+Max ||multiplier|-1|: 4.740652315149418e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.10830283e-14 5.24150418e-14 5.03419948e-14 4.96796608e-14
+ 5.35654826e-14 3.22169472e-14 2.31836244e-14 2.55404313e-14
+ 1.73898076e-14 2.32795642e-10 5.00844988e-10]
+Compact integer gauges: (array([0, 1]), array([480, 450]))
+Maximum Fourier edge fraction: 5.019282865178106e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_039/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_039/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_040; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000003e+00
+closure_T                    min/mean/max = 2.214081e-12 1.667185e-10 6.158101e-10
+closure_4T                   min/mean/max = 1.854513e-12 3.038654e-10 1.534815e-09
+semigroup_4T                 min/mean/max = 4.965068e-16 7.120752e-14 6.893934e-13
+predicted_4T                 min/mean/max = 1.854516e-12 3.038654e-10 1.534815e-09
+offdiag_4T                   min/mean/max = 1.681677e-21 2.027390e-16 8.390883e-15
+gram_unitarity               min/mean/max = 3.925726e-17 4.863533e-12 2.617390e-10
+gauge_T_error                min/mean/max = 1.241267e-15 3.482357e-15 6.306077e-15
+gauge_4T_error               min/mean/max = 4.902691e-15 1.392575e-14 2.518598e-14
+Exact timing errors / T: {'phase_grid': 4.9404924595819466e-15, 'T': 2.886579864025407e-15, 'fourT': 3.552713678800501e-15}
+Max ||multiplier|-1|: 6.498135363131041e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [7.01143007e-14 1.24353102e-14 5.08091762e-14 3.73980345e-14
+ 3.98981331e-14 4.17737027e-14 4.59436184e-14 5.39962957e-14
+ 3.41623023e-14 2.31304788e-10 4.89624643e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 39, 446, 445]))
+Maximum Fourier edge fraction: 4.9422240355086886e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_040/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_040/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_041; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 2.287992e-12 1.666810e-10 6.127096e-10
+closure_4T                   min/mean/max = 1.827989e-12 2.996604e-10 1.492985e-09
+semigroup_4T                 min/mean/max = 2.719480e-16 6.941907e-14 7.099242e-13
+predicted_4T                 min/mean/max = 1.827989e-12 2.996604e-10 1.492985e-09
+offdiag_4T                   min/mean/max = 7.979823e-21 2.151391e-16 1.274867e-14
+gram_unitarity               min/mean/max = 8.777084e-17 5.608731e-12 3.161512e-10
+gauge_T_error                min/mean/max = 1.268585e-15 3.558062e-15 6.445034e-15
+gauge_4T_error               min/mean/max = 5.043349e-15 1.423196e-14 2.591723e-14
+Exact timing errors / T: {'phase_grid': 4.218847493575595e-15, 'T': 4.3298697960381105e-15, 'fourT': 4.440892098500626e-16}
+Max ||multiplier|-1|: 5.286882043264995e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.34908032e-14 3.71037113e-14 4.09178154e-14 5.21868481e-14
+ 3.87322448e-14 2.57263453e-14 2.06037935e-14 7.68248015e-15
+ 1.39138968e-14 2.30438314e-10 4.79601937e-10]
+Compact integer gauges: (array([0, 1]), array([470, 460]))
+Maximum Fourier edge fraction: 4.895310394756447e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_041/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_041/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_042; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 2.361573e-12 1.666085e-10 6.095271e-10
+closure_4T                   min/mean/max = 1.764563e-12 2.953072e-10 1.462867e-09
+semigroup_4T                 min/mean/max = 4.339999e-16 6.517975e-14 7.202196e-13
+predicted_4T                 min/mean/max = 1.764563e-12 2.953073e-10 1.462867e-09
+offdiag_4T                   min/mean/max = 8.667453e-21 1.939504e-16 9.919544e-15
+gram_unitarity               min/mean/max = 7.850470e-17 6.377816e-12 3.939456e-10
+gauge_T_error                min/mean/max = 1.053250e-15 2.677293e-15 5.385440e-15
+gauge_4T_error               min/mean/max = 4.069661e-15 1.070582e-14 2.170848e-14
+Exact timing errors / T: {'phase_grid': 4.107825191113079e-15, 'T': 3.774758283725532e-15, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 3.615996391204135e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.99943662e-14 3.47166783e-14 4.02694559e-14 5.16331468e-14
+ 3.92066736e-14 2.61215678e-14 2.01766501e-14 5.92140727e-15
+ 1.30541530e-14 2.29544339e-10 4.69434201e-10]
+Compact integer gauges: (array([0, 1]), array([454, 476]))
+Maximum Fourier edge fraction: 4.83972882389073e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_042/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_042/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_043; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 2.425123e-12 1.660493e-10 6.046514e-10
+closure_4T                   min/mean/max = 1.655996e-12 2.900393e-10 1.435334e-09
+semigroup_4T                 min/mean/max = 5.259846e-16 6.343187e-14 7.101632e-13
+predicted_4T                 min/mean/max = 1.655997e-12 2.900393e-10 1.435334e-09
+offdiag_4T                   min/mean/max = 9.363410e-21 1.660222e-16 6.253140e-15
+gram_unitarity               min/mean/max = 3.925243e-17 7.191056e-12 4.744351e-10
+gauge_T_error                min/mean/max = 1.191875e-15 3.726243e-15 6.796206e-15
+gauge_4T_error               min/mean/max = 4.794570e-15 1.490703e-14 2.716311e-14
+Exact timing errors / T: {'phase_grid': 6.772360450213455e-15, 'T': 7.549516567451064e-15, 'fourT': 4.440892098500626e-15}
+Max ||multiplier|-1|: 3.412825577697731e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [4.25292012e-14 2.72384461e-14 1.85646947e-14 9.59248148e-15
+ 1.94489100e-14 9.84881223e-15 1.88526573e-14 2.76160172e-14
+ 4.30564037e-14 2.28002506e-10 4.57931428e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 32, 436, 462]))
+Maximum Fourier edge fraction: 4.76859078220676e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_043/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_043/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_044; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 2.494973e-12 1.659151e-10 6.013725e-10
+closure_4T                   min/mean/max = 1.523824e-12 2.854814e-10 1.408248e-09
+semigroup_4T                 min/mean/max = 5.664450e-16 6.536591e-14 7.032881e-13
+predicted_4T                 min/mean/max = 1.523825e-12 2.854814e-10 1.408248e-09
+offdiag_4T                   min/mean/max = 6.686724e-21 1.846603e-16 8.301083e-15
+gram_unitarity               min/mean/max = 8.777097e-17 8.022318e-12 5.372231e-10
+gauge_T_error                min/mean/max = 1.247458e-15 4.118019e-15 6.995286e-15
+gauge_4T_error               min/mean/max = 4.961343e-15 1.647581e-14 2.785133e-14
+Exact timing errors / T: {'phase_grid': 8.021361352916756e-15, 'T': 3.6637359812630166e-15, 'fourT': 5.773159728050814e-15}
+Max ||multiplier|-1|: 6.021849685566849e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [4.43968632e-14 6.06339108e-14 3.40622783e-14 2.50949257e-14
+ 1.59787002e-14 2.41715730e-14 1.91887195e-14 2.77620301e-14
+ 5.09997358e-14 2.27066535e-10 4.47686229e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 13, 455, 462]))
+Maximum Fourier edge fraction: 4.712218080216973e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_044/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_044/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_045; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 2.554444e-12 1.653062e-10 5.964595e-10
+closure_4T                   min/mean/max = 1.360596e-12 2.800981e-10 1.374229e-09
+semigroup_4T                 min/mean/max = 5.357123e-16 6.663441e-14 6.905405e-13
+predicted_4T                 min/mean/max = 1.360596e-12 2.800982e-10 1.374229e-09
+offdiag_4T                   min/mean/max = 3.699182e-21 1.998135e-16 9.686864e-15
+gram_unitarity               min/mean/max = 7.972182e-17 8.763220e-12 5.605508e-10
+gauge_T_error                min/mean/max = 1.694682e-15 3.954236e-15 6.955527e-15
+gauge_4T_error               min/mean/max = 6.761431e-15 1.580999e-14 2.768109e-14
+Exact timing errors / T: {'phase_grid': 6.106226635438361e-15, 'T': 6.661338147750939e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 6.393774398816277e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.46604229e-14 5.18920865e-14 6.61883018e-14 7.62740967e-14
+ 7.79431492e-14 7.14238224e-14 6.04601099e-14 3.83487537e-14
+ 2.42256110e-14 2.25502555e-10 4.36289718e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([413, 474,  30,  13]))
+Maximum Fourier edge fraction: 4.639901989606165e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_045/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_045/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_046; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 2.636025e-12 1.657009e-10 5.947719e-10
+closure_4T                   min/mean/max = 1.193617e-12 2.763411e-10 1.344904e-09
+semigroup_4T                 min/mean/max = 1.755417e-16 6.493734e-14 6.844908e-13
+predicted_4T                 min/mean/max = 1.193618e-12 2.763411e-10 1.344904e-09
+offdiag_4T                   min/mean/max = 2.229768e-21 2.068090e-16 8.511663e-15
+gram_unitarity               min/mean/max = 7.850493e-17 9.327981e-12 5.933357e-10
+gauge_T_error                min/mean/max = 1.200890e-15 2.636897e-15 4.789425e-15
+gauge_4T_error               min/mean/max = 4.733770e-15 1.054186e-14 1.897832e-14
+Exact timing errors / T: {'phase_grid': 7.105427357601002e-15, 'T': 4.107825191113079e-15, 'fourT': 7.549516567451064e-15}
+Max ||multiplier|-1|: 4.587441537751147e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.20711720e-14 3.34869317e-14 1.79652134e-14 2.40353137e-14
+ 3.79922433e-14 4.75438301e-14 4.07336147e-14 3.32654449e-14
+ 1.09443514e-14 2.25237245e-10 4.27462130e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 45, 414, 471]))
+Maximum Fourier edge fraction: 4.612227074227039e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_046/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_046/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_047; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 2.756992e-12 1.649761e-10 5.870115e-10
+closure_4T                   min/mean/max = 8.848707e-13 2.665239e-10 1.272943e-09
+semigroup_4T                 min/mean/max = 3.444376e-16 6.178138e-14 6.435245e-13
+predicted_4T                 min/mean/max = 8.848711e-13 2.665239e-10 1.272943e-09
+offdiag_4T                   min/mean/max = 4.721230e-21 2.006183e-16 5.926588e-15
+gram_unitarity               min/mean/max = 1.676577e-19 1.000373e-11 5.899008e-10
+gauge_T_error                min/mean/max = 1.544430e-15 3.999257e-15 6.898814e-15
+gauge_4T_error               min/mean/max = 6.174727e-15 1.600644e-14 2.760073e-14
+Exact timing errors / T: {'phase_grid': 6.994405055138486e-15, 'T': 1.1102230246251565e-15, 'fourT': 4.440892098500626e-15}
+Max ||multiplier|-1|: 1.5565326805244695e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [5.67389276e-14 3.85408065e-14 2.40817465e-14 2.77355442e-14
+ 2.18197090e-14 3.52820587e-14 6.05363197e-14 5.44560822e-14
+ 5.89622113e-14 2.22882332e-10 4.06905310e-10]
+Compact integer gauges: (array([-3, -2,  0,  1]), array([ 12,  17, 424, 477]))
+Maximum Fourier edge fraction: 4.4953269062813265e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_047/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_047/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_048; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 2.870382e-12 1.641607e-10 5.791624e-10
+closure_4T                   min/mean/max = 8.489020e-13 2.568315e-10 1.241949e-09
+semigroup_4T                 min/mean/max = 2.077037e-16 6.000717e-14 5.691161e-13
+predicted_4T                 min/mean/max = 8.489051e-13 2.568315e-10 1.241949e-09
+offdiag_4T                   min/mean/max = 1.214339e-21 1.874297e-16 6.458004e-15
+gram_unitarity               min/mean/max = 9.274353e-20 1.049185e-11 5.300390e-10
+gauge_T_error                min/mean/max = 1.447554e-15 3.571341e-15 5.264322e-15
+gauge_4T_error               min/mean/max = 5.654513e-15 1.428628e-14 2.105454e-14
+Exact timing errors / T: {'phase_grid': 2.3314683517128287e-15, 'T': 2.4424906541753444e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 2.886579864025407e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.37286210e-14 8.70592156e-15 5.97672452e-15 3.16209559e-15
+ 6.54372054e-15 3.37978104e-15 6.25769114e-15 9.09160601e-15
+ 1.41302471e-14 2.20481844e-10 3.87173193e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 32, 408, 490]))
+Maximum Fourier edge fraction: 4.377132268196601e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_048/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_048/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_049; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 3.017584e-12 1.623201e-10 5.656481e-10
+closure_4T                   min/mean/max = 1.406440e-12 2.422213e-10 1.171116e-09
+semigroup_4T                 min/mean/max = 2.113802e-16 5.157127e-14 4.484865e-13
+predicted_4T                 min/mean/max = 1.406441e-12 2.422213e-10 1.171116e-09
+offdiag_4T                   min/mean/max = 1.833709e-21 2.189635e-16 6.190688e-15
+gram_unitarity               min/mean/max = 9.340281e-20 1.078862e-11 5.948683e-10
+gauge_T_error                min/mean/max = 1.180183e-15 2.603065e-15 4.722365e-15
+gauge_4T_error               min/mean/max = 4.727256e-15 1.040129e-14 1.902349e-14
+Exact timing errors / T: {'phase_grid': 7.993605777301127e-15, 'T': 1.9984014443252818e-15, 'fourT': 1.3322676295501878e-15}
+Max ||multiplier|-1|: 2.601252546696742e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [4.24693011e-14 7.12590392e-14 3.07780962e-14 3.39398480e-14
+ 7.14855680e-14 3.33972083e-14 3.07751719e-14 7.13812794e-14
+ 4.33033769e-14 2.16193066e-10 3.58589621e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 63, 363, 504]))
+Maximum Fourier edge fraction: 4.174850231620927e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_049/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_049/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_050; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 3.157842e-12 1.608125e-10 5.537625e-10
+closure_4T                   min/mean/max = 2.124662e-12 2.291628e-10 1.084169e-09
+semigroup_4T                 min/mean/max = 4.046036e-16 4.583038e-14 3.866396e-13
+predicted_4T                 min/mean/max = 2.124664e-12 2.291628e-10 1.084169e-09
+offdiag_4T                   min/mean/max = 7.654791e-21 2.129267e-16 5.873244e-15
+gram_unitarity               min/mean/max = 2.110607e-19 1.072485e-11 5.049013e-10
+gauge_T_error                min/mean/max = 1.355200e-15 3.397794e-15 5.911938e-15
+gauge_4T_error               min/mean/max = 5.613218e-15 1.358598e-14 2.367484e-14
+Exact timing errors / T: {'phase_grid': 4.884981308350689e-15, 'T': 4.9960036108132044e-15, 'fourT': 1.3322676295501878e-15}
+Max ||multiplier|-1|: 3.327338404801594e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.28951809e-14 4.95232089e-14 6.90013764e-14 8.05093012e-14
+ 8.42915027e-14 7.98822754e-14 6.83513177e-14 4.78161849e-14
+ 2.37255479e-14 2.12505826e-10 3.34066061e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([365, 517,  32,  16]))
+Maximum Fourier edge fraction: 4.0022385047258145e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_050/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_050/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_051; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 3.392802e-12 1.574509e-10 5.300463e-10
+closure_4T                   min/mean/max = 3.010986e-12 2.079274e-10 9.724487e-10
+semigroup_4T                 min/mean/max = 2.830524e-16 3.462049e-14 2.941505e-13
+predicted_4T                 min/mean/max = 3.010988e-12 2.079274e-10 9.724487e-10
+offdiag_4T                   min/mean/max = 1.537337e-21 2.262878e-16 7.877726e-15
+gram_unitarity               min/mean/max = 8.777084e-17 8.798575e-12 2.934820e-10
+gauge_T_error                min/mean/max = 1.348987e-15 3.203490e-15 5.477350e-15
+gauge_4T_error               min/mean/max = 5.404971e-15 1.280490e-14 2.169229e-14
+Exact timing errors / T: {'phase_grid': 5.88418203051333e-15, 'T': 6.106226635438361e-15, 'fourT': 4.884981308350689e-15}
+Max ||multiplier|-1|: 2.0627943797535409e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.48958977e-14 5.44695014e-14 7.34508874e-14 8.52180357e-14
+ 8.78189908e-14 8.21377263e-14 7.02379800e-14 4.71653081e-14
+ 2.49812393e-14 2.05087517e-10 2.94396702e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([329, 553,  30,  18]))
+Maximum Fourier edge fraction: 3.672925596801955e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_051/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_051/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_052; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 3.458748e-12 1.562522e-10 5.222068e-10
+closure_4T                   min/mean/max = 3.047488e-12 2.025820e-10 9.288481e-10
+semigroup_4T                 min/mean/max = 5.495324e-16 3.499619e-14 2.979790e-13
+predicted_4T                 min/mean/max = 3.047488e-12 2.025820e-10 9.288481e-10
+offdiag_4T                   min/mean/max = 7.823173e-21 2.354965e-16 7.813673e-15
+gram_unitarity               min/mean/max = 7.850485e-17 8.241203e-12 2.824358e-10
+gauge_T_error                min/mean/max = 2.775558e-15 4.587084e-15 6.893280e-15
+gauge_4T_error               min/mean/max = 1.102648e-14 1.834432e-14 2.744071e-14
+Exact timing errors / T: {'phase_grid': 8.215650382226158e-15, 'T': 1.2212453270876722e-15, 'fourT': 4.884981308350689e-15}
+Max ||multiplier|-1|: 2.927658115936538e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [8.42014733e-14 7.00067025e-14 3.76512921e-14 3.73731026e-14
+ 3.54408786e-14 6.89042827e-14 8.37065781e-14 9.23243327e-14
+ 9.41820900e-14 2.02624212e-10 2.83756663e-10]
+Compact integer gauges: (array([0, 1, 2]), array([323, 586,  21]))
+Maximum Fourier edge fraction: 3.566715645854213e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_052/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_052/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_053; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000002e+00
+closure_T                    min/mean/max = 3.591536e-12 1.542027e-10 5.075947e-10
+closure_4T                   min/mean/max = 2.713605e-12 1.945847e-10 8.577170e-10
+semigroup_4T                 min/mean/max = 5.978734e-16 3.588631e-14 2.691757e-13
+predicted_4T                 min/mean/max = 2.713605e-12 1.945847e-10 8.577171e-10
+offdiag_4T                   min/mean/max = 2.000922e-20 2.494551e-16 6.766961e-15
+gram_unitarity               min/mean/max = 8.777092e-17 8.075948e-12 2.737211e-10
+gauge_T_error                min/mean/max = 1.265849e-15 2.694990e-15 4.490660e-15
+gauge_4T_error               min/mean/max = 5.114261e-15 1.077906e-14 1.820563e-14
+Exact timing errors / T: {'phase_grid': 3.1086244689504383e-15, 'T': 3.4416913763379853e-15, 'fourT': 3.9968028886505635e-15}
+Max ||multiplier|-1|: 1.219024881038422e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.98805469e-14 1.23580565e-14 8.38087306e-15 4.54211382e-15
+ 9.24306472e-15 4.87984751e-15 8.63072215e-15 1.27400866e-14
+ 2.01646146e-14 1.98197172e-10 2.66359159e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 28, 326, 576]))
+Maximum Fourier edge fraction: 3.3713959894724793e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_053/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_053/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_054; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000006e+00
+closure_T                    min/mean/max = 3.634465e-12 1.526552e-10 4.990428e-10
+closure_4T                   min/mean/max = 2.352513e-12 1.908591e-10 8.353010e-10
+semigroup_4T                 min/mean/max = 6.614917e-16 3.336771e-14 2.519666e-13
+predicted_4T                 min/mean/max = 2.352513e-12 1.908591e-10 8.353010e-10
+offdiag_4T                   min/mean/max = 1.439922e-21 2.425708e-16 5.793014e-15
+gram_unitarity               min/mean/max = 8.777104e-17 7.501328e-12 2.454361e-10
+gauge_T_error                min/mean/max = 2.094765e-15 4.245889e-15 6.513519e-15
+gauge_4T_error               min/mean/max = 8.159950e-15 1.698148e-14 2.611173e-14
+Exact timing errors / T: {'phase_grid': 5.6066262743570405e-15, 'T': 2.220446049250313e-16, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 5.706546346573305e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.35005341e-14 2.55408573e-14 3.73622880e-14 5.80947078e-14
+ 5.79505550e-14 3.71511608e-14 2.49317626e-14 1.27396855e-14
+ 2.56309010e-14 1.95433768e-10 2.58123971e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 28, 318, 584]))
+Maximum Fourier edge fraction: 3.2599043926400845e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_054/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_054/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_055; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000003e+00
+closure_T                    min/mean/max = 3.716506e-12 1.499882e-10 4.837421e-10
+closure_4T                   min/mean/max = 1.506231e-12 1.851891e-10 7.767333e-10
+semigroup_4T                 min/mean/max = 6.933341e-16 2.797402e-14 1.989230e-13
+predicted_4T                 min/mean/max = 1.506231e-12 1.851891e-10 7.767333e-10
+offdiag_4T                   min/mean/max = 9.226037e-21 2.126965e-16 5.069699e-15
+gram_unitarity               min/mean/max = 7.850467e-17 5.760083e-12 1.475678e-10
+gauge_T_error                min/mean/max = 1.195747e-15 3.920059e-15 6.072892e-15
+gauge_4T_error               min/mean/max = 4.934251e-15 1.568448e-14 2.428478e-14
+Exact timing errors / T: {'phase_grid': 4.9960036108132044e-15, 'T': 1.9984014443252818e-15, 'fourT': 2.6645352591003757e-15}
+Max ||multiplier|-1|: 2.1360690993788012e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.25361282e-14 3.36503921e-14 4.28537560e-14 6.15141383e-14
+ 5.60518442e-14 3.60978635e-14 2.49214802e-14 7.94592077e-15
+ 1.95736634e-14 1.90589125e-10 2.44439355e-10]
+Compact integer gauges: (array([0, 1]), array([316, 614]))
+Maximum Fourier edge fraction: 3.0666325717019697e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_055/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_055/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_056; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 3.791042e-12 1.465075e-10 4.648285e-10
+closure_4T                   min/mean/max = 1.867052e-12 1.789682e-10 6.932373e-10
+semigroup_4T                 min/mean/max = 7.423811e-16 2.264988e-14 1.490020e-13
+predicted_4T                 min/mean/max = 1.867053e-12 1.789682e-10 6.932373e-10
+offdiag_4T                   min/mean/max = 1.467552e-20 1.656074e-16 3.718372e-15
+gram_unitarity               min/mean/max = 1.445113e-19 5.219598e-12 1.417874e-10
+gauge_T_error                min/mean/max = 1.265849e-15 2.838444e-15 4.695863e-15
+gauge_4T_error               min/mean/max = 4.941136e-15 1.134343e-14 1.877328e-14
+Exact timing errors / T: {'phase_grid': 9.880984919163893e-15, 'T': 5.995204332975845e-15, 'fourT': 2.220446049250313e-15}
+Max ||multiplier|-1|: 1.2945200467129325e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [7.43359056e-14 6.28850543e-14 4.50723399e-14 2.79571968e-14
+ 8.37912492e-14 9.11390084e-14 8.02991768e-14 1.00188180e-13
+ 9.22161732e-14 1.84573378e-10 2.29803980e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([234, 648,  24,  24]))
+Maximum Fourier edge fraction: 2.8345362969667032e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_056/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_056/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_057; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000003e+00
+closure_T                    min/mean/max = 3.834648e-12 1.437996e-10 4.504528e-10
+closure_4T                   min/mean/max = 3.469876e-12 1.739692e-10 6.550872e-10
+semigroup_4T                 min/mean/max = 4.164186e-16 2.082159e-14 1.378280e-13
+predicted_4T                 min/mean/max = 3.469876e-12 1.739692e-10 6.550872e-10
+offdiag_4T                   min/mean/max = 6.281325e-21 1.509519e-16 3.043098e-15
+gram_unitarity               min/mean/max = 3.925231e-17 4.756667e-12 1.241869e-10
+gauge_T_error                min/mean/max = 1.467129e-15 2.968074e-15 4.705041e-15
+gauge_4T_error               min/mean/max = 5.791346e-15 1.186395e-14 1.902458e-14
+Exact timing errors / T: {'phase_grid': 5.662137425588298e-15, 'T': 1.5543122344752192e-15, 'fourT': 5.329070518200751e-15}
+Max ||multiplier|-1|: 1.028066520802895e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.23106154e-14 1.00417465e-14 2.63106270e-14 3.84149690e-14
+ 5.98299113e-14 6.49989164e-14 4.36413865e-14 3.38743344e-14
+ 2.09869756e-14 1.80021281e-10 2.19513740e-10]
+Compact integer gauges: (array([0, 1, 2]), array([264, 665,   1]))
+Maximum Fourier edge fraction: 2.66548572592344e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_057/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_057/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_058; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000003e+00
+closure_T                    min/mean/max = 3.845910e-12 1.422526e-10 4.428212e-10
+closure_4T                   min/mean/max = 4.378063e-12 1.710121e-10 6.297299e-10
+semigroup_4T                 min/mean/max = 1.766354e-16 2.053083e-14 1.381885e-13
+predicted_4T                 min/mean/max = 4.378064e-12 1.710121e-10 6.297299e-10
+offdiag_4T                   min/mean/max = 2.379987e-22 1.365695e-16 2.921352e-15
+gram_unitarity               min/mean/max = 3.925241e-17 4.213198e-12 1.037078e-10
+gauge_T_error                min/mean/max = 2.880703e-15 4.633699e-15 6.884278e-15
+gauge_4T_error               min/mean/max = 1.138266e-14 1.854883e-14 2.768671e-14
+Exact timing errors / T: {'phase_grid': 6.827871601444713e-15, 'T': 8.104628079763643e-15, 'fourT': 1.7763568394002505e-15}
+Max ||multiplier|-1|: 1.354472090042691e-13
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.78997317e-14 7.47708377e-14 4.48049794e-14 4.17037562e-14
+ 7.49451699e-14 4.11225355e-14 4.53485974e-14 7.51378948e-14
+ 2.81161491e-14 1.77554030e-10 2.14309954e-10]
+Compact integer gauges: (array([-1,  0,  1]), array([ 40, 215, 675]))
+Maximum Fourier edge fraction: 2.5774192792449306e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_058/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_058/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_059; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000003e+00
+closure_T                    min/mean/max = 3.881983e-12 1.384139e-10 4.230178e-10
+closure_4T                   min/mean/max = 7.125055e-12 1.626344e-10 5.618959e-10
+semigroup_4T                 min/mean/max = 5.307790e-16 2.119419e-14 1.334571e-13
+predicted_4T                 min/mean/max = 7.125055e-12 1.626344e-10 5.618959e-10
+offdiag_4T                   min/mean/max = 1.710602e-21 1.422664e-16 3.217344e-15
+gram_unitarity               min/mean/max = 7.850465e-17 3.083312e-12 5.991993e-11
+gauge_T_error                min/mean/max = 1.256074e-15 3.512294e-15 5.513954e-15
+gauge_4T_error               min/mean/max = 5.213617e-15 1.404937e-14 2.216279e-14
+Exact timing errors / T: {'phase_grid': 7.549516567451064e-15, 'T': 7.993605777301127e-15, 'fourT': 8.881784197001252e-15}
+Max ||multiplier|-1|: 9.281464485866309e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.16933038e-14 6.75093215e-14 8.78887627e-14 1.02126535e-13
+ 1.05474512e-13 9.74025295e-14 8.25379021e-14 5.42998327e-14
+ 3.16284901e-14 1.71335607e-10 2.00234149e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([174, 706,  23,  27]))
+Maximum Fourier edge fraction: 2.3548585919087633e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_059/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_059/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_060; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000010e+00
+closure_T                    min/mean/max = 3.909127e-12 1.348937e-10 4.042849e-10
+closure_4T                   min/mean/max = 8.866798e-12 1.545312e-10 5.160905e-10
+semigroup_4T                 min/mean/max = 5.551115e-16 1.605428e-14 1.009163e-13
+predicted_4T                 min/mean/max = 8.866798e-12 1.545312e-10 5.160905e-10
+offdiag_4T                   min/mean/max = 2.440198e-21 1.315626e-16 2.051001e-15
+gram_unitarity               min/mean/max = 7.850463e-17 2.776829e-12 7.219823e-11
+gauge_T_error                min/mean/max = 1.143045e-15 2.856067e-15 4.711586e-15
+gauge_4T_error               min/mean/max = 4.421421e-15 1.142295e-14 1.902924e-14
+Exact timing errors / T: {'phase_grid': 5.051514762044462e-15, 'T': 5.329070518200751e-15, 'fourT': 3.1086244689504383e-15}
+Max ||multiplier|-1|: 4.3076653355456074e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [9.18114362e-14 9.85894581e-14 8.68260804e-14 7.71933555e-14
+ 4.44853223e-14 4.91006118e-14 3.77380454e-14 7.80221835e-14
+ 8.99847306e-14 1.65651346e-10 1.86661832e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([153, 727,  38,  12]))
+Maximum Fourier edge fraction: 2.1549250224190848e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_060/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_060/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_061; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000008e+00
+closure_T                    min/mean/max = 3.890985e-12 1.308657e-10 3.855179e-10
+closure_4T                   min/mean/max = 1.133436e-11 1.457502e-10 4.555240e-10
+semigroup_4T                 min/mean/max = 6.121977e-16 1.316714e-14 6.521396e-14
+predicted_4T                 min/mean/max = 1.133436e-11 1.457502e-10 4.555240e-10
+offdiag_4T                   min/mean/max = 2.521407e-21 9.703317e-17 1.686627e-15
+gram_unitarity               min/mean/max = 1.110223e-16 1.847698e-12 4.193132e-11
+gauge_T_error                min/mean/max = 2.020636e-15 4.089994e-15 6.673355e-15
+gauge_4T_error               min/mean/max = 8.003622e-15 1.635253e-14 2.663518e-14
+Exact timing errors / T: {'phase_grid': 6.772360450213455e-15, 'T': 1.7763568394002505e-15, 'fourT': 5.329070518200751e-15}
+Max ||multiplier|-1|: 4.39648317751562e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [6.73629240e-14 6.61540634e-14 4.75865278e-14 6.13012550e-14
+ 2.71331680e-14 7.46435658e-14 9.30242975e-14 7.83218055e-14
+ 7.92558647e-14 1.59663878e-10 1.72595835e-10]
+Compact integer gauges: (array([-1,  0,  1,  2]), array([ 22, 162, 742,   4]))
+Maximum Fourier edge fraction: 1.962381988404622e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_061/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_061/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_062; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000009e+00
+closure_T                    min/mean/max = 3.856361e-12 1.269407e-10 3.677912e-10
+closure_4T                   min/mean/max = 1.111376e-11 1.364105e-10 4.159659e-10
+semigroup_4T                 min/mean/max = 3.510833e-16 1.424874e-14 8.635305e-14
+predicted_4T                 min/mean/max = 1.111376e-11 1.364105e-10 4.159659e-10
+offdiag_4T                   min/mean/max = 2.255034e-20 9.776920e-17 1.886127e-15
+gram_unitarity               min/mean/max = 8.777168e-17 1.317490e-12 3.720285e-11
+gauge_T_error                min/mean/max = 1.247458e-15 2.524720e-15 4.160375e-15
+gauge_4T_error               min/mean/max = 4.834572e-15 1.010746e-14 1.650652e-14
+Exact timing errors / T: {'phase_grid': 6.661338147750939e-15, 'T': 3.3306690738754696e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 6.461498003318411e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [2.38071291e-14 3.57586869e-14 4.05065745e-14 8.32901254e-14
+ 8.44711646e-14 8.07490882e-14 8.64735053e-14 5.37618394e-14
+ 3.39903590e-14 1.53989022e-10 1.59606423e-10]
+Compact integer gauges: (array([0, 1, 2]), array([139, 787,   4]))
+Maximum Fourier edge fraction: 1.7888058961167116e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_062/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_062/PyFLQ/fourier.npz
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Calculation: FLQ_063; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000001e+00
+closure_T                    min/mean/max = 3.809407e-12 1.231242e-10 3.510653e-10
+closure_4T                   min/mean/max = 1.273096e-11 1.273265e-10 3.707170e-10
+semigroup_4T                 min/mean/max = 6.869155e-16 1.349117e-14 9.030204e-14
+predicted_4T                 min/mean/max = 1.273096e-11 1.273266e-10 3.707170e-10
+offdiag_4T                   min/mean/max = 4.736938e-20 8.110227e-17 1.692491e-15
+gram_unitarity               min/mean/max = 2.858650e-19 1.151761e-12 4.946828e-11
+gauge_T_error                min/mean/max = 2.784425e-15 4.403610e-15 6.312670e-15
+gauge_4T_error               min/mean/max = 1.113383e-14 1.761563e-14 2.560984e-14
+Exact timing errors / T: {'phase_grid': 6.564193633096238e-15, 'T': 5.773159728050814e-15, 'fourT': 9.769962616701378e-15}
+Max ||multiplier|-1|: 2.7644553313166398e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [3.32883065e-14 6.72526716e-14 9.58900376e-14 1.12613060e-13
+ 1.19784711e-13 1.14153135e-13 9.79110488e-14 7.19960702e-14
+ 3.27412754e-14 1.48607352e-10 1.48194225e-10]
+Compact integer gauges: (array([0, 1, 2, 3]), array([108, 768,  27,  27]))
+Maximum Fourier edge fraction: 1.6327255017083125e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_063/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_063/PyFLQ/fourier.npz
+STATUS: COMPLETE
+Completed 64 extractions
+STATUS: COMPLETE

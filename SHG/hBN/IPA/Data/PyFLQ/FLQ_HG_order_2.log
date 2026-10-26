@@ -1,0 +1,1107 @@
+FLQ-four-scripts-1.0
+Source=both; harmonic=2; fit-order=4
+Field 2 not found
+Field 3 not found
+  0%|          | 0/191 [00:00<?, ?it/s]Time range: 39.539 - 47.810 [fs]
+Time range: 39.539 - 47.058 [fs]
+Time range: 39.539 - 46.431 [fs]
+Time range: 39.539 - 45.901 [fs]
+Time range: 39.539 - 45.447 [fs]
+Time range: 39.539 - 45.053 [fs]
+Time range: 39.539 - 44.708 [fs]
+Time range: 39.539 - 44.404 [fs]
+Time range: 39.539 - 44.134 [fs]
+Time range: 39.539 - 43.892 [fs]
+Time range: 39.539 - 43.674 [fs]
+Time range: 39.539 - 43.477 [fs]
+Time range: 39.539 - 43.298 [fs]
+Time range: 39.539 - 43.135 [fs]
+Time range: 39.539 - 42.985 [fs]
+Time range: 39.539 - 42.847 [fs]
+Time range: 39.539 - 42.720 [fs]
+Time range: 39.539 - 42.602 [fs]
+Time range: 39.539 - 42.493 [fs]
+Time range: 39.539 - 42.391 [fs]
+Time range: 39.539 - 42.296 [fs]
+Time range: 39.539 - 42.207 [fs]
+Time range: 39.539 - 42.123 [fs]
+Time range: 39.539 - 42.045 [fs]
+Time range: 39.539 - 41.971 [fs]
+Time range: 39.539 - 41.902 [fs]
+Time range: 39.539 - 41.836 [fs]
+Time range: 39.539 - 41.774 [fs]
+Time range: 39.539 - 41.715 [fs]
+Time range: 39.539 - 41.660 [fs]
+Time range: 39.539 - 41.606 [fs]
+Time range: 39.539 - 41.556 [fs]
+Time range: 39.539 - 41.508 [fs]
+Time range: 39.539 - 41.462 [fs]
+Time range: 39.539 - 41.419 [fs]
+Time range: 39.539 - 41.377 [fs]
+Time range: 39.539 - 41.337 [fs]
+Time range: 39.539 - 41.299 [fs]
+Time range: 39.539 - 41.262 [fs]
+Time range: 39.539 - 41.227 [fs]
+Time range: 39.539 - 41.193 [fs]
+Time range: 39.539 - 41.160 [fs]
+Time range: 39.539 - 41.129 [fs]
+Time range: 39.539 - 41.099 [fs]
+Time range: 39.539 - 41.070 [fs]
+Time range: 39.539 - 41.043 [fs]
+Time range: 39.539 - 41.016 [fs]
+Time range: 39.539 - 40.990 [fs]
+Time range: 39.539 - 40.965 [fs]
+Time range: 39.539 - 40.941 [fs]
+Time range: 39.539 - 40.917 [fs]
+Time range: 39.539 - 40.895 [fs]
+Time range: 39.539 - 40.873 [fs]
+Time range: 39.539 - 40.852 [fs]
+Time range: 39.539 - 40.831 [fs]
+Time range: 39.539 - 40.811 [fs]
+Time range: 39.539 - 40.792 [fs]
+Time range: 39.539 - 40.773 [fs]
+Time range: 39.539 - 40.755 [fs]
+Time range: 39.539 - 40.737 [fs]
+Time range: 39.539 - 40.720 [fs]
+Time range: 39.539 - 40.704 [fs]
+Time range: 39.539 - 40.687 [fs]
+Time range: 39.539 - 40.672 [fs]
+Time range: 39.539 - 40.656 [fs]
+Time range: 39.539 - 40.642 [fs]
+Time range: 39.539 - 40.627 [fs]
+Time range: 39.539 - 40.613 [fs]
+Time range: 39.539 - 40.599 [fs]
+Time range: 39.539 - 40.586 [fs]
+Time range: 39.539 - 40.573 [fs]
+Time range: 39.539 - 40.560 [fs]
+Time range: 39.539 - 40.547 [fs]
+Time range: 39.539 - 40.535 [fs]
+Time range: 39.539 - 40.523 [fs]
+Time range: 39.539 - 40.512 [fs]
+Time range: 39.539 - 40.500 [fs]
+Time range: 39.539 - 40.489 [fs]
+Time range: 39.539 - 40.479 [fs]
+Time range: 39.539 - 40.468 [fs]
+Time range: 39.539 - 40.458 [fs]
+Time range: 39.539 - 40.448 [fs]
+Time range: 39.539 - 40.438 [fs]
+Time range: 39.539 - 40.428 [fs]
+Time range: 39.539 - 40.419 [fs]
+Time range: 39.539 - 40.409 [fs]
+Time range: 39.539 - 40.400 [fs]
+Time range: 39.539 - 40.391 [fs]
+Time range: 39.539 - 40.383 [fs]
+Time range: 39.539 - 40.374 [fs]
+Time range: 39.539 - 40.366 [fs]
+Time range: 39.539 - 40.358 [fs]
+Time range: 39.539 - 40.350 [fs]
+Time range: 39.539 - 40.342 [fs]
+Time range: 39.539 - 40.334 [fs]
+Time range: 39.539 - 40.326 [fs]
+Time range: 39.539 - 40.319 [fs]
+Time range: 39.539 - 40.312 [fs]
+Time range: 39.539 - 40.305 [fs]
+Time range: 39.539 - 40.298 [fs]
+Time range: 39.539 - 40.291 [fs]
+Time range: 39.539 - 40.284 [fs]
+Time range: 39.539 - 40.277 [fs]
+Time range: 39.539 - 40.271 [fs]
+Time range: 39.539 - 40.264 [fs]
+Time range: 39.539 - 40.258 [fs]
+Time range: 39.539 - 40.252 [fs]
+Time range: 39.539 - 40.246 [fs]
+Time range: 39.539 - 40.240 [fs]
+Time range: 39.539 - 40.234 [fs]
+Time range: 39.539 - 40.228 [fs]
+Time range: 39.539 - 40.222 [fs]
+Time range: 39.539 - 40.217 [fs]
+Time range: 39.539 - 40.211 [fs]
+Time range: 39.539 - 40.206 [fs]
+Time range: 39.539 - 40.200 [fs]
+Time range: 39.539 - 40.195 [fs]
+Time range: 39.539 - 40.190 [fs]
+Time range: 39.539 - 40.185 [fs]
+Time range: 39.539 - 40.180 [fs]
+Time range: 39.539 - 40.175 [fs]
+Time range: 39.539 - 40.170 [fs]
+Time range: 39.539 - 40.165 [fs]
+Time range: 39.539 - 40.161 [fs]
+Time range: 39.539 - 40.156 [fs]
+Time range: 39.539 - 40.151 [fs]
+Time range: 39.539 - 40.147 [fs]
+Time range: 39.539 - 40.142 [fs]
+Time range: 39.539 - 40.138 [fs]
+Time range: 39.539 - 40.134 [fs]
+Time range: 39.539 - 40.129 [fs]
+Time range: 39.539 - 40.125 [fs]
+Time range: 39.539 - 40.121 [fs]
+Time range: 39.539 - 40.117 [fs]
+Time range: 39.539 - 40.113 [fs]
+Time range: 39.539 - 40.109 [fs]
+Time range: 39.539 - 40.105 [fs]
+Time range: 39.539 - 40.101 [fs]
+Time range: 39.539 - 40.098 [fs]
+Time range: 39.539 - 40.094 [fs]
+Time range: 39.539 - 40.090 [fs]
+Time range: 39.539 - 40.086 [fs]
+Time range: 39.539 - 40.083 [fs]
+Time range: 39.539 - 40.079 [fs]
+Time range: 39.539 - 40.076 [fs]
+Time range: 39.539 - 40.072 [fs]
+Time range: 39.539 - 40.069 [fs]
+Time range: 39.539 - 40.066 [fs]
+Time range: 39.539 - 40.062 [fs]
+Time range: 39.539 - 40.059 [fs]
+Time range: 39.539 - 40.056 [fs]
+Time range: 39.539 - 40.052 [fs]
+Time range: 39.539 - 40.049 [fs]
+Time range: 39.539 - 40.046 [fs]
+Time range: 39.539 - 40.043 [fs]
+Time range: 39.539 - 40.040 [fs]
+Time range: 39.539 - 40.037 [fs]
+Time range: 39.539 - 40.034 [fs]
+Time range: 39.539 - 40.031 [fs]
+Time range: 39.539 - 40.028 [fs]
+Time range: 39.539 - 40.025 [fs]
+Time range: 39.539 - 40.022 [fs]
+Time range: 39.539 - 40.020 [fs]
+Time range: 39.539 - 40.017 [fs]
+Time range: 39.539 - 40.014 [fs]
+Time range: 39.539 - 40.011 [fs]
+Time range: 39.539 - 40.009 [fs]
+Time range: 39.539 - 40.006 [fs]
+Time range: 39.539 - 40.003 [fs]
+Time range: 39.539 - 40.001 [fs]
+Time range: 39.539 - 39.998 [fs]
+Time range: 39.539 - 39.996 [fs]
+Time range: 39.539 - 39.993 [fs]
+Time range: 39.539 - 39.991 [fs]
+Time range: 39.539 - 39.988 [fs]
+Time range: 39.539 - 39.986 [fs]
+Time range: 39.539 - 39.983 [fs]
+Time range: 39.539 - 39.981 [fs]
+Time range: 39.539 - 39.979 [fs]
+Time range: 39.539 - 39.976 [fs]
+Time range: 39.539 - 39.974 [fs]
+Time range: 39.539 - 39.972 [fs]
+Time range: 39.539 - 39.969 [fs]
+Time range: 39.539 - 39.967 [fs]
+Time range: 39.539 - 39.965 [fs]
+Time range: 39.539 - 39.963 [fs]
+Time range: 39.539 - 39.961 [fs]
+Time range: 39.539 - 39.959 [fs]
+Time range: 39.539 - 39.956 [fs]
+Time range: 39.539 - 39.954 [fs]
+Time range: 39.539 - 39.952 [fs]
+100%|##########| 191/191 [00:00<00:00, 3268.56it/s]
+RT spectrum: 191 frequencies; YamboPy Xn_from_sine, fit order 4
+TENSOR DIAGNOSTICS: harmonic order=2, unit field=[0.0, 1.0, 0.0]
+Point-group source: explicit_equilibrium_symmetry_database: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/SAVE/ns.db1
+Unitary spatial symmetry operations: 12 ; excluded antiunitary operations: 12 ; invariant tensor parameters: 1
+Measured quantities: chi_x_eff, chi_y_eff, chi_z_eff (field contractions)
+Recoverable tensor components (3):
+  [1,1,2]       chi_xxy     = -1 chi_y_eff
+  [2,1,1]       chi_yxx     = -1 chi_y_eff
+  [2,2,2]       chi_yyy     = +1 chi_y_eff
+Not individually identifiable from this field/symmetry information (0):
+Symmetry-forbidden components (15):
+  [1,1,1]       chi_xxx    
+  [1,1,3]       chi_xxz    
+  [1,2,2]       chi_xyy    
+  [1,2,3]       chi_xyz    
+  [1,3,3]       chi_xzz    
+  [2,1,2]       chi_yxy    
+  [2,1,3]       chi_yxz    
+  [2,2,3]       chi_yyz    
+  [2,3,3]       chi_yzz    
+  [3,1,1]       chi_zxx    
+  [3,1,2]       chi_zxy    
+  [3,1,3]       chi_zxz    
+  [3,2,2]       chi_zyy    
+  [3,2,3]       chi_zyz    
+  [3,3,3]       chi_zzz    
+Requested: y (vector contraction)
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_000: photon=0.50000010 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.300441356695023e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.016874000529428e-12, null], "combined_active_error": 7.016874000529428e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.947385e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_001: photon=0.80000017 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.3341988893216544e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.996612325001695e-12, null], "combined_active_error": 7.996612325001695e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 7.609016e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_002: photon=1.10000023 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.370602458767388e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.077119556866413e-12, null], "combined_active_error": 7.077119556866413e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 6.895957e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_003: photon=1.40000029 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.41980374070929e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.927636047849817e-12, null], "combined_active_error": 5.927636047849817e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.137344e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_004: photon=1.70000036 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.470293188030949e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 9.061869466088903e-12, null], "combined_active_error": 9.061869466088903e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.281946e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_005: photon=1.95000041 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.3964973190989625e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 9.947948571412785e-12, null], "combined_active_error": 9.947948571412785e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.102876e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_006: photon=2.15000045 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.432426589909214e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.652853598306362e-12, null], "combined_active_error": 5.652853598306362e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.084315e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_007: photon=2.25000047 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.429096263217515e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 8.583277347453105e-12, null], "combined_active_error": 8.583277347453105e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.107526e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_008: photon=2.35000049 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.443660694893373e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.705827445176904e-12, null], "combined_active_error": 7.705827445176904e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.252693e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_009: photon=2.45000051 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.522917017390753e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.571020609451274e-12, null], "combined_active_error": 7.571020609451274e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.862778e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_010: photon=2.50000052 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.372769155832696e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 6.8074647755388424e-12, null], "combined_active_error": 6.8074647755388424e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.178552e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_011: photon=2.55000053 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.631391363205654e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.31981029905873e-12, null], "combined_active_error": 7.31981029905873e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.104098e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_012: photon=2.60000054 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.290186964870687e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.443713357873002e-12, null], "combined_active_error": 5.443713357873002e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.391875e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_013: photon=2.65000055 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.749571256016209e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.877646303244124e-12, null], "combined_active_error": 5.877646303244124e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.623641e-09
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_014: photon=2.70000056 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.324877940488043e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 8.264431395965746e-12, null], "combined_active_error": 8.264431395965746e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.174194e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_015: photon=2.75000058 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.608271259164244e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.4502825582488575e-12, null], "combined_active_error": 3.4502825582488575e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.903357e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_016: photon=2.85000060 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.533640372734127e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 6.555777786321985e-12, null], "combined_active_error": 6.555777786321985e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.548867e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_017: photon=3.05000064 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.442931649832309e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 6.185367874218936e-12, null], "combined_active_error": 6.185367874218936e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 3.163840e-09
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_018: photon=3.15000066 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.540194395262217e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.4857084131939e-12, null], "combined_active_error": 4.4857084131939e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.845491e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_019: photon=3.35000070 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.5167288489421225e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.408216457308345e-12, null], "combined_active_error": 4.408216457308345e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 3.543215e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_020: photon=3.45000072 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.440354176943466e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.957519090767702e-12, null], "combined_active_error": 4.957519090767702e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.871208e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_021: photon=3.60000075 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.692159890034233e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.085740511829352e-12, null], "combined_active_error": 4.085740511829352e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.016275e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_022: photon=3.75000078 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.581722973821743e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.7232132464026546e-12, null], "combined_active_error": 5.7232132464026546e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 3.253624e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_023: photon=4.05000085 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.534705841543542e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.970183623157713e-12, null], "combined_active_error": 3.970183623157713e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.907841e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_024: photon=4.20000088 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.760033682045009e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.1532244714633735e-12, null], "combined_active_error": 3.1532244714633735e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.214136e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_025: photon=4.35000091 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.7722724014706735e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.9199352710621028e-12, null], "combined_active_error": 2.9199352710621028e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.643062e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_026: photon=4.55000095 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 5.6070468906880155e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.0758569276441927e-12, null], "combined_active_error": 3.0758569276441927e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.039111e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_027: photon=4.65000097 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 7.36771916692167e-06
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.166128219444301e-12, null], "combined_active_error": 2.166128219444301e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 3.161843e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_028: photon=4.95000104 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.329034937618849e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.1708966354983005e-12, null], "combined_active_error": 2.1708966354983005e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 8.432064e-09
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_029: photon=5.10000107 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.079593389794464e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.634860283401494e-12, null], "combined_active_error": 1.634860283401494e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.635280e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_030: photon=5.25000110 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.774693707526652e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.0384551525968612e-12, null], "combined_active_error": 3.0384551525968612e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 6.462566e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_031: photon=5.35000112 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.958873239452227e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.8376804058011773e-12, null], "combined_active_error": 1.8376804058011773e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.774100e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_032: photon=5.40000113 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.160297807172985e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.7523409652639924e-12, null], "combined_active_error": 1.7523409652639924e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 9.112848e-09
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_033: photon=5.55000116 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.489041752045005e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.4682508664326305e-12, null], "combined_active_error": 2.4682508664326305e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.169975e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_034: photon=5.85000122 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 5.009343194496617e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.231566630612443e-12, null], "combined_active_error": 2.231566630612443e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 3.756697e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_035: photon=5.95000124 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 5.41109510315801e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.2836389471028307e-12, null], "combined_active_error": 3.2836389471028307e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.647508e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_036: photon=6.05000127 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.9696861377074716e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.1195524859551716e-12, null], "combined_active_error": 2.1195524859551716e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 6.657979e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_037: photon=6.10000128 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.3763027113856314e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.8301370414908906e-12, null], "combined_active_error": 2.8301370414908906e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.155118e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_038: photon=6.15000129 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.181180911210133e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.7410380649443897e-12, null], "combined_active_error": 1.7410380649443897e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.140962e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_039: photon=6.20000130 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.678216159592675e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.5346335811725456e-12, null], "combined_active_error": 3.5346335811725456e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.391494e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_040: photon=6.25000131 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.7341748721643326e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.5873802972584676e-12, null], "combined_active_error": 3.5873802972584676e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 6.007403e-08
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_041: photon=6.30000132 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.433230125653011e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.178786706822811e-12, null], "combined_active_error": 3.178786706822811e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.066370e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_042: photon=6.35000133 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.6085726478116804e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.055741337464023e-12, null], "combined_active_error": 3.055741337464023e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.859747e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_043: photon=6.40000134 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.429176128674304e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.72486776698316e-12, null], "combined_active_error": 4.72486776698316e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.793012e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_044: photon=6.45000135 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.654701271693226e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.757223692517238e-12, null], "combined_active_error": 4.757223692517238e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 3.093517e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_045: photon=6.50000136 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.525792498816222e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.8556725026057705e-12, null], "combined_active_error": 3.8556725026057705e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.980089e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_046: photon=6.55000137 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.8926563451575524e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.6855133387594725e-12, null], "combined_active_error": 5.6855133387594725e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.526372e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_047: photon=6.65000139 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.493876144819379e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.063762521410103e-12, null], "combined_active_error": 4.063762521410103e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 3.126996e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_048: photon=6.75000141 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.848507810120189e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.5319804848267355e-12, null], "combined_active_error": 5.5319804848267355e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.127216e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_049: photon=6.90000144 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 4.0268611377326e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.50950828268147e-12, null], "combined_active_error": 4.50950828268147e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.085585e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_050: photon=7.05000147 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.0020626165877284e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 4.976696361364132e-12, null], "combined_active_error": 4.976696361364132e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.020515e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_051: photon=7.35000154 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.8536085058171836e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 6.539363703149244e-12, null], "combined_active_error": 6.539363703149244e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.400121e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_052: photon=7.45000156 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.960403554956273e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 3.780275400535864e-12, null], "combined_active_error": 3.780275400535864e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.213591e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_053: photon=7.65000160 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.5906984783566174e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 9.303084088341333e-12, null], "combined_active_error": 9.303084088341333e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 5.229915e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_054: photon=7.75000162 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 3.32613042092822e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 5.298240368567822e-12, null], "combined_active_error": 5.298240368567822e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.392935e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_055: photon=7.95000166 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.553043112172652e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.368074655585758e-12, null], "combined_active_error": 7.368074655585758e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.711839e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_056: photon=8.20000172 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.044501839579964e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.0696844685057037e-11, null], "combined_active_error": 1.0696844685057037e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 7.232484e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_057: photon=8.40000176 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.5134782718981745e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.2171229794602179e-11, null], "combined_active_error": 1.2171229794602179e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 9.567329e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_058: photon=8.50000178 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.5822829051475638e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 7.948720698512767e-12, null], "combined_active_error": 7.948720698512767e-12, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.206510e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_059: photon=8.80000184 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.0136683152954323e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.7127172975930288e-11, null], "combined_active_error": 1.7127172975930288e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.817090e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_060: photon=9.10000190 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 1.8352148830738044e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.6747006774021625e-11, null], "combined_active_error": 1.6747006774021625e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.566642e-06
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_061: photon=9.40000197 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 2.326055137283653e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.3008764300374309e-11, null], "combined_active_error": 1.3008764300374309e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 1.180095e-06
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_062: photon=9.70000203 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 1.042176541258093e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.0804298207853312e-11, null], "combined_active_error": 2.0804298207853312e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 8.527701e-07
+STATUS: COMPLETE
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_063: photon=10.00000209 eV, Berry grid=(30, 30, 1), symmetry=residual
+Unprojected Berry error: 1.5061485592872108e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 2.807455596413723e-11, null], "combined_active_error": 2.807455596413723e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 2.721682e-06
+STATUS: COMPLETE
+Selected component: {'label': 'chi_y_eff', 'status': 'field_contracted', 'coefficients_xyz': None}
+Normalization: supercell volume; no 2D thickness rescaling
+Harmonic units: cm/statV
+RT/Floquet comparison: {
+  "x": {
+    "complex_L2_relative": 0.0,
+    "peak_normalized_max_abs_magnitude_error": 0.0,
+    "median_magnitude_relative_error_above_5pct_peak": null,
+    "npoints": 64,
+    "npoints_above_5pct_peak": 0,
+    "max_energy_difference_eV": 0.0,
+    "reference_matching": "exact_RT_subset",
+    "reference_points": 191,
+    "floquet_points": 64,
+    "max_matching_deviation_eV": 1.0458811097180387e-06
+  },
+  "y": {
+    "complex_L2_relative": 0.005021027996778839,
+    "peak_normalized_max_abs_magnitude_error": 0.003836946624270746,
+    "median_magnitude_relative_error_above_5pct_peak": 0.0012516335672361507,
+    "npoints": 64,
+    "npoints_above_5pct_peak": 48,
+    "max_energy_difference_eV": 0.0,
+    "reference_matching": "exact_RT_subset",
+    "reference_points": 191,
+    "floquet_points": 64,
+    "max_matching_deviation_eV": 1.0458811097180387e-06
+  },
+  "z": {
+    "complex_L2_relative": 0.0,
+    "peak_normalized_max_abs_magnitude_error": 0.0,
+    "median_magnitude_relative_error_above_5pct_peak": null,
+    "npoints": 64,
+    "npoints_above_5pct_peak": 0,
+    "max_energy_difference_eV": 0.0,
+    "reference_matching": "exact_RT_subset",
+    "reference_points": 191,
+    "floquet_points": 64,
+    "max_matching_deviation_eV": 1.0458811097180387e-06
+  },
+  "selected": {
+    "complex_L2_relative": 0.005021027996778839,
+    "peak_normalized_max_abs_magnitude_error": 0.003836946624270746,
+    "median_magnitude_relative_error_above_5pct_peak": 0.0012516335672361507,
+    "npoints": 64,
+    "npoints_above_5pct_peak": 48,
+    "max_energy_difference_eV": 0.0,
+    "label": "chi_y_eff"
+  }
+}
+Written: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/PyFLQ/HG_order_2.npz
+STATUS: COMPLETE

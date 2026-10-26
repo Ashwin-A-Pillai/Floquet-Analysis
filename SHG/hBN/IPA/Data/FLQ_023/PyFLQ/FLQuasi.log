@@ -1,0 +1,29 @@
+FLQ-four-scripts-1.0
+Calculation: FLQ_023; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000002e+00
+closure_T                    min/mean/max = 1.069870e-12 1.223121e-10 6.693458e-10
+closure_4T                   min/mean/max = 4.514756e-13 9.570096e-11 1.043221e-09
+semigroup_4T                 min/mean/max = 6.765147e-16 4.530227e-14 7.967958e-13
+predicted_4T                 min/mean/max = 4.514776e-13 9.570098e-11 1.043221e-09
+offdiag_4T                   min/mean/max = 3.164160e-21 3.100342e-17 1.888035e-15
+gram_unitarity               min/mean/max = 1.036321e-19 3.595647e-13 8.119107e-12
+gauge_T_error                min/mean/max = 1.777224e-15 3.454245e-15 5.476506e-15
+gauge_4T_error               min/mean/max = 7.051446e-15 1.382239e-14 2.199026e-14
+Exact timing errors / T: {'phase_grid': 3.6637359812630166e-15, 'T': 2.886579864025407e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 5.218048215738236e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [9.45766036e-15 1.74307286e-14 1.50974211e-14 3.54294139e-14
+ 3.83493756e-14 3.46397431e-14 3.69399425e-14 2.56224754e-14
+ 1.83001925e-14 2.08896599e-10 1.77984846e-10]
+Compact integer gauges: (array([-3, -1,  0,  1,  4]), array([ 18,  15, 603, 281,  13]))
+Maximum Fourier edge fraction: 5.924746296423388e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_023/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_023/PyFLQ/fourier.npz
+STATUS: COMPLETE

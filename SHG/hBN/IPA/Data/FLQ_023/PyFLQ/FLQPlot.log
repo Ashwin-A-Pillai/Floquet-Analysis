@@ -1,0 +1,16 @@
+FLQ-four-scripts-1.0
+Calculation: FLQ_023; photon energy: 4.05000085 eV
+Periodic-mode reconstruction error (all basis components): 2.491257595746629e-14
+Selected-component absolute error: 2.441941735703943e-20
+Selected-component relative error: not meaningful near numerical zero
+Mode association weight at selected k: 1.0
+Floquet band gauge: ks-connected; omega=4.05000085 eV
+KS/Floquet phase-reference offset (median, modulo omega): -0.75765225 eV (5th-95th width 0.00362 eV)
+Applied global reference offset: -0.75765225 eV (--floquet-align=global); reference zero: VBM
+Minimum interpolated Floquet multiplier modulus: 0.862482
+Max |Floquet - KS| for represented modes on path: 0.007398911960093457 eV
+Band plot (with KS reference): /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_023/PyFLQ/plots/fig-Floquet_bands_IBZ.png
+BZ expansion: 465 stored points -> 900 full mesh points; first-BZ clipping applied.
+This is a Floquet coefficient weight, not an exciton probability or an excitonic wavefunction.
+Plots: /home/pillai/my_codes/yambo/Floqanalysis/outs/IPA/FS_IPA/FLQ_023/PyFLQ/plots
+STATUS: COMPLETE
