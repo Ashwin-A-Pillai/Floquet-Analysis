@@ -1,0 +1,29 @@
+FLQ-four-scripts-1.0
+Calculation: FLQ_026; SAVE: /home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/FS_TDSHF/SAVE
+Field 2 not found
+Field 3 not found
+gram_condition               min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+eigenvector_condition        min/mean/max = 1.000000e+00 1.000000e+00 1.000000e+00
+closure_T                    min/mean/max = 3.469349e-12 9.362948e-11 7.795386e-10
+closure_4T                   min/mean/max = 2.015437e-12 4.676295e-11 3.635766e-10
+semigroup_4T                 min/mean/max = 1.783611e-12 4.766370e-11 1.351386e-10
+predicted_4T                 min/mean/max = 6.296257e-12 7.531507e-11 3.635812e-10
+offdiag_4T                   min/mean/max = 4.945289e-24 3.740473e-13 6.426638e-12
+gram_unitarity               min/mean/max = 1.110224e-16 3.895931e-13 5.862797e-12
+gauge_T_error                min/mean/max = 1.777224e-15 3.364589e-15 5.392588e-15
+gauge_4T_error               min/mean/max = 6.972342e-15 1.345703e-14 2.151943e-14
+Exact timing errors / T: {'phase_grid': 3.6637359812630166e-15, 'T': 2.886579864025407e-15, 'fourT': 8.881784197001252e-16}
+Max ||multiplier|-1|: 1.0436096431476471e-14
+Imaginary projected energies are diagnostics, NOT measured lifetimes.
+Physical-state reconstruction errors at stored post-t0 records: [1.38422667e-14 2.53780718e-14 1.90609160e-14 3.15102735e-14
+ 3.50674353e-14 3.28322991e-14 3.35970481e-14 2.43398806e-14
+ 1.89249592e-14 1.64909279e-10 9.74309974e-11]
+Compact integer gauges: (array([-3, -2, -1,  0,  1]), array([ 11,  18,  55, 171,  87]))
+Maximum Fourier edge fraction: 8.244700626458683e-21
+WARNING: small edge weights and interpolation-node agreement do not prove harmonic convergence.
+Only 2 represented occupied modes extracted; no unpropagated conduction modes invented.
+Frozen occupied bands: [1, 2]
+Written:
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/FS_TDSHF/FLQ_026/PyFLQ/quasienergies.npz
+  /home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/FS_TDSHF/FLQ_026/PyFLQ/fourier.npz
+STATUS: COMPLETE

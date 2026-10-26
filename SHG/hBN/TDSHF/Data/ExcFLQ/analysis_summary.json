@@ -1,0 +1,550 @@
+{
+  "script": "FLQ_Exc.py",
+  "output_dir": "/home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/FS_TDSHF/ExcFLQ",
+  "electronic_data": "TD-HSEX BSE; DO NOT use independent IPA SAVE",
+  "energy_sorted": "/home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/BSE_files/o-BSE.exc_qpt1_E_sorted",
+  "intensity_sorted": "/home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/BSE_files/o-BSE.exc_qpt1_I_sorted",
+  "equilibrium_save": "/home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/SAVE",
+  "BSE_database": "/home/pillai/my_codes/yambo/Floqanalysis/outs/TDHSEX/BSE/ndb.BS_diago_Q1",
+  "high_symmetry_path": "/home/pillai/my_codes/yambo/Floqanalysis/IBZ/hBN.csv",
+  "shg_spectrum": "PyFLQ/HG_order_2.npz",
+  "shg_source": "RT",
+  "exciton_count": 5184,
+  "groups": [
+    {
+      "states": [
+        1,
+        2
+      ],
+      "label": "1,2",
+      "mean_energy_eV": 5.999992649999999,
+      "splitting_eV": 8.919999999967843e-06,
+      "max_linear_strength": 1.0,
+      "sum_linear_strength": 1.219390808,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 2.9999963249999997,
+      "possible_1ph_pump_eV": 5.999992649999999
+    },
+    {
+      "states": [
+        3,
+        4
+      ],
+      "label": "3,4",
+      "mean_energy_eV": 6.863518815,
+      "splitting_eV": 6.490000000525242e-06,
+      "max_linear_strength": 0.30190023,
+      "sum_linear_strength": 0.30361850208999996,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 3.4317594075,
+      "possible_1ph_pump_eV": 6.863518815
+    },
+    {
+      "states": [
+        5
+      ],
+      "label": "5",
+      "mean_energy_eV": 6.9387559,
+      "splitting_eV": 0.0,
+      "max_linear_strength": 2.0098875e-10,
+      "sum_linear_strength": 2.0098875e-10,
+      "weak_in_one_photon_y": true,
+      "possible_2ph_pump_eV": 3.46937795,
+      "possible_1ph_pump_eV": 6.9387559
+    },
+    {
+      "states": [
+        6
+      ],
+      "label": "6",
+      "mean_energy_eV": 7.0023499,
+      "splitting_eV": 0.0,
+      "max_linear_strength": 3.15704675e-09,
+      "sum_linear_strength": 3.15704675e-09,
+      "weak_in_one_photon_y": true,
+      "possible_2ph_pump_eV": 3.50117495,
+      "possible_1ph_pump_eV": 7.0023499
+    },
+    {
+      "states": [
+        7,
+        8
+      ],
+      "label": "7,8",
+      "mean_energy_eV": 7.104747290000001,
+      "splitting_eV": 2.6759999999903528e-05,
+      "max_linear_strength": 0.0386776165,
+      "sum_linear_strength": 0.04015555736,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 3.5523736450000003,
+      "possible_1ph_pump_eV": 7.104747290000001
+    },
+    {
+      "states": [
+        9
+      ],
+      "label": "9",
+      "mean_energy_eV": 7.27525011,
+      "splitting_eV": 0.0,
+      "max_linear_strength": 1.81287406e-09,
+      "sum_linear_strength": 1.81287406e-09,
+      "weak_in_one_photon_y": true,
+      "possible_2ph_pump_eV": 3.637625055,
+      "possible_1ph_pump_eV": 7.27525011
+    },
+    {
+      "states": [
+        10,
+        11
+      ],
+      "label": "10,11",
+      "mean_energy_eV": 7.290153575,
+      "splitting_eV": 3.486999999946505e-05,
+      "max_linear_strength": 0.0249733477,
+      "sum_linear_strength": 0.025549944666,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 3.6450767875,
+      "possible_1ph_pump_eV": 7.290153575
+    }
+  ],
+  "k_resolved_records": [
+    {
+      "states": [
+        1,
+        2
+      ],
+      "label": "1,2",
+      "mean_energy_eV": 5.999992649999999,
+      "splitting_eV": 8.919999999967843e-06,
+      "max_linear_strength": 1.0,
+      "sum_linear_strength": 1.219390808,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 2.9999963249999997,
+      "possible_1ph_pump_eV": 5.999992649999999,
+      "norm_full_k_weight": 1.0,
+      "norm_IBZ_star_weight": 1.0,
+      "participation_k": 44.35633040764955,
+      "effective_num_IBZ_stars": 5.295635274439075,
+      "max_path_sampling_misfit_Ainv": 0.09084709538506347,
+      "top_vc": [
+        {
+          "v": 4,
+          "c": 5,
+          "fraction": 0.9980054702851797
+        },
+        {
+          "v": 4,
+          "c": 7,
+          "fraction": 0.0005371028152870896
+        },
+        {
+          "v": 4,
+          "c": 6,
+          "fraction": 0.00046880538891585317
+        },
+        {
+          "v": 3,
+          "c": 6,
+          "fraction": 0.000221264421033882
+        },
+        {
+          "v": 3,
+          "c": 8,
+          "fraction": 0.00019966674363973457
+        },
+        {
+          "v": 3,
+          "c": 5,
+          "fraction": 0.00019916986311877322
+        },
+        {
+          "v": 4,
+          "c": 8,
+          "fraction": 0.00014602316818964977
+        },
+        {
+          "v": 2,
+          "c": 6,
+          "fraction": 5.739495158512888e-05
+        }
+      ]
+    },
+    {
+      "states": [
+        3,
+        4
+      ],
+      "label": "3,4",
+      "mean_energy_eV": 6.863518815,
+      "splitting_eV": 6.490000000525242e-06,
+      "max_linear_strength": 0.30190023,
+      "sum_linear_strength": 0.30361850208999996,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 3.4317594075,
+      "possible_1ph_pump_eV": 6.863518815,
+      "norm_full_k_weight": 1.0,
+      "norm_IBZ_star_weight": 0.9999999999999999,
+      "participation_k": 63.338161878072604,
+      "effective_num_IBZ_stars": 8.196317798236851,
+      "max_path_sampling_misfit_Ainv": 0.09084709538506347,
+      "top_vc": [
+        {
+          "v": 4,
+          "c": 5,
+          "fraction": 0.998643513132033
+        },
+        {
+          "v": 4,
+          "c": 6,
+          "fraction": 0.0005564515055082287
+        },
+        {
+          "v": 4,
+          "c": 7,
+          "fraction": 0.0002914188526580148
+        },
+        {
+          "v": 3,
+          "c": 6,
+          "fraction": 0.00014534289994116572
+        },
+        {
+          "v": 3,
+          "c": 5,
+          "fraction": 0.0001337124720200121
+        },
+        {
+          "v": 3,
+          "c": 8,
+          "fraction": 9.660079051429644e-05
+        },
+        {
+          "v": 4,
+          "c": 8,
+          "fraction": 4.382182102794204e-05
+        },
+        {
+          "v": 2,
+          "c": 8,
+          "fraction": 2.5933151472297694e-05
+        }
+      ]
+    },
+    {
+      "states": [
+        5
+      ],
+      "label": "5",
+      "mean_energy_eV": 6.9387559,
+      "splitting_eV": 0.0,
+      "max_linear_strength": 2.0098875e-10,
+      "sum_linear_strength": 2.0098875e-10,
+      "weak_in_one_photon_y": true,
+      "possible_2ph_pump_eV": 3.46937795,
+      "possible_1ph_pump_eV": 6.9387559,
+      "norm_full_k_weight": 1.0,
+      "norm_IBZ_star_weight": 1.0,
+      "participation_k": 39.49072167098133,
+      "effective_num_IBZ_stars": 3.895287237714389,
+      "max_path_sampling_misfit_Ainv": 0.09084709538506347,
+      "top_vc": [
+        {
+          "v": 4,
+          "c": 5,
+          "fraction": 0.9997547384752075
+        },
+        {
+          "v": 4,
+          "c": 7,
+          "fraction": 0.00011880366250469963
+        },
+        {
+          "v": 4,
+          "c": 6,
+          "fraction": 6.259028405309894e-05
+        },
+        {
+          "v": 4,
+          "c": 8,
+          "fraction": 5.0029366355959605e-05
+        },
+        {
+          "v": 3,
+          "c": 8,
+          "fraction": 7.138994509807025e-06
+        },
+        {
+          "v": 3,
+          "c": 6,
+          "fraction": 5.248124281749575e-06
+        },
+        {
+          "v": 2,
+          "c": 8,
+          "fraction": 9.589823927768498e-07
+        },
+        {
+          "v": 2,
+          "c": 6,
+          "fraction": 4.1676309280070567e-07
+        }
+      ]
+    },
+    {
+      "states": [
+        6
+      ],
+      "label": "6",
+      "mean_energy_eV": 7.0023499,
+      "splitting_eV": 0.0,
+      "max_linear_strength": 3.15704675e-09,
+      "sum_linear_strength": 3.15704675e-09,
+      "weak_in_one_photon_y": true,
+      "possible_2ph_pump_eV": 3.50117495,
+      "possible_1ph_pump_eV": 7.0023499,
+      "norm_full_k_weight": 1.0000000000000002,
+      "norm_IBZ_star_weight": 1.0,
+      "participation_k": 44.95165208348312,
+      "effective_num_IBZ_stars": 4.627072893039689,
+      "max_path_sampling_misfit_Ainv": 0.09084709538506347,
+      "top_vc": [
+        {
+          "v": 4,
+          "c": 5,
+          "fraction": 0.9973701075140824
+        },
+        {
+          "v": 3,
+          "c": 6,
+          "fraction": 0.0005152552387939528
+        },
+        {
+          "v": 2,
+          "c": 6,
+          "fraction": 0.00043108137288522025
+        },
+        {
+          "v": 2,
+          "c": 8,
+          "fraction": 0.00036097830288548825
+        },
+        {
+          "v": 4,
+          "c": 6,
+          "fraction": 0.00029954485359733014
+        },
+        {
+          "v": 3,
+          "c": 8,
+          "fraction": 0.0002648125752201464
+        },
+        {
+          "v": 4,
+          "c": 7,
+          "fraction": 0.0002578901168258232
+        },
+        {
+          "v": 1,
+          "c": 6,
+          "fraction": 0.00012997185099275705
+        }
+      ]
+    },
+    {
+      "states": [
+        7,
+        8
+      ],
+      "label": "7,8",
+      "mean_energy_eV": 7.104747290000001,
+      "splitting_eV": 2.6759999999903528e-05,
+      "max_linear_strength": 0.0386776165,
+      "sum_linear_strength": 0.04015555736,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 3.5523736450000003,
+      "possible_1ph_pump_eV": 7.104747290000001,
+      "norm_full_k_weight": 0.9999999999999998,
+      "norm_IBZ_star_weight": 1.0,
+      "participation_k": 17.512241136293824,
+      "effective_num_IBZ_stars": 5.170048931286861,
+      "max_path_sampling_misfit_Ainv": 0.09084709538506347,
+      "top_vc": [
+        {
+          "v": 4,
+          "c": 5,
+          "fraction": 0.9996308476163289
+        },
+        {
+          "v": 4,
+          "c": 6,
+          "fraction": 0.0001533231435571574
+        },
+        {
+          "v": 4,
+          "c": 7,
+          "fraction": 6.188429760372529e-05
+        },
+        {
+          "v": 3,
+          "c": 6,
+          "fraction": 4.182818230118375e-05
+        },
+        {
+          "v": 3,
+          "c": 5,
+          "fraction": 3.858693736885612e-05
+        },
+        {
+          "v": 3,
+          "c": 8,
+          "fraction": 3.326475552151952e-05
+        },
+        {
+          "v": 4,
+          "c": 8,
+          "fraction": 1.7886239173281313e-05
+        },
+        {
+          "v": 2,
+          "c": 8,
+          "fraction": 7.6174437079448106e-06
+        }
+      ]
+    },
+    {
+      "states": [
+        9
+      ],
+      "label": "9",
+      "mean_energy_eV": 7.27525011,
+      "splitting_eV": 0.0,
+      "max_linear_strength": 1.81287406e-09,
+      "sum_linear_strength": 1.81287406e-09,
+      "weak_in_one_photon_y": true,
+      "possible_2ph_pump_eV": 3.637625055,
+      "possible_1ph_pump_eV": 7.27525011,
+      "norm_full_k_weight": 1.0,
+      "norm_IBZ_star_weight": 1.0000000000000002,
+      "participation_k": 46.269967746985934,
+      "effective_num_IBZ_stars": 4.305502355109328,
+      "max_path_sampling_misfit_Ainv": 0.09084709538506347,
+      "top_vc": [
+        {
+          "v": 4,
+          "c": 5,
+          "fraction": 0.9994237940002435
+        },
+        {
+          "v": 4,
+          "c": 7,
+          "fraction": 0.00012400146111422533
+        },
+        {
+          "v": 4,
+          "c": 6,
+          "fraction": 9.2030931942398e-05
+        },
+        {
+          "v": 3,
+          "c": 6,
+          "fraction": 8.817069930726988e-05
+        },
+        {
+          "v": 4,
+          "c": 8,
+          "fraction": 6.221185294535492e-05
+        },
+        {
+          "v": 2,
+          "c": 6,
+          "fraction": 5.7370873599446426e-05
+        },
+        {
+          "v": 2,
+          "c": 8,
+          "fraction": 5.00137722392358e-05
+        },
+        {
+          "v": 3,
+          "c": 8,
+          "fraction": 4.59702403369239e-05
+        }
+      ]
+    },
+    {
+      "states": [
+        10,
+        11
+      ],
+      "label": "10,11",
+      "mean_energy_eV": 7.290153575,
+      "splitting_eV": 3.486999999946505e-05,
+      "max_linear_strength": 0.0249733477,
+      "sum_linear_strength": 0.025549944666,
+      "weak_in_one_photon_y": false,
+      "possible_2ph_pump_eV": 3.6450767875,
+      "possible_1ph_pump_eV": 7.290153575,
+      "norm_full_k_weight": 0.9999999999999998,
+      "norm_IBZ_star_weight": 0.9999999999999999,
+      "participation_k": 15.665797799963656,
+      "effective_num_IBZ_stars": 4.142499052918294,
+      "max_path_sampling_misfit_Ainv": 0.09084709538506347,
+      "top_vc": [
+        {
+          "v": 4,
+          "c": 5,
+          "fraction": 0.9998590483404604
+        },
+        {
+          "v": 4,
+          "c": 7,
+          "fraction": 5.81135242642213e-05
+        },
+        {
+          "v": 4,
+          "c": 6,
+          "fraction": 1.881919157132148e-05
+        },
+        {
+          "v": 3,
+          "c": 6,
+          "fraction": 1.8530655783898864e-05
+        },
+        {
+          "v": 4,
+          "c": 8,
+          "fraction": 1.4298506762866917e-05
+        },
+        {
+          "v": 3,
+          "c": 5,
+          "fraction": 1.3691393215810073e-05
+        },
+        {
+          "v": 3,
+          "c": 8,
+          "fraction": 1.1275630313021405e-05
+        },
+        {
+          "v": 2,
+          "c": 8,
+          "fraction": 1.8024459439853056e-06
+        }
+      ]
+    }
+  ],
+  "dark_vs_bright_IBZ_states": [
+    [
+      1,
+      2
+    ],
+    [
+      5
+    ]
+  ],
+  "one_photon_dark_threshold": 1e-06,
+  "selected_dark_candidate_count": 15,
+  "SHG_magnitude_local_peaks": 3,
+  "interpretation": "E_exc and E_exc/2 are candidate SHG denominator positions. Linear BSE strength is NOT two-photon absorption, and k weights are NOT a decomposition of chi2. A quantitative dark-state SHG mechanism requires exciton-exciton dipoles and coherent sums. No anticrossing is inferred from a single calculated susceptibility spectrum.",
+  "FLOrder": "UNCHANGED; no propagation or BSE computation"
+}

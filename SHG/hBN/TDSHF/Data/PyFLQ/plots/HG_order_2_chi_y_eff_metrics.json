@@ -1,0 +1,10 @@
+{
+  "complex_L2_relative": 0.00696929942567105,
+  "peak_normalized_max_abs_magnitude_error": 0.0038877709958484536,
+  "median_magnitude_relative_error_above_5pct_peak": 0.002211842379640139,
+  "npoints": 64,
+  "npoints_above_5pct_peak": 49,
+  "max_energy_difference_eV": 0.0,
+  "component": "chi_y_eff",
+  "reference_matching": "exact_RT_subset"
+}

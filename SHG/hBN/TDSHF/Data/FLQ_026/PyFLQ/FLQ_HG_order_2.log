@@ -1,0 +1,13 @@
+FLQ-four-scripts-1.0
+Field 2 not found
+Field 3 not found
+FLQ_026: photon=4.05000085 eV, Berry grid=(18, 18, 1), symmetry=residual
+Unprojected Berry error: 4.818915383002857e-05
+Applied polar-vector projector:
+ [[0. 0. 0.]
+ [0. 1. 0.]
+ [0. 0. 0.]]
+Quadrature convergence tests symmetry-allowed outputs: ['y']
+Raw Berry checks: {"active_components": ["y"], "relative_errors_per_component": [null, 1.5786790507764444e-11, null], "combined_active_error": 1.5786790507764444e-11, "inactive_leakage": 0.0}
+Polarization quadrature 65->131: harmonic-2 relative change 4.022081e-08
+STATUS: COMPLETE

@@ -1,0 +1,16 @@
+dark_state,dark_exciton_E_eV,dark_two_photon_pump_eV,nearest_bright_states,bright_two_photon_pump_eV,two_photon_pump_separation_eV,separation_over_broadening,closer_than_reference_broadening,note
+5,6.9387559,3.46937795,"3,4",3.4317594075,0.037618542500000185,0.18809271250000092,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+6,7.0023499,3.50117495,"7,8",3.5523736450000003,0.051198695000000516,0.2559934750000026,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+9,7.27525011,3.637625055,"10,11",3.6450767875,0.0074517324999998635,0.03725866249999932,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+14,7.39587591,3.697937955,"10,11",3.6450767875,0.05286116750000014,0.2643058375000007,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+15,7.4606645,3.73033225,"10,11",3.6450767875,0.08525546250000016,0.4262773125000008,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+18,7.4905274,3.7452637,"10,11",3.6450767875,0.10018691250000034,0.5009345625000017,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+19,7.5439447,3.77197235,"10,11",3.6450767875,0.12689556250000011,0.6344778125000006,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+21,7.59210043,3.796050215,"10,11",3.6450767875,0.1509734275000003,0.7548671375000016,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+23,7.59963751,3.799818755,"10,11",3.6450767875,0.15474196750000013,0.7737098375000007,1,Comparison to a user-supplied broadening scale; not a fitted linewidth
+24,7.70891389,3.854456945,"10,11",3.6450767875,0.20938015750000005,1.0469007875000003,0,Comparison to a user-supplied broadening scale; not a fitted linewidth
+26,7.710947,3.8554735,"10,11",3.6450767875,0.21039671250000014,1.0519835625000007,0,Comparison to a user-supplied broadening scale; not a fitted linewidth
+27,7.79356782,3.89678391,"10,11",3.6450767875,0.25170712250000005,1.2585356125000002,0,Comparison to a user-supplied broadening scale; not a fitted linewidth
+29,7.8321623,3.91608115,"10,11",3.6450767875,0.27100436250000026,1.3550218125000013,0,Comparison to a user-supplied broadening scale; not a fitted linewidth
+30,7.85513852,3.92756926,"10,11",3.6450767875,0.2824924725,1.4124623625,0,Comparison to a user-supplied broadening scale; not a fitted linewidth
+33,7.9013691,3.95068455,"10,11",3.6450767875,0.3056077625000002,1.528038812500001,0,Comparison to a user-supplied broadening scale; not a fitted linewidth
