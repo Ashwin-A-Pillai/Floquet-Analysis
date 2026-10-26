@@ -1,0 +1,198 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.1.0                                  
+#                   Branch is develop                                 
+#               MPI+SLK+HDF5_MPI_IO Build                             
+#               http://www.lumen-code.org                             
+#
+optics                           # [R] Linear Response optical properties
+em1s                             # [R][Xs] Statically Screened Interaction
+bss                              # [R] BSE solver
+rim_cut                          # [R] Coulomb potential
+bse                              # [R][BSE] Bethe Salpeter Equation.
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+StdoHash=  40                    # [IO] Live-timing Hashes
+Nelectro= 8.000000               # Electrons number
+NelCond= 0.000000                # Number of electrons in conduction (Quasi-Fermi distribution)
+ElecTemp= 0.000000         eV    # Electronic Temperature
+BoseTemp=-1.000000         eV    # Bosonic Temperature
+OccTresh= 0.100000E-4            # Occupation treshold (metallic bands)
+NLogCPUs=0                       # [PARALLEL] Live-timing CPU`s (0 for all)
+DBsIOoff= "none"                 # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
+DBsFRAGpm= "none"                # [IO] Space-separated list of +DB to FRAG and -DB to NOT FRAG. DB=(DIP,X,W,HF,COLLS,K,BS,QINDX,RT,ELP
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+FFTGvecs=  7255            RL    # [FFT] Plane-waves
+#WFbuffIO                      # [IO] Wave-functions buffered I/O
+PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload"/"KQmemory")
+DIP_CPU= ""
+DIP_ROLEs= ""
+X_and_IO_CPU= ""                 # [PARALLEL] CPUs for each role
+X_and_IO_ROLEs= ""               # [PARALLEL] CPUs roles (q,g,k,c,v)
+X_and_IO_nCPU_LinAlg_INV=-1      # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
+BZINDX_CPU= ""                   # [PARALLEL] CPUs for each role
+BZINDX_ROLEs= ""                 # [PARALLEL] CPUs roles (k)
+BS_CPU= ""
+BS_ROLEs= ""
+BS_nCPU_LinAlg_INV=-1            # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
+BS_nCPU_LinAlg_DIAGO=-1          # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
+NonPDirs= "none"                 # [X/BSS] Non periodic chartesian directions (X,Y,Z,XY...)
+% MolPos
+ 0.000000 | 0.000000 | 0.000000 |        # [X/BSS] Molecule coord in supercell, 0.5 is the middle
+%
+RandQpts= 5000000
+RandGvec= 29 RL
+#QpgFull                       # [F RIM] Coulomb interaction: Full matrix
+% Em1Anys
+ 0.000000 | 0.000000 | 0.000000 |        # [RIM] X Y Z Static Inverse dielectric matrix Anysotropy
+%
+IDEm1Ref=0                       # [RIM] Dielectric matrix reference component 1(x)/2(y)/3(z)
+CUTGeo= "slab z"
+% CUTBox
+ 0.000000 | 0.000000 | 0.000000 |        # [CUT] [au] Box sides
+%
+CUTRadius= 0.000000              # [CUT] [au] Sphere/Cylinder radius
+CUTwsGvec= 0.700000              # [CUT] WS cutoff: number of G to be modified
+#CUTCol_test                   # [CUT] Perform a cutoff test in R-space
+EpsEnv= 1.000000                 # [COL] Static Inverse dielectric matrix of enviroment
+Chimod= "HARTREE"                # [X] IP/Hartree/ALDA/LRC/PF/BSfxc
+ChiLinAlgMod= "LIN_SYS"          # [X] inversion/lin_sys,cpu/gpu
+BSKmod= "SEX"
+BSEmod= "resonant"
+Lkind= "BAR"                     # [BSE,X] bar(default)/full/tilde
+BSKIOshape= "2D_standard"        # [BSK] "1D_linear"/"2D_standard"
+BSEdiskIO= "medium"              # [BSE] high(restart always) |medium(restart only corr.) |low(writes at the end)|none
+BSSmod= "d"
+% DipBands
+   1 | 200 |                         # [DIP] Bands range for dipoles
+%
+#DipBandsALL                   # [DIP] Compute all bands range, not only valence and conduction
+DipApproach= "G-space v"         # [DIP] [G-space v/R-space x/Covariant/Shifted grids/derk]
+DipComputed= ""                  # [DIP] [default R P V; extra P2 Spin Orb]
+#DipPDirect                    # [DIP] Directly compute <v> also when using other approaches for dipoles
+ShiftedPaths= ""                 # [DIP] Shifted grids paths (separated by a space)
+DipoleEtresh= 0.100000E-4  eV    # [DIP] Treshold in the definition of R=P/deltaE
+DbGdQsize=-1.000000              # [X,DbGd][o/o] Percentual of the total DbGd transitions to be used
+Gauge= "length"                  # [BSE/X] Gauge (length|velocity)
+BSENGexx= 20000 mHa
+#ALLGexx                       # [BSS] Force the use use all RL vectors for the exchange part
+% Qdirection
+ 0.000000 | 0.000000 | 0.000000 |        # [Xd] Transferred momentum direction (iku)
+%
+QShiftOrder= 1                   # [Xd] Pick-up the (QShiftOrder)th q+G vector
+BSENGBlk=-1                RL    # [BSK] Screened interaction block size [if -1 uses all the G-vectors of W_{G,Gp}]
+#WehCpl                        # [BSK] eh interaction included also in coupling
+#WehDiag                       # [BSK] diagonal (G-space) the eh interaction
+KfnQPdb= "none"
+KfnQP_INTERP_NN= 1               # [EXTQP BSK BSS] Interpolation neighbours (NN mode)
+KfnQP_INTERP_shells= 20.00000    # [EXTQP BSK BSS] Interpolation shells (BOLTZ mode)
+KfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP BSK BSS] Interpolation DbGd mode
+% KfnQP_E
+ 3.64670676 | 1.000000 | 1.000000 |
+%
+KfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP BSK BSS] Z factor  (c/v)
+KfnQP_Wv_E= 0.000000       eV    # [EXTQP BSK BSS] W Energy reference  (valence)
+% KfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP BSK BSS] W parameters  (valence) eV| 1|eV^-1
+%
+KfnQP_Wv_dos= 0.000000     eV    # [EXTQP BSK BSS] W dos pre-factor  (valence)
+KfnQP_Wc_E= 0.000000       eV    # [EXTQP BSK BSS] W Energy reference  (conduction)
+% KfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP BSK BSS] W parameters  (conduction) eV| 1 |eV^-1
+%
+KfnQP_Wc_dos= 0.000000     eV    # [EXTQP BSK BSS] W dos pre-factor  (conduction)
+#NoCondSumRule                 # [BSE/X] Do not impose the conductivity sum rule in velocity gauge
+#MetDamp                       # [BSE] Define \w+=sqrt(\w*(\w+i\eta))
+% PL_weights
+ 1.000000 | 0.000000 | 0.000000 |        # [PL] [cc] Weights of the carthesian components of the emitted radiation
+%
+EXCTemp= 0.000000          eV    # Excitonic Temperature (for luminescence spectra and EXCPH)
+DrudeWBS= ( 0.000000 , 0.000000 )  eV    # [BSE] Drude plasmon
+#Reflectivity                  # [BSS] Compute reflectivity at normal incidence
+BoseCut= 0.100000                # Finite T Bose function cutoff
+% BSEQptR
+ 1 | 1 |
+%
+% BSEBands
+ 1 | 8 |
+%
+BSEFrozenBands= ""               # [BSK] Bands expluded from BSE construction
+BSKCut= 0.000000                 # [BSK] Cutoff on the BSE Kernel, 0=full 1=none
+% BSEEhEny
+-1.000000 |-1.000000 |         eV    # [BSK] Electron-hole energy range
+%
+% BSehWind
+ 100.0000 | 100.0000 |               # [BSK] [o/o] E/h coupling pairs energy window
+%
+#NoDiagSC                      # New setup for non-diagonal supercells
+% BEnRange
+ 0.0 | 10.0 | eV
+%
+% BDmRange
+ 0.100000 | 0.100000 |         eV    # [BSS] Damping range
+%
+BDmERef= 0.000000          eV    # [BSS] Damping energy reference
+BEnSteps= 400
+% BLongDir
+ 0.0 | 1.0 | 0.0 |
+%
+% QPropDir
+ 0.000000 | 0.000000 | 1.000000 |        # [BSS] [cc] Propagation versor Field
+%
+BSEprop= "abs"                   # [BSS] Can be any among abs/jdos/kerr/asymm/anHAll/magn/dich/photolum/esrt/MEspin/MEorb
+BSEdips= "none"                  # [BSS] Can be "trace/none" or "xy/xz/yz" to define off-diagonal rotation plane
+WRbsWF
+#BSSPertWidth                  # [BSS] Include QPs lifetime in a perturbative way
+BSSldiaLib= "s"                  # [BSS] Library used with ldiago solver `(s)scalapack/(e1)elpa1/(e2)elpa2`
+BSSNEig=0                        # [SLEPC/DIAGO] Number of eigenvalues to compute
+% BSSEnRange
+-1.000000 |-1.000000 |         eV    # [DIAGO] Target energy to find eigenvalues
+%
+BSSFirstEig= 1                   # [DIAGO] Index of the first eigenvalues to compute
+XfnQPdb= "none"                  # [EXTQP Xd] Database action
+XfnQP_INTERP_NN= 1               # [EXTQP Xd] Interpolation neighbours (NN mode)
+XfnQP_INTERP_shells= 20.00000    # [EXTQP Xd] Interpolation shells (BOLTZ mode)
+XfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP Xd] Interpolation DbGd mode
+% XfnQP_E
+ 0.000000 | 1.000000 | 1.000000 |        # [EXTQP Xd] E parameters  (c/v) eV|adim|adim
+%
+XfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP Xd] Z factor  (c/v)
+XfnQP_Wv_E= 0.000000       eV    # [EXTQP Xd] W Energy reference  (valence)
+% XfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP Xd] W parameters  (valence) eV| 1|eV^-1
+%
+XfnQP_Wv_dos= 0.000000     eV    # [EXTQP Xd] W dos pre-factor  (valence)
+XfnQP_Wc_E= 0.000000       eV    # [EXTQP Xd] W Energy reference  (conduction)
+% XfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP Xd] W parameters  (conduction) eV| 1 |eV^-1
+%
+XfnQP_Wc_dos= 0.000000     eV    # [EXTQP Xd] W dos pre-factor  (conduction)
+% QpntsRXs
+   1 |  37 |                         # [Xs] Transferred momenta
+%
+% BndsRnXs
+ 1 | 200 |
+%
+NGsBlkXs= 5000 mHa
+GrFnTpXs= "T"                    # [Xs] Green`s function (T)ordered,(R)etarded,(r)senant,(a)ntiresonant [T, R, r, Ta, Ra]
+% DmRngeXs
+ 0.100000E-2 | 0.100000E-2 |   eV    # [Xs] Damping range
+%
+CGrdSpXs= 100.0000               # [Xs] [o/o] Coarse grid controller
+% EhEngyXs
+-1.000000 |-1.000000 |         eV    # [Xs] Electron-hole energy range
+%
+% LongDrXs
+ 0.0 | 1.0 | 0.0 |
+%
+DrudeWXs= ( 0.000000 , 0.000000 )  eV    # [Xs] Drude plasmon
+XTermKind= "none"                # [X] X terminator ("none","BG" Bruneval-Gonze)
+XTermEn= 40.00000          eV    # [X] X terminator energy (only for kind="BG")
+#OptDipAverage                 # [Xd] Average Xd along the non-zero Electric Field directions

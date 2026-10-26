@@ -1,0 +1,30 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.1.0                                  
+#                   Branch is develop                                 
+#               MPI+SLK+HDF5_MPI_IO Build                             
+#               http://www.lumen-code.org                             
+#
+fixsyms                          # [R] Remove symmetries not consistent with an external perturbation
+% Efield1
+ 0.0 | 1.0 | 0.0 |
+%
+% Efield2
+ 0.000000 | 0.000000 | 0.000000 |        # Additional external Electric Field
+%
+BField= 0.000000           T     # [MAG] Magnetic field modulus
+Bpsi= 0.000000             deg   # [MAG] Magnetic field psi angle [degree]
+Btheta= 0.000000           deg   # [MAG] Magnetic field theta angle [degree]
+#KeepKGrid                     # Do not expand the k-grid
+#RmAllSymm                     # Remove all symmetries
+#RmNoSymmo                     # Remove non-symmorphic symmetries
+RmTimeRev
+#RmSpaceInv                    # Remove Spatial Inversion
