@@ -1,0 +1,98 @@
+#!/bin/bash -l
+#SBATCH --job-name=IPA_RT
+#SBATCH --output=outs/%x.%j.out
+#SBATCH --error=outs/%x.%j.err
+#SBATCH --partition=c9
+#SBATCH --nodes=1
+#SBATCH --ntasks=24
+#SBATCH --cpus-per-task=2
+
+set -euo pipefail
+ulimit -l unlimited
+export OMPI_MCA_pml=ucx OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export OMP_PLACES=cores OMP_PROC_BIND=close OPENBLAS_NUM_THREADS=1 MPLBACKEND=Agg
+module purge
+module load gnu12/12.2.0 openmpi4/4.1.5 phdf5/1.14.0
+module load netcdf/4.9.0 netcdf-fortran/4.6.0 scalapack/2.2.2
+module load fftw/3.3.10 openblas/0.3.21 petsc/3.22.0_s slepc/3.22.0_s
+module load libxc/5.2.3 pmix/4.2.9 prun/2.2
+
+source /home/pillai/miniconda3/etc/profile.d/conda.sh
+conda activate yambo-lelphc
+export PYTHONPATH="/home/pillai/my_codes/yambopy-fl-analysis:${PYTHONPATH:-}"
+
+ROOT=${SLURM_SUBMIT_DIR:-$PWD}; cd "$ROOT"
+scripts=${ANALYSIS_DIR:-/home/pillai/my_codes/yambo/Floqanalysis/scripts}
+YAMBO="/home/pillai/lumen/bin/yambo"
+YNL="/home/pillai/lumen/bin/yambo_nl"
+YPP_NL="/home/pillai/lumen/bin/ypp_nl"
+P2Y="/home/pillai/lumen/bin/p2y"
+
+# Editable numerical settings; these defaults are your current hBN pilot.
+# No material-name or fixed-k-grid checks. QE must already supply the desired mesh.
+export dim=${dim:-2D} MPI_RANKS=${SLURM_NTASKS:-24} # slab/bulk geometry; Yambo MPI ranks
+export nl_band_i=${nl_band_i:-3} nl_band_f=${nl_band_f:-6} # First/last propagated KS bands
+export nl_step=${nl_step:-0.010000} nl_time=${nl_time:--1.000000} # Time step / auto stop (fs)
+export nl_integrator=${nl_integrator:-CRANKNIC} nl_damp=${nl_damp:-0.200000} # Solver; damping eV
+export nl_en_min=${nl_en_min:-0.5} nl_en_max=${nl_en_max:-10.05} nl_esteps=${nl_esteps:-191} # RT eV range/count
+export field1_int=${field1_int:-1000.0} field1_width=0.0 field1_fwhm=0.0 # kW/cm2; pulse envelope fs
+export field1_kind=SOFTSIN field1_pol=linear field1_tstart=$nl_step # Smooth sine; linear; start fs
+export efield1_x=${efield1_x:-0.0} efield1_y=${efield1_y:-1.0} efield1_z=${efield1_z:-0.0} # E direction xyz
+export NL_CPU_LAYOUT="${NL_CPU_LAYOUT:-${MPI_RANKS} 1}" NL_ROLES='w k' NL_THREADS=0 # MPI w/k and OMP
+export fl_order=${fl_order:-4}          # Stored Floquet Fourier order (2*FLOrder+1 samples)
+export HARMONIC_ORDER=${HARMONIC_ORDER:-2}  # 2=SHG, 3=THG; input tensor rank is N+1
+export COMPONENT=${COMPONENT:-y}      # x/y/z=field contraction; "[1,1,2]"=chi_xxy
+export FREQ_COMPONENT=${FREQ_COMPONENT:-all}  # x/y/z/all or identifiable tensor: adaptive RT proxy
+export TENSOR_DB=${TENSOR_DB:-../SAVE/ns.db1}  # Equilibrium point group, NOT driven FS_*/SAVE
+FLQ_POINTS=${FLQ_POINTS:-64}          # Target Floquet frequencies chosen from actual RT nodes
+
+export nl_correlation=IPA QP_MODE=none SCISSOR_EV=0.0 QP_DB=none # Independent particles; bare KS
+
+BRANCH=FS_IPA # Isolated nonlinear IPA workspace; regular SAVE stays in parent
+# Fresh run
+rm -f r_setu* l_p2* l_setu* l_fixsym* r_fixsym* 2>/dev/null || true
+rm -rf SAVE FixSymm CHI_IP 2>/dev/null || true
+
+# =============================================================================
+# 1. Regular SAVE
+# =============================================================================
+"${P2Y}"
+"${YAMBO}"
+
+# 2. Linear independent-particle spectrum.
+export i_band=${i_band:-1} f_band=${f_band:-8} iE=0.0 fE=10.0 stepE=400 # Linear IP bands, eV range, points
+"$YNL" -o c -V all -F IPA_temp.in -Q
+bash "${scripts}/patch_IPA.sh" IPA_temp.in IPA.in
+prun "$YNL" -F IPA.in -J CHI_IP -C CHI_IP </dev/null > IPA.out
+
+# 3. Fix symmetry and isolate the nonlinear branch.
+"$YPP_NL" -y -F FSypp_temp.in -Q
+bash "${scripts}/patch_FSy.sh" FSypp_temp.in FSypp.in
+"$YPP_NL" -F FSypp.in
+cp -a FixSymm "$BRANCH"
+cd "$BRANCH"
+"$YNL"
+
+# 4. Ordinary IPA RT frequency sweep. All input changes are in patch_FN.sh.
+export NTDiv=false # RT loop: do NOT divide timestep by single frequency
+"$YNL" -u n -V all -Input nl_n_temp.in -Q
+bash "${scripts}/patch_FN.sh" nl_n_temp.in YNL.in
+prun "$YNL" -Input YNL.in -J NL -C NL </dev/null > NL.out
+grep -q 'Game Over' NL/r-NL_nloptics
+
+# RT spectrum and adaptive list; no Lumen Floquet propagation in this job.
+python3 "${scripts}/FLQ_HG.py" --source rt --harmonic-order "$HARMONIC_ORDER" \
+    --component "$COMPONENT" --tensor-symmetry-db "$TENSOR_DB" --force
+python3 "${scripts}/FLQ_AL.py" frequencies --adaptive \
+    --spectrum "PyFLQ/RT_order_${HARMONIC_ORDER}.dat" \
+    --component "$FREQ_COMPONENT" --harmonic-order "$HARMONIC_ORDER" \
+    --points "$FLQ_POINTS" --max-step-eV 0.35
+"$YNL" -u p -V all -Input nl_p_temp.in -Q
+# This generated settings snapshot keeps the later FP inputs consistent with FN.
+declare -p dim nl_band_i nl_band_f nl_step nl_time nl_integrator nl_correlation nl_damp \
+    field1_int field1_width field1_fwhm field1_kind field1_pol field1_tstart \
+    efield1_x efield1_y efield1_z QP_MODE SCISSOR_EV QP_DB fl_order \
+    HARMONIC_ORDER COMPONENT FREQ_COMPONENT TENSOR_DB > .flq.env
+sha256sum YNL.in .flq.env > .RT_input.sha256
+printf '%s\n' "$BRANCH" > "$ROOT/.flq_branch"
+echo "Preparation complete: $(date)"

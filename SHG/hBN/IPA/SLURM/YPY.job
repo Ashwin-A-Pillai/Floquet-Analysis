@@ -1,0 +1,67 @@
+#!/bin/bash -l
+#SBATCH --job-name=YamboPy
+#SBATCH --output=outs/%x.%j.out
+#SBATCH --error=outs/%x.%j.err
+#SBATCH --partition=c9
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=4
+
+set -euo pipefail
+ulimit -l unlimited
+export OMPI_MCA_pml=ucx OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export OMP_PLACES=cores OMP_PROC_BIND=close OPENBLAS_NUM_THREADS=1 MPLBACKEND=Agg
+module purge
+module load gnu12/12.2.0 openmpi4/4.1.5 phdf5/1.14.0
+module load netcdf/4.9.0 netcdf-fortran/4.6.0 scalapack/2.2.2
+module load fftw/3.3.10 openblas/0.3.21 petsc/3.22.0_s slepc/3.22.0_s
+module load libxc/5.2.3 pmix/4.2.9 prun/2.2
+source /home/pillai/miniconda3/etc/profile.d/conda.sh
+conda activate yambo-lelphc
+export PYTHONPATH="/home/pillai/my_codes/yambopy-fl-analysis:${PYTHONPATH:-}"
+ROOT=${SLURM_SUBMIT_DIR:-$PWD}; cd "$ROOT"
+scripts=${ANALYSIS_DIR:-/home/pillai/my_codes/yambo/Floqanalysis/scripts}
+YNL=/home/pillai/lumen/bin/yambo_nl
+YPP_NL=/home/pillai/lumen/bin/ypp_nl
+
+read -r BRANCH < "$ROOT/.flq_branch"
+cd "$ROOT/$BRANCH"
+sha256sum -c .RT_input.sha256
+# Analysis-only overrides do not change the completed Floquet calculations.
+USER_COMPONENT=${COMPONENT:-}; USER_HARMONIC=${HARMONIC_ORDER:-}; USER_TENSOR_DB=${TENSOR_DB:-}
+source .flq.env  # Restore original driving field, band window, and QP settings
+COMPONENT=${USER_COMPONENT:-$COMPONENT}; HARMONIC_ORDER=${USER_HARMONIC:-$HARMONIC_ORDER}
+TENSOR_DB=${USER_TENSOR_DB:-${TENSOR_DB:-../SAVE/ns.db1}} # Original, un-reduced crystal point group
+export OPENBLAS_NUM_THREADS=$OMP_NUM_THREADS MKL_NUM_THREADS=$OMP_NUM_THREADS # Analysis BLAS threads
+count=$(wc -l < FLQ_frequencies.dat) # Required completed adaptive frequency count
+sig=$(sha256sum YNL.in nl_p_temp.in .flq.env FLQ_frequencies.dat "${scripts}/patch_FP.sh" | sha256sum | cut -d' ' -f1)
+while read -r idx freq; do
+    [[ -s FLQ_${idx}/.complete && $(< "FLQ_${idx}/.complete") == "$sig" ]] || { echo "Missing/mismatched FLQ_${idx}" >&2; exit 2; }
+done < FLQ_frequencies.dat
+
+# YPP harmonic analysis: patch_FAL replaces the old, misnamed patch_IPA.
+"$YPP_NL" -u -Input anl_temp.in -Q
+export FIT_ORDER=${FIT_ORDER:-$(( HARMONIC_ORDER > 2 ? 2*HARMONIC_ORDER : 4 ))} # Fit through max(4,2N)
+export xorder=$FIT_ORDER time_min=${time_min:--1.0} time_max=${time_max:--1.0} # YPP order / fitting window fs
+export damp_mode=NONE damp_factor=0.0 # No double damping; NL already contains dephasing
+bash "${scripts}/patch_FAL.sh" anl_temp.in anl.in
+jobdb=DE2,NL
+[[ $nl_correlation != SEX ]] || jobdb=DE2,NL,COL
+"$YPP_NL" -F anl.in -J "$jobdb" -C DE2 </dev/null > YPP.out
+
+python3 "$scripts/FLQuasi.py" --expect-bands "$nl_band_i" "$nl_band_f" --expected-count "$count" --force
+python3 "$scripts/FLQ_AL.py" audit --expected-count "$count" --verify-sources
+python3 "$scripts/FLQ_HG.py" --source both --harmonic-order "$HARMONIC_ORDER" \
+    --fit-order "$FIT_ORDER" --expected-fl-count "$count" --rt-reference exact \
+    --component "$COMPONENT" --tensor-symmetry-db "$TENSOR_DB" --force
+# Spectrum plot selects the requested measured contraction or identifiable chi tensor element.
+python3 "$scripts/FLQPlot.py" --spectra "PyFLQ/HG_order_${HARMONIC_ORDER}.npz" --component "$COMPONENT"
+python3 "$scripts/FLQPlot.py" --frequency-plan FLQ_frequencies.json
+# Supply the actual path; no material-specific path is inferred from the folder name.
+IBZ_CSV=${IBZ_CSV:-../../../IBZ/hBN.csv} # CSV: Label,k1,k2,k3, path order & k-space labels
+# TARGET_EV = nearest Floquet run; PLOT_KPT is one-based; PLOT_ETA is the FKS sideband index.
+python3 "$scripts/FLQPlot.py" --target-eV "${TARGET_EV:-4.1}" --ibz "$IBZ_CSV" \
+    --kpt "${PLOT_KPT:-6}" --initial-band "${PLOT_INITIAL_BAND:-4}" \
+    --basis-band "${PLOT_BASIS_BAND:-5}" --eta "${PLOT_ETA:-2}" --projection-bands all
+echo "Selected tensor/contraction: $COMPONENT; adaptive proxy: $FREQ_COMPONENT"
+echo "Analysis complete: $(date)"
