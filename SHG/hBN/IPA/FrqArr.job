@@ -1,0 +1,76 @@
+#!/bin/bash -l
+#SBATCH --job-name=Floquet
+#SBATCH --output=outs/%x.%A_%a.out
+#SBATCH --error=outs/%x.%A_%a.err
+#SBATCH --partition=c8
+#SBATCH --nodes=1
+#SBATCH --ntasks=32               # One c9 node (48 CPU ranks)
+#SBATCH --cpus-per-task=1       # One OMP thread per rank
+#SBATCH --array=0-15%5           # 64 points / 4 runs per element; one element at a time
+
+set -euo pipefail
+ulimit -l unlimited
+export OMPI_MCA_pml=ucx OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
+export OMP_PLACES=cores OMP_PROC_BIND=close OPENBLAS_NUM_THREADS=1 MPLBACKEND=Agg
+module purge
+module load gnu12/12.2.0 openmpi4/4.1.5 phdf5/1.14.0
+module load netcdf/4.9.0 netcdf-fortran/4.6.0 scalapack/2.2.2
+module load fftw/3.3.10 openblas/0.3.21 petsc/3.22.0_s slepc/3.22.0_s
+module load libxc/5.2.3 pmix/4.2.9 prun/2.2
+source /home/pillai/miniconda3/etc/profile.d/conda.sh
+conda activate yambo-lelphc
+export PYTHONPATH="/home/pillai/my_codes/yambopy-fl-analysis:${PYTHONPATH:-}"
+ROOT=${SLURM_SUBMIT_DIR:-$PWD}; cd "$ROOT"
+scripts=${ANALYSIS_DIR:-/home/pillai/my_codes/yambo/Floqanalysis/scripts}
+YNL=/home/pillai/lumen/bin/yambo_nl
+
+# Shared worker: preparation job records FS_IPA or FS_TDSHF in .flq_branch.
+read -r BRANCH < "$ROOT/.flq_branch"
+cd "$ROOT/$BRANCH"
+sha256sum -c .RT_input.sha256
+source .flq.env  # Inherits field, bands, QP mode, and selected spectral proxy
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1
+export MPI_RANKS=${FLQ_RANKS:-8} NL_ROLES='w k' NL_THREADS=0 NTDiv=true nl_time=-1.000000 # Per-frequency ranks; pump timing
+export NL_CPU_LAYOUT="1 $MPI_RANKS" # All MPI ranks over k, one drive frequency per step
+workers=$((SLURM_NTASKS / MPI_RANKS)) # 48/12 = 4 concurrent frequencies
+(( workers > 0 && workers * MPI_RANKS == SLURM_NTASKS )) || exit 2
+mapfile -t frequencies < FLQ_frequencies.dat # Adaptive frequencies from RT
+# Default array=0-15 covers 64 points at 4 per element. Resize at sbatch for another count.
+# Fingerprint inputs and patcher: avoid restarting a completed frequency with changed physics.
+sig=$(sha256sum YNL.in nl_p_temp.in .flq.env FLQ_frequencies.dat "${scripts}/patch_FP.sh" | sha256sum | cut -d' ' -f1)
+pids=()
+for ((slot=0; slot<workers; slot++)); do
+    number=$((SLURM_ARRAY_TASK_ID * workers + slot))
+    ((number < ${#frequencies[@]})) || continue
+    read -r idx freq <<< "${frequencies[number]}" # 000-based identifier, photon energy (eV)
+    (
+        # Only numeric frequency indices can be used in auto-deletion paths.
+        [[ $idx =~ ^[0-9]+$ ]] || { echo "Invalid frequency index: $idx" >&2; exit 2; }
+        calc="FLQ_${idx}"
+        if [[ -f "$calc/.complete" ]]; then
+            echo "[REUSE] $calc at $freq eV (.complete present)"; exit 0
+        fi
+        if [[ -e "$calc" || -L "$calc" ]]; then
+            [[ -d "$calc" && ! -L "$calc" ]] || { echo "Not a regular calculation directory: $calc" >&2; exit 2; }
+            echo "[RESTART] $calc at $freq eV (.complete absent; deleting incomplete directory)"
+            rm -rf -- "$calc"
+        fi
+        mkdir -- "$calc"
+        export field1_freq="$freq"
+        bash "${scripts}/patch_FP.sh" nl_p_temp.in "$calc/Y_FLQ_${idx}.in"
+        jobdb=$calc
+        [[ $nl_correlation != SEX ]] || jobdb="$calc,COL"
+        srun --exact --exclusive -N1 -n "$MPI_RANKS" -c1 --mem=0 \
+            --cpu-bind=cores --mpi="${SRUN_MPI:-pmix}" "$YNL" \
+            -Input "$calc/Y_FLQ_${idx}.in" -J "$jobdb" -C "$calc" \
+            </dev/null > "$calc/launch.out" 2> "$calc/launch.err"
+        grep -q 'Game Over' "$calc/r-${calc}_nloptics"
+        [[ -s "$calc/ndb.Nonlinear" && -s "$calc/ndb.RT_V_bands" && -s "$calc/ndb.RT_V_bands_K_section" ]] || exit 2
+        printf '%s\n' "$sig" > "$calc/.complete"
+    ) &
+    pids+=("$!")
+done
+failed=0
+for pid in "${pids[@]}"; do wait "$pid" || failed=1; done
+((failed == 0)) || { echo 'One or more frequency runs failed' >&2; exit 2; }
+echo "Floquet batch complete: $(date)"
