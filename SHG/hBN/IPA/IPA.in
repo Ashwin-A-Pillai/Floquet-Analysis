@@ -1,0 +1,106 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.1.0                                  
+#                   Branch is develop                                 
+#               MPI+SLK+HDF5_MPI_IO Build                             
+#               http://www.lumen-code.org                             
+#
+optics                           # [R] Linear Response optical properties
+infver                           # [R] Input file variables verbosity
+chi                              # [R][CHI] Dyson equation for Chi.
+dipoles                          # [R] Oscillator strenghts (or dipoles)
+StdoHash=  40                    # [IO] Live-timing Hashes
+Nelectro= 8.000000               # Electrons number
+NelCond= 0.000000                # Number of electrons in conduction (Quasi-Fermi distribution)
+ElecTemp= 0.000000         eV    # Electronic Temperature
+BoseTemp=-1.000000         eV    # Bosonic Temperature
+OccTresh= 0.100000E-4            # Occupation treshold (metallic bands)
+NLogCPUs=0                       # [PARALLEL] Live-timing CPU`s (0 for all)
+DBsIOoff= "none"                 # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
+DBsFRAGpm= "none"                # [IO] Space-separated list of +DB to FRAG and -DB to NOT FRAG. DB=(DIP,X,W,HF,COLLS,K,BS,QINDX,RT,ELP
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+FFTGvecs=  7255            RL    # [FFT] Plane-waves
+#WFbuffIO                      # [IO] Wave-functions buffered I/O
+PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload"/"KQmemory")
+DIP_CPU= ""
+DIP_ROLEs= ""
+X_CPU= ""
+X_ROLEs= ""
+X_nCPU_LinAlg_INV=-1             # [PARALLEL] CPUs for Linear Algebra (if -1 it is automatically set)
+BZINDX_CPU= ""                   # [PARALLEL] CPUs for each role
+BZINDX_ROLEs= ""                 # [PARALLEL] CPUs roles (k)
+NonPDirs= "none"                 # [X/BSS] Non periodic chartesian directions (X,Y,Z,XY...)
+% MolPos
+ 0.000000 | 0.000000 | 0.000000 |        # [X/BSS] Molecule coord in supercell, 0.5 is the middle
+%
+Chimod= "IP"
+ChiLinAlgMod= "LIN_SYS"          # [X] inversion/lin_sys,cpu/gpu
+% DipBands
+   1 | 200 |                         # [DIP] Bands range for dipoles
+%
+#DipBandsALL                   # [DIP] Compute all bands range, not only valence and conduction
+DipApproach= "G-space v"         # [DIP] [G-space v/R-space x/Covariant/Shifted grids/derk]
+DipComputed= ""                  # [DIP] [default R P V; extra P2 Spin Orb]
+#DipPDirect                    # [DIP] Directly compute <v> also when using other approaches for dipoles
+ShiftedPaths= ""                 # [DIP] Shifted grids paths (separated by a space)
+DipoleEtresh= 0.100000E-4  eV    # [DIP] Treshold in the definition of R=P/deltaE
+#EvPolarization                # [DIP] Evaluate Polarization (require DipApproach=Covariant)
+% QpntsRXd
+ 1 | 1 |
+%
+% BndsRnXd
+ 1 | 8 |
+%
+GrFnTpXd= "T"                    # [Xd] Green`s function (T)ordered,(R)etarded,(r)senant,(a)ntiresonant [T, R, r, Ta, Ra]
+% EnRngeXd
+ 0.0 | 10.0 | eV
+%
+% DmRngeXd
+ 0.100000 | 0.100000 | eV
+%
+DmERefXd= 0.000000         eV    # [Xd] Damping reference energy
+CGrdSpXd= 100.0000               # [Xd] [o/o] Coarse grid controller
+ETStpsXd= 400
+EMStpsXd= 100.0000               # [Xd] [o/o] Memory Energy steps
+DrudeWXd= ( 0.000000 , 0.000000 )  eV    # [Xd] Drude plasmon
+% EhEngyXd
+-1.000000 |-1.000000 |         eV    # [Xd] Electron-hole energy range
+%
+% LongDrXd
+ 0.0 | 1.0 | 0.0 |
+%
+#DrClassic                     # [X] Use a classical model for the drude term
+XfnQPdb= "none"
+XfnQP_INTERP_NN= 1               # [EXTQP Xd] Interpolation neighbours (NN mode)
+XfnQP_INTERP_shells= 20.00000    # [EXTQP Xd] Interpolation shells (BOLTZ mode)
+XfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP Xd] Interpolation DbGd mode
+% XfnQP_E
+ 0.0 | 1.000000 | 1.000000 |
+%
+XfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP Xd] Z factor  (c/v)
+XfnQP_Wv_E= 0.000000       eV    # [EXTQP Xd] W Energy reference  (valence)
+% XfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP Xd] W parameters  (valence) eV| 1|eV^-1
+%
+XfnQP_Wv_dos= 0.000000     eV    # [EXTQP Xd] W dos pre-factor  (valence)
+XfnQP_Wc_E= 0.000000       eV    # [EXTQP Xd] W Energy reference  (conduction)
+% XfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP Xd] W parameters  (conduction) eV| 1 |eV^-1
+%
+XfnQP_Wc_dos= 0.000000     eV    # [EXTQP Xd] W dos pre-factor  (conduction)
+XfnRTdb= "none"                  # [EXTRT Xd] Database
+XfnRT_N= 1                       # [EXTRT Xd] Interpolation neighbours
+% Qdirection
+ 0.000000 | 0.000000 | 0.000000 |        # [Xd] Transferred momentum direction (iku)
+%
+QShiftOrder= 1                   # [Xd] Pick-up the (QShiftOrder)th q+G vector
+DbGdQsize=-1.000000              # [X,DbGd][o/o] Percentual of the total DbGd transitions to be used
+Gauge= "length"                  # [BSE/X] Gauge (length|velocity)
