@@ -1,0 +1,27 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.1.0                                  
+#                   Branch is develop                                 
+#               MPI+SLK+HDF5_MPI_IO Build                             
+#               http://www.lumen-code.org                             
+#
+nonlinear                        # [R] Non-linear response analysis
+Xorder= 4
+% TimeRange
+ -1.0 | -1.0 | fs
+%
+ETStpsRt= 200                    # Total Energy steps
+% EnRngeRt
+  0.00000 | 20.00000 |         eV    # Energy range
+%
+DampMode= "NONE"
+DampFactor= 0.0 eV
+PumpPATH= "none"

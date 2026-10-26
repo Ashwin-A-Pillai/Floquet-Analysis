@@ -1,0 +1,128 @@
+#                                                                     
+# $$\                                                                 
+# $$ |                                                                
+# $$ |     $$\   $$\ $$$$$$\$$$$\   $$$$$$\  $$$$$$$\                 
+# $$ |     $$ |  $$ |$$  _$$  _$$\ $$  __$$\ $$  __$$\                
+# $$ |     $$ |  $$ |$$ / $$ / $$ |$$$$$$$$ |$$ |  $$ |               
+# $$ |     $$ |  $$ |$$ | $$ | $$ |$$   ____|$$ |  $$ |               
+# $$$$$$$$\\$$$$$$  |$$ | $$ | $$ |\$$$$$$$\ $$ |  $$ |               
+# \________|\______/ \__| \__| \__| \_______|\__|  \__|               
+#                                                                     
+#                   Fork Lumen 2.1.0                                  
+#                   Branch is develop                                 
+#               MPI+SLK+HDF5_MPI_IO Build                             
+#               http://www.lumen-code.org                             
+#
+nloptics                         # [R] Non-linear spectroscopy
+StdoHash=  40                    # [IO] Live-timing Hashes
+Nelectro= 8.000000               # Electrons number
+NelCond= 0.000000                # Number of electrons in conduction (Quasi-Fermi distribution)
+ElecTemp= 0.000000         eV    # Electronic Temperature
+BoseTemp=-1.000000         eV    # Bosonic Temperature
+OccTresh= 0.100000E-4            # Occupation treshold (metallic bands)
+NLogCPUs=0                       # [PARALLEL] Live-timing CPU`s (0 for all)
+DBsIOoff= "none"                 # [IO] Space-separated list of DB with NO I/O. DB=(DIP,X,HF,COLLs,J,GF,CARRIERs,OBS,W,SC,BS,ALL)
+DBsFRAGpm= "none"                # [IO] Space-separated list of +DB to FRAG and -DB to NOT FRAG. DB=(DIP,X,W,HF,COLLS,K,BS,QINDX,RT,ELP
+#DegFix                        # Force the code to impose the energy levels to respect their degeneracy
+PAR_def_mode= "balanced"         # [PARALLEL] Default distribution mode ("balanced"/"memory"/"workload"/"KQmemory")
+BZINDX_CPU= ""                   # [PARALLEL] CPUs for each role
+BZINDX_ROLEs= ""                 # [PARALLEL] CPUs roles (k)
+NL_CPU= "24 1"
+NL_ROLEs= "w k"
+DIP_CPU= ""
+DIP_ROLEs= ""
+OSCLL_CPU= ""                    # [PARALLEL] CPUs for each role
+OSCLL_ROLEs= ""                  # [PARALLEL] CPUs roles (k,b)
+FFTGvecs=  7255            RL    # [FFT] Plane-waves
+% NLBands
+ 3 | 6 |
+%
+NLverbosity= "high"              # [NL] Verbosity level (low | high)
+NLstep= 0.010000 fs
+NLtime= -1.000000 fs
+NLintegrator= "CRANKNIC"
+NLCorrelation= "IPA"
+NLLrcAlpha= 0.000000
+#TestOSCLL                     # [NL] Test Oscillators vs Full Collisions [for testing purposes]
+#NoUseSymm                     # [NL] Do not use residual-symms for polar/current (def false)
+% NLEnRange
+ 0.5 | 10.05 | eV
+%
+NLEnSteps= 191
+% NLrotaxis
+ 0.000000 | 0.000000 | 0.000000 |        # [NL] Rotation axis (for the loop on angles NLAngSteps/=0)
+%
+NLAngSteps=0                     # [NL] Angular steps (if NLAngSteps/=0 field versor will be ignored)
+NLMaxAng= 360.0000               # [NL] Max angle in degree (default 360 degree)
+NLDamping= 0.200000 eV
+RADLifeTime=-1.000000      fs    # [RT] Radiative life-time (if negative RADLifeTime=Phase_LifeTime)
+#UseDipoles                    # [NL] Use Covariant Dipoles (just for test purpose)
+#FrSndOrd                      # [NL] Force second order in Covariant Dipoles
+#NoComprCOLL                   # [NL] Load collisions in double-precision and do not remove small elements (default false)
+COLLCut= 0.500000E-3             # [SC,RT] Cutoff on the collisions, 0=full 1=none (default =0.0005)
+#EvalCurrent                   # [NL] Evaluate the current
+#InducedField                  # [RT] Include induced field in coupling and current
+Gauge= "length"                  # [BSE/X] Gauge (length|velocity)
+HARRLvcs=  44217           RL    # [HA] Hartree     RL components
+EXXRLvcs=  44217           RL    # [XX] Exchange    RL components
+CORRLvcs=-1                RL    # [GW] Correlation RL components [if -1 uses all the G-vectors of W_{G,Gp}]
+GfnQPdb= "none"
+GfnQP_INTERP_NN= 1               # [EXTQP G] Interpolation neighbours (NN mode)
+GfnQP_INTERP_shells= 20.00000    # [EXTQP G] Interpolation shells (BOLTZ mode)
+GfnQP_DbGd_INTERP_mode= "NN"     # [EXTQP G] Interpolation DbGd mode
+% GfnQP_E
+ 0.0 | 1.000000 | 1.000000 |
+%
+GfnQP_Z= ( 1.000000 , 0.000000 )         # [EXTQP G] Z factor  (c/v)
+GfnQP_Wv_E= 0.000000       eV    # [EXTQP G] W Energy reference  (valence)
+% GfnQP_Wv
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (valence) eV| 1|eV^-1
+%
+GfnQP_Wv_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (valence)
+GfnQP_Wc_E= 0.000000       eV    # [EXTQP G] W Energy reference  (conduction)
+% GfnQP_Wc
+ 0.000000 | 0.000000 | 0.000000 |        # [EXTQP G] W parameters  (conduction) eV| 1 |eV^-1
+%
+GfnQP_Wc_dos= 0.000000     eV    # [EXTQP G] W dos pre-factor  (conduction)
+Field1_Freq= 0.100000      eV    # [RT Field1] Frequency
+Field1_Int= 1000.0 kWLm2
+Field1_Width= 0.0 fs
+Field1_Chirp= 0.000000     fs    # [RT Field1] Width
+Field1_FWHM= 0.0 fs
+Field1_kind= "SOFTSIN"
+Field1_pol= "linear"
+% Field1_Dir
+ 0.0 | 1.0 | 0.0 |
+%
+% Field1_Dir_circ
+ 0.000000 | 1.000000 | 0.000000 |        # [RT Field1] Versor_circ
+%
+Field1_Tstart= 0.010000 fs
+Field2_Freq= 0.100000      eV    # [RT Field2] Frequency
+Field2_Int= 0.000000       kWLm2 # [RT Field2] Intensity
+Field2_Width= 0.000000     fs    # [RT Field2] Width
+Field2_Chirp= 0.000000     fs    # [RT Field2] Width
+Field2_FWHM= 2.000000      fs    # [RT Field2] Full Width at Half Maximum (overwrite width if set)
+Field2_kind= "none"              # [RT Field2] Kind(SIN|COS|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field2_pol= "linear"             # [RT Field2] Pol(linear|circular)
+% Field2_Dir
+ 0.000000 | 0.000000 | 0.000000 |        # [RT Field2] Versor
+%
+% Field2_Dir_circ
+ 0.000000 | 1.000000 | 0.000000 |        # [RT Field2] Versor_circ
+%
+Field2_Tstart= 0.010000    fs    # [RT Field2] Initial Time
+Field3_Freq= 0.100000      eV    # [RT Field3] Frequency
+Field3_Int= 0.000000       kWLm2 # [RT Field3] Intensity
+Field3_Width= 0.000000     fs    # [RT Field3] Width
+Field3_Chirp= 0.000000     fs    # [RT Field3] Width
+Field3_FWHM= 2.000000      fs    # [RT Field3] Full Width at Half Maximum (overwrite width if set)
+Field3_kind= "none"              # [RT Field3] Kind(SIN|COS|RES|ANTIRES|GAUSS|DELTA|QSSIN)
+Field3_pol= "linear"             # [RT Field3] Pol(linear|circular)
+% Field3_Dir
+ 0.000000 | 0.000000 | 0.000000 |        # [RT Field3] Versor
+%
+% Field3_Dir_circ
+ 0.000000 | 1.000000 | 0.000000 |        # [RT Field3] Versor_circ
+%
+Field3_Tstart= 0.010000    fs    # [RT Field3] Initial Time
